@@ -1,0 +1,116 @@
+// en.json
+
+
+"userLocationMapText"=>"User Location",
+"driverLocationMapText"=>"Driver Location",
+"selectPaymentMethodtoogle"=>"Select Payment Method",
+"noInternettText"=>"No Internet Connection",
+"noInternettTitttle"=>"It seems you're offline. Please check your connection and try again.",
+"enterDestinationPlaceholderText"=>"Enter destination",
+"addStopPlaceHolderText"=>"Add Stop",
+"pickupLocationTittle"=>"Pickup location",
+"creditCardAmbulance"=>"Credit Card",
+"payPalAmbulance"=>"PayPal",
+"googlePayAmbulance"=>"Google Pay",
+"cashAmbulance"=>"Cash",
+"PickupAmbulance"=>"Pickup",
+"noAccountOTPText"=>"No account linked to the given number. Please sign up.",
+"OTPIncorrectMsg"=>"The OTP you entered is incorrect. Please try again.",
+"duringVerificationOTP"=>"An error occurred during verification. Please try again.",
+"linkedinNoAccountinOtp"=>"There is no account linked to the given number.",
+"tryAgainOtp"=>"Something Went Wrong Please Try Again Later",
+"bookRideInvalidDate"=>"Invalid Date",
+"bookRideInvalidTime"=>"Invalid Time",
+"multiStopTextFirst"=>"Multiple stops, top drivers, affordable",
+"multiStopTextSec"=>"fares and more with rido rentals.",
+"driverPriceText"=>"Driver Price",
+"MoreTextInformation"=>"More Information",
+"DateandTextTime"=>"Date and Time",
+"ChangeTexttt"=>"Change",
+"ServiceUnavailableNo"=>"Service Unavailable",
+"ServiceUnavailableNoTextt"=>"Unfortunately, the service you're looking for is currently not available in your selected area or time. Please try a different location or check back later.",
+"BookAgainTextttt"=>"Book Again",
+"ticketPleaseEnterdescription"=>"Please Enter a description.",
+"ticketImageisRequired"=>"Image is Required"
+
+
+
+// ar.json
+
+
+"userLocationMapText" => "موقع المستخدم",
+"driverLocationMapText" => "موقع السائق",
+"selectPaymentMethodtoogle" => "اختر طريقة الدفع",
+"noInternettText" => "لا يوجد اتصال بالإنترنت",
+"noInternettTitttle" => "يبدو أنك غير متصل. يرجى التحقق من الاتصال والمحاولة مرة أخرى.",
+"enterDestinationPlaceholderText" => "أدخل الوجهة",
+"addStopPlaceHolderText" => "أضف محطة",
+"pickupLocationTittle" => "موقع الاستلام",
+"creditCardAmbulance" => "بطاقة ائتمان",
+"payPalAmbulance" => "باي بال",
+"googlePayAmbulance" => "جوجل باي",
+"cashAmbulance" => "نقداً",
+"PickupAmbulance" => "الاستلام",
+"noAccountOTPText" => "لا يوجد حساب مرتبط بالرقم المُدخل. يرجى التسجيل.",
+"OTPIncorrectMsg" => "رمز التحقق (OTP) الذي أدخلته غير صحيح. حاول مرة أخرى.",
+"duringVerificationOTP" => "حدث خطأ أثناء التحقق. يرجى المحاولة مرة أخرى.",
+"linkedinNoAccountinOtp" => "لا يوجد حساب مرتبط بالرقم المُدخل.",
+"tryAgainOtp" => "حدث خطأ ما. يرجى المحاولة مرة أخرى لاحقًا.",
+"bookRideInvalidDate" => "تاريخ غير صالح",
+"bookRideInvalidTime" => "وقت غير صالح",
+"multiStopTextFirst" => "عدة محطات، أفضل السائقين، أسعار معقولة",
+"multiStopTextSec" => "وأكثر مع تأجير ريدو.",
+"driverPriceText" => "سعر السائق",
+"MoreTextInformation" => "مزيد من المعلومات",
+"DateandTextTime" => "التاريخ والوقت",
+"ChangeTexttt" => "تغيير",
+"ServiceUnavailableNo" => "الخدمة غير متوفرة",
+"ServiceUnavailableNoTextt" => "للأسف، الخدمة التي تبحث عنها غير متوفرة حالياً في المنطقة أو الوقت المحدد. يرجى تجربة موقع مختلف أو العودة لاحقاً.",
+"BookAgainTextttt" => "احجز مرة أخرى",
+"ticketPleaseEnterdescription" => "يرجى إدخال وصف.",
+"ticketImageisRequired" => "الصورة مطلوبة"
+
+
+
+
+
+
+
+
+
+// fr.json
+
+
+
+
+"userLocationMapText" => "Emplacement de l'utilisateur",
+"driverLocationMapText" => "Emplacement du conducteur",
+"selectPaymentMethodtoogle" => "Sélectionnez un mode de paiement",
+"noInternettText" => "Pas de connexion Internet",
+"noInternettTitttle" => "Il semble que vous soyez hors ligne. Veuillez vérifier votre connexion et réessayer.",
+"enterDestinationPlaceholderText" => "Entrez la destination",
+"addStopPlaceHolderText" => "Ajouter un arrêt",
+"pickupLocationTittle" => "Lieu de prise en charge",
+"creditCardAmbulance" => "Carte de crédit",
+"payPalAmbulance" => "PayPal",
+"googlePayAmbulance" => "Google Pay",
+"cashAmbulance" => "Espèces",
+"PickupAmbulance" => "Prise en charge",
+"noAccountOTPText" => "Aucun compte associé au numéro donné. Veuillez vous inscrire.",
+"OTPIncorrectMsg" => "Le code OTP que vous avez saisi est incorrect. Veuillez réessayer.",
+"duringVerificationOTP" => "Une erreur s'est produite lors de la vérification. Veuillez réessayer.",
+"linkedinNoAccountinOtp" => "Aucun compte n'est associé au numéro donné.",
+"tryAgainOtp" => "Quelque chose s'est mal passé. Veuillez réessayer plus tard.",
+"bookRideInvalidDate" => "Date invalide",
+"bookRideInvalidTime" => "Heure invalide",
+"multiStopTextFirst" => "Plusieurs arrêts, meilleurs conducteurs, abordable",
+"multiStopTextSec" => "tarifs et plus avec les locations Rido.",
+"driverPriceText" => "Prix du conducteur",
+"MoreTextInformation" => "Plus d'informations",
+"DateandTextTime" => "Date et heure",
+"ChangeTexttt" => "Changer",
+"ServiceUnavailableNo" => "Service indisponible",
+"ServiceUnavailableNoTextt" => "Malheureusement, le service que vous recherchez n’est actuellement pas disponible dans la zone ou à l’heure sélectionnée. Veuillez essayer un autre emplacement ou réessayer plus tard.",
+"BookAgainTextttt" => "Réserver à nouveau",
+"ticketPleaseEnterdescription" => "Veuillez entrer une description.",
+"ticketImageisRequired" => "L’image est requise"

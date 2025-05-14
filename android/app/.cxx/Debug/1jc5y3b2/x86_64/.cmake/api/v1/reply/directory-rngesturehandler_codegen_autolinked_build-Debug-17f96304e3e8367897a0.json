@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "rngesturehandler_codegen_autolinked_build",
+		"source" : "/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni"
+	}
+}

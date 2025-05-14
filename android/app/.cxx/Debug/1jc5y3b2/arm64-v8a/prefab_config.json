@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "prefabPath": "/Users/macbookprom1/.gradle/caches/modules-2/files-2.1/com.google.prefab/cli/2.1.0/aa32fec809c44fa531f01dcfb739b5b3304d3050/cli-2.1.0-all.jar",
+  "packages": [
+    "/Users/macbookprom1/.gradle/caches/8.10.2/transforms/9c031d1bb6588f27760dd02fc9517a54/transformed/jetified-react-android-0.77.2-debug/prefab",
+    "/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-reanimated/android/build/intermediates/prefab_package/debug/prefab",
+    "/Users/macbookprom1/.gradle/caches/8.10.2/transforms/90773311d8af38d2592dba0ae56fb603/transformed/jetified-hermes-android-0.77.2-debug/prefab",
+    "/Users/macbookprom1/.gradle/caches/8.10.2/transforms/f11952b525f3a5e4d0e94e235f377d46/transformed/jetified-fbjni-0.7.0/prefab"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "541305365092",
+    "project_id": "taxidouser-b07f9",
+    "storage_bucket": "taxidouser-b07f9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541305365092:android:142946389095d5003cf571",
+        "android_client_info": {
+          "package_name": "com.taxidouser"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyuysv4NAzby6oi7xicvW8xWAnlL_yjm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
