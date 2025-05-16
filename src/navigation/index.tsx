@@ -83,11 +83,11 @@ const MyStack: React.FC = () => {
           <Stack.Screen name="NoInternet" component={NoInternet} />
         ) : (
           <>
-            <Stack.Screen name="Splash" component={Splash} />
-            <Stack.Screen name="Onboarding" component={Onboarding} />
-            {/* <Stack.Screen name="SignIn" component={SignIn} />
-            <Stack.Screen name="OtpVerification" component={OtpVerification} />
-            <Stack.Screen name="SignUp" component={SignUp} /> */}
+            {/* <Stack.Screen name="Splash" component={Splash} /> */}
+            {/* <Stack.Screen name="Onboarding" component={Onboarding} /> */}
+            {/* <Stack.Screen name="SignIn" component={SignIn} /> */}
+            {/* <Stack.Screen name="OtpVerification" component={OtpVerification} /> */}
+            <Stack.Screen name="SignUp" component={SignUp} />
             <Stack.Screen name="MyTabs" component={MyTabs} />
             <Stack.Screen name="PromoCodeScreen" component={PromoCodeScreen} />
             <Stack.Screen name="SavedLocation" component={SavedLocation} />

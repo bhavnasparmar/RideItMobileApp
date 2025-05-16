@@ -18,7 +18,7 @@ import { useAppNavigation, useAppRoute } from "@src/utils/navigation";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export function OtpVerification({}) {
-  const route = useAppRoute();
+  const route :any = useAppRoute();
   const countryCode = route?.params?.countryCode ?? "91";
   const phoneNumber = route?.params?.phoneNumber ?? "1234567890";
   const demouser = route.params || {};
@@ -139,11 +139,11 @@ export function OtpVerification({}) {
       container={
         <View>
           <AuthText
-            title={translateData?.otpVerification}
+            title={translateData?.otpVerification ? translateData?.otpVerification : "OTP Varification"}
             subtitle={
               isEmail
                 ? `${translateData?.otpSendTo} ${emailOrPhone}`
-                : `${translateData?.otpSendTo} ${countryCode} ${emailOrPhone}`
+                : `${translateData?.otpSendTo ? translateData?.otpSendTo : "Enter OTP sent to "} ${countryCode? countryCode : "+91"} ${emailOrPhone ? emailOrPhone : "77777 88888"}`
             }
 
           />
@@ -156,7 +156,7 @@ export function OtpVerification({}) {
               },
             ]}
           >
-            {translateData?.otp}
+            {translateData?.otp ? translateData?.otp : 'OTP'}
           </Text>
           <View style={[style.inputContainer, { flexDirection: viewRTLStyle }]}>
             <OTPTextView
@@ -186,7 +186,7 @@ export function OtpVerification({}) {
             />
           </View>
           <View style={[external.mt_40]}>
-            <Button title={translateData?.verify} onPress={handleVerify} loading={loading} />
+            <Button title={translateData?.verify ? translateData?.verify : 'Submit'} onPress={handleVerify} loading={loading} />
           </View>
           <View style={[external.mb_15, external.mt_5]}>
             <NewUserComponent

@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     countryCodeContainer: { marginTop: windowHeight(17) },
     btn: {
         top: windowHeight(25),
-        marginBottom: windowHeight(48),
+        marginBottom: windowHeight(200),
     },
     confirmPasswordView: { bottom: windowHeight(6.9) },
     passwordView: { bottom: windowHeight(5.3) },
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     },
     phoneNumberInput: {
         width: windowWidth(330),
-        backgroundColor: appColors.lightGray,
+       // backgroundColor: appColors.lightGray,
         borderRadius: windowHeight(4),
         marginHorizontal: windowHeight(9),
         paddingHorizontal: windowHeight(9),
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     countryCodeContainer1: {
         width: windowWidth(100),
         height: windowHeight(42),
-        backgroundColor: appColors.lightGray,
+       // backgroundColor: appColors.lightGray,
         borderRadius: windowHeight(4),
         alignItems: "center",
         justifyContent: "center",

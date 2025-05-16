@@ -9,7 +9,7 @@ export function SignInTextContainer () {
   );
   return (
     <View>
-      <AuthText title={translateData?.authTitle} subtitle={translateData?.authDescription} />
+      <AuthText title={translateData?.authTitle ?translateData?.authTitle : "Let's you in "} subtitle={translateData?.authDescription? translateData?.authDescription : 'Hey, you have been missed !'} />
     </View>
   );
 };

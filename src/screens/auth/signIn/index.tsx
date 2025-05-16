@@ -2,7 +2,11 @@ import React, { useState, useRef, useCallback, useEffect } from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { external } from "../../../styles/externalStyle";
 import { AuthContainer } from "../../../components/authComponents/authContainer/index";
-import { Button, AnimatedAlert, notificationHelper } from "@src/commonComponent";
+import {
+  Button,
+  AnimatedAlert,
+  notificationHelper,
+} from "@src/commonComponent";
 import { SignInTextContainer } from "./signInComponents/signInTextContainer/index";
 import { CountryCodeContainer } from "./signInComponents/countryCodeContainer/index";
 import { useValues } from "../../../../App";
@@ -18,7 +22,6 @@ import { useAppNavigation } from "@src/utils/navigation";
 import { useFocusEffect } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-
 export function SignIn() {
   const { navigate } = useAppNavigation();
   const { isDark, textColorStyle, viewRTLStyle } = useValues();
@@ -31,8 +34,9 @@ export function SignIn() {
   const { loading } = useSelector((state: any) => state.auth);
   const [demouser, setDemouser] = useState(false);
   const [warning, setWarning] = useState(false);
-  const { translateData, settingData } = useSelector((state: any) => state.setting);
-
+  const { translateData, settingData } = useSelector(
+    (state: any) => state.setting
+  );
 
   useFocusEffect(
     useCallback(() => {
@@ -61,7 +65,7 @@ export function SignIn() {
       .then((res: any) => {
         if (res?.success) {
           navigate("OtpVerification", { countryCode, phoneNumber, demouser });
-          notificationHelper("OTP", "Otp Sent Successfully", "success")
+          notificationHelper("OTP", "Otp Sent Successfully", "success");
 
           setWarning(false);
         } else {
@@ -75,8 +79,6 @@ export function SignIn() {
       });
   };
 
-
-
   const gotoGuest = () => {
     navigate("MyTabs");
   };
@@ -88,12 +90,11 @@ export function SignIn() {
 
   useEffect(() => {
     const getStoredPhone = async () => {
-      const storedPhone = await AsyncStorage.getItem('phoneNumber');
+      const storedPhone = await AsyncStorage.getItem("phoneNumber");
     };
 
     getStoredPhone();
   }, []);
-
 
   return (
     <AuthContainer
@@ -104,7 +105,7 @@ export function SignIn() {
           <SignInTextContainer />
           <View style={[external.mt_10]}>
             <CountryCodeContainer
-              countryCode={countryCode}
+              countryCode={"+91"}
               setCountryCode={setCountryCode}
               phoneNumber={phoneNumber}
               setPhoneNumber={setPhoneNumber}
@@ -116,17 +117,29 @@ export function SignIn() {
             />
             <View style={[external.mt_25]}>
               <Button
-                title={translateData?.getOtp || 'Get OTP'}
+                title={translateData?.getOtp || "Sign In"}
                 onPress={handleSignIn}
                 loading={loading}
               />
             </View>
-
-            <View style={styles.imgContainer}>
-              <Image source={Images.or} style={styles.orImg} />
+            <View style={{justifyContent : 'center' , flexDirection : 'row',marginTop : 10}}>
+              <Text style={{ textAlign: "center",color : 'gray' }}>
+                {translateData?.mobileNumber
+                  ? translateData?.mobileNumber
+                  : "New User ?"}
+              </Text>
+               <Text style={{ textAlign: "center" ,fontWeight : 'bold' }}>
+                {translateData?.mobileNumber
+                  ? translateData?.mobileNumber
+                  : " Sign Up"}
+              </Text>
             </View>
 
-            <TouchableOpacity
+            {/* <View style={styles.imgContainer}>
+              <Image source={Images.or} style={styles.orImg} />
+            </View> */}
+
+            {/* <TouchableOpacity
               activeOpacity={0.7}
               onPress={gotoGuest}
               style={[
@@ -143,7 +156,7 @@ export function SignIn() {
               <Text style={[styles.sociallogin, { color: textColorStyle }]}>
                 {translateData?.guest || 'Guest user'}
               </Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
 
             {settingData?.values?.activation?.demo_mode == 1 ? (
               <TouchableOpacity
@@ -154,11 +167,12 @@ export function SignIn() {
 
                   {
                     flexDirection: viewRTLStyle,
-
                   },
                 ]}
               >
-                <Text style={styles.demoBtnText}>{translateData?.demoUser}</Text>
+                <Text style={styles.demoBtnText}>
+                  {translateData?.demoUser}
+                </Text>
               </TouchableOpacity>
             ) : null}
 

@@ -178,7 +178,7 @@ export function CountryCodeContainer({
                 isDark ? appColors.darkText : appColors.regularText
               }
               placeholder={
-                translateData?.enterNumberandEmailBoth ??
+                // translateData?.enterNumberandEmailBoth ??
                 "Enter phone or email"
               }
               keyboardType="default"

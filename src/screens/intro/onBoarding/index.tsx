@@ -28,62 +28,62 @@ export function Onboarding() {
 
   useFocusEffect(
     useCallback(() => {
-      dispatch(languageDataGet());
-      dispatch(settingDataGet());
-      dispatch(translateDataGet())
+      // dispatch(languageDataGet());
+      // dispatch(settingDataGet());
+      // dispatch(translateDataGet())
     }, [dispatch])
   );
 
-  useEffect(() => {
-    const setDefaultLanguage = async () => {
-      const defaultLang = settingData?.values?.general?.default_language?.locale;
-      await setValue("defaultLanguage", defaultLang);
-    };
-    setDefaultLanguage();
-  }, [settingData]);
+  // useEffect(() => {
+  //   const setDefaultLanguage = async () => {
+  //     const defaultLang = settingData?.values?.general?.default_language?.locale;
+  //     await setValue("defaultLanguage", defaultLang);
+  //   };
+  //   setDefaultLanguage();
+  // }, [settingData]);
 
-  useEffect(() => {
-    const loadLanguage = async () => {
-      try {
-        const storedLang = await getValue("selectedLanguage");
-        if (storedLang) {
-          setSelectedLanguage(storedLang);
-          return;
-        }
+  // useEffect(() => {
+  //   const loadLanguage = async () => {
+  //     try {
+  //       const storedLang = await getValue("selectedLanguage");
+  //       if (storedLang) {
+  //         setSelectedLanguage(storedLang);
+  //         return;
+  //       }
 
-        if (!settingData?.values?.general?.default_language) {
-          return;
-        }
+  //       if (!settingData?.values?.general?.default_language) {
+  //         return;
+  //       }
 
-        const defaultLangObj = settingData?.values?.general?.default_language;
+  //       const defaultLangObj = settingData?.values?.general?.default_language;
 
-        if (typeof defaultLangObj !== "object" || !defaultLangObj.locale) {
-          return;
-        }
+  //       if (typeof defaultLangObj !== "object" || !defaultLangObj.locale) {
+  //         return;
+  //       }
 
-        const defaultLang = defaultLangObj.locale;
-        if (!languageData?.data || languageData.data.length === 0) {
-          return;
-        }
+  //       const defaultLang = defaultLangObj.locale;
+  //       if (!languageData?.data || languageData.data.length === 0) {
+  //         return;
+  //       }
 
-        const matchingLang = languageData.data.find(
-          (lang) => lang.locale === defaultLang
-        );
+  //       const matchingLang = languageData.data.find(
+  //         (lang) => lang.locale === defaultLang
+  //       );
 
-        if (matchingLang) {
-          setSelectedLanguage(matchingLang.locale);
-          await setValue("selectedLanguage", matchingLang.locale);
-        } else {
-        }
-      } catch (error) { }
-    };
+  //       if (matchingLang) {
+  //         setSelectedLanguage(matchingLang.locale);
+  //         await setValue("selectedLanguage", matchingLang.locale);
+  //       } else {
+  //       }
+  //     } catch (error) { }
+  //   };
 
-    loadLanguage();
-  }, [settingData, languageData]);
+  //   loadLanguage();
+  // }, [settingData, languageData]);
 
   useEffect(() => {
     if (languageData?.data) {
-      const formattedItems = languageData.data.map((lang) => ({
+      const formattedItems = languageData.data.map((lang: { name: any; locale: any; flag: any; }) => ({
         label: lang.name,
         value: lang.locale,
         icon: () => (
@@ -145,8 +145,8 @@ export function Onboarding() {
                 if (!selectedValue) return;
 
                 setSelectedLanguage(selectedValue);
-                dispatch(settingDataGet());
-                dispatch(translateDataGet())
+                // dispatch(settingDataGet());
+                // dispatch(translateDataGet())
 
                 try {
                   await setValue(

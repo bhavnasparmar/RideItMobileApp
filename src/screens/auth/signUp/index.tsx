@@ -20,7 +20,7 @@ import { CountryPicker } from "react-native-country-codes-picker";
 export function SignUp() {
   const { isDark, textRTLStyle, setToken, textColorStyle, isRTL, viewRTLStyle } = useValues();
   const { colors } = useTheme()
-  const route = useAppRoute();
+  const route : any= useAppRoute();
   const usercredentialCode = route.params?.countryCode ?? "91";
   const usercredential = route.params?.phoneNumber ?? "1234567890";
   const [isEmailUser,  setIsEmailUser ] = useState(false);
@@ -38,15 +38,15 @@ export function SignUp() {
     useState(false);
   const [userNameError, setUserNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
-  const [numberError, setNumberError] = useState(false);
+  const [numberError, setNumberError] = useState<any>(false);
   const [passwordError, setPasswordError] = useState(false);
-  const [confirmPasswordError, setConfirmPasswordError] = useState(false);
+  const [confirmPasswordError, setConfirmPasswordError] = useState<any>(false);
   const [fcmToken, setFcmToken] = useState<string>("");
   const dispatch = useDispatch();
   const [success, setSuccess] = useState<boolean>(false);
   const { replace } = useAppNavigation();
   const { translateData } = useSelector((state: any) => state.setting);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
   const [show, setShow] = useState(false);
 
 
@@ -89,30 +89,30 @@ export function SignUp() {
     }
 
     if (!phoneNumber.trim()) {
-      setNumberError(translateData.validNo);
+      setNumberError(translateData?.validNo);
       isValid = false;
     } else if (phoneNumber.length !== 10) {
-      setNumberError(translateData.numberDigit);
+      setNumberError(translateData?.numberDigit);
       isValid = false;
     } else {
       setNumberError("");
     }
 
     if (!password) {
-      setPasswordError(translateData.errorPassword);
+      setPasswordError(translateData?.errorPassword);
       isValid = false;
     } else if (password.length < 8) {
-      setPasswordError(translateData.passwordDigit);
+      setPasswordError(translateData?.passwordDigit);
       isValid = false;
     } else {
       setPasswordError("");
     }
 
     if (!confirmPassword) {
-      setConfirmPasswordError(translateData.errorConfirmPassword);
+      setConfirmPasswordError(translateData?.errorConfirmPassword);
       isValid = false;
     } else if (password !== confirmPassword) {
-      setConfirmPasswordError(translateData.passwordError);
+      setConfirmPasswordError(translateData?.passwordError);
       isValid = false;
     } else {
       setConfirmPasswordError("");
@@ -135,19 +135,19 @@ export function SignUp() {
       password_confirmation: confirmPassword,
     };
 
-    dispatch(userRegistration(payload))
-      .unwrap()
-      .then((res) => {
-        if (res?.success) {
-          setValue("token", res.access_token);
-          setToken(res.access_token);
-          replace("MyTabs");
-          dispatch(selfData());
-        } else {
-          setSuccess(false);
-        }
-      })
-      .finally(() => setLoading(false));
+    // dispatch(userRegistration(payload))
+    //   .unwrap()
+    //   .then((res) => {
+    //     if (res?.success) {
+    //       setValue("token", res.access_token);
+    //       setToken(res.access_token);
+    //       replace("MyTabs");
+    //       dispatch(selfData());
+    //     } else {
+    //       setSuccess(false);
+    //     }
+    //   })
+    //   .finally(() => setLoading(false));
   };
 
 
@@ -166,18 +166,18 @@ export function SignUp() {
           topSpace={windowHeight(100)}
           container={
             <View
-              showsVerticalScrollIndicator={false}
+             // showsVerticalScrollIndicator={false}
             >
               <AuthText
-                title={translateData.createAccount}
-                subtitle={translateData.registerContent}
+                title={translateData?.createAccount ? translateData?.createAccount : "Create Account"}
+                subtitle={translateData?.registerContent ?  translateData?.registerContent : "Explore your life by joining with"}
               />
               <View>
-                <InputText
+                {/* <InputText
                   showTitle={true}
-                  title={translateData.userName}
+                  title={translateData?.userName}
                   borderColor={isDark ? appColors.bgDark : appColors.lightGray}
-                  placeholder={translateData.enterUserName}
+                  placeholder={translateData?.enterUserName}
                   placeholderTextColor={
                     isDark ? appColors.darkText : appColors.regularText
                   }
@@ -194,12 +194,12 @@ export function SignUp() {
                     setUserNameError(!text.trim());
                   }}
                   warningText={
-                    userNameError ? `${translateData.enterUserName}` : ""
+                    userNameError ? `${translateData?.enterUserName}` : ""
                   }
-                />
+                /> */}
 
                 <Text style={[styles.numberTitle, { textAlign: textRTLStyle, color: isDark ? appColors.whiteColor : appColors.primaryText }]}>
-                  {translateData.mobileNumber}
+                  {translateData?.mobileNumber ?  translateData?.mobileNumber : "Mobile Number"}
                 </Text>
                 <View style={styles.countryCodeContainer}>
 
@@ -299,8 +299,9 @@ export function SignUp() {
                         <TextInput
                           style={[[commonStyles.regularText, { color: isDark ? appColors.whiteColor : appColors.blackColor }], [styles.inputText, { textAlign: textRTLStyle }]]}
                           placeholderTextColor={isDark ? appColors.darkText : appColors.regularText}
-                          placeholder={translateData.enterPhone}
-                          keyboardType="number-pad"
+                         // placeholder={translateData?.enterPhone}
+                         placeholder="Enter phone or email"
+                          //keyboardType="number-pad"
                           editable={isEmailUser}
                           value={phoneNumber}
                           onChangeText={(text) => {
@@ -308,7 +309,7 @@ export function SignUp() {
                             setPhoneNumber(numericText);
 
                             if (numericText.length < 10) {
-                              setNumberError(translateData.validNo);
+                              setNumberError(translateData?.validNo);
                             } else {
                               setNumberError("");
                             }
@@ -320,16 +321,16 @@ export function SignUp() {
                     </View>
                     {numberError && (
                       <Text style={styles.warningText}>
-                        {translateData.validNo}
+                        {translateData?.validNo}
                       </Text>
                     )}
                   </View>
                 </View>
-                <View style={styles.emailView}>
+                {/* <View style={styles.emailView}>
                   <InputText
                     showTitle={true}
-                    title={translateData.email}
-                    placeholder={translateData.enterEmail}
+                    title={translateData?.email ?translateData?.email : "Email"}
+                    placeholder={translateData?.enterEmail ?  translateData?.enterEmail : "Enter Email"}
                     borderColor={
                       isDark ? appColors.bgDark : appColors.lightGray
                     }
@@ -352,15 +353,15 @@ export function SignUp() {
                       setEmailError(!emailRegex.test(text.trim()));
                     }}
                     warningText={
-                      emailError ? `${translateData.enterEmailId}` : ""
+                      emailError ? `${translateData?.enterEmailId}` : ""
                     }
                   />
-                </View>
-                <View style={styles.referralIdView}>
+                </View> */}
+                {/* <View style={styles.referralIdView}>
                   <InputText
                     showTitle={true}
-                    title={translateData.referralId}
-                    placeholder={translateData.enterReferralId}
+                    title={translateData?.referralId}
+                    placeholder={translateData?.enterReferralId}
                     borderColor={
                       isDark ? appColors.bgDark : appColors.lightGray
                     }
@@ -377,12 +378,12 @@ export function SignUp() {
                     value={referralID}
                     onChangeText={setReferralID}
                   />
-                </View>
+                </View> */}
                 <View style={styles.passwordView}>
                   <InputText
                     showTitle={true}
-                    title={translateData.password}
-                    placeholder={translateData.enterPassword}
+                    title={translateData?.password ? translateData?.password : "Password" }
+                    placeholder={translateData?.enterPassword ? translateData?.enterPassword : "Enter Password" }
                     borderColor={
                       isDark ? appColors.bgDark : appColors.lightGray
                     }
@@ -399,7 +400,7 @@ export function SignUp() {
                     value={password}
                     onChangeText={(text) => {
                       setPassword(text);
-                      setPasswordError(text && text.length < 8 ? translateData.passwordDigit : "");
+                      setPasswordError(text && text.length < 8 ? translateData?.passwordDigit : "");
                     }}
 
                     rightIcon={
@@ -416,11 +417,11 @@ export function SignUp() {
 
                   />
                 </View>
-                <View style={styles.confirmPasswordView}>
+                {/* <View style={styles.confirmPasswordView}>
                   <InputText
                     showTitle={true}
-                    title={translateData.confirmPassword}
-                    placeholder={translateData.enterConfirmPassword}
+                    title={translateData?.confirmPassword}
+                    placeholder={translateData?.enterConfirmPassword}
                     borderColor={
                       isDark ? appColors.bgDark : appColors.lightGray
                     }
@@ -438,7 +439,7 @@ export function SignUp() {
                     onChangeText={(text) => {
                       setConfirmPassword(text);
                       setConfirmPasswordError(
-                        text !== password ? translateData.passwordError : ""
+                        text !== password ? translateData?.passwordError : ""
                       );
                     }} rightIcon={
                       <TouchableOpacity
@@ -454,13 +455,13 @@ export function SignUp() {
                     secureText={!isConfirmPasswordVisible}
                     warningText={confirmPasswordError}
                   />
-                </View>
+                </View> */}
               </View>
               <View
                 style={styles.btn}
               >
                 <Button
-                  title={translateData.register}
+                  title={translateData?.register ?  translateData?.register : "Get OTP"}
                   onPress={handleRegister}
                   loading={loading}
                 />
