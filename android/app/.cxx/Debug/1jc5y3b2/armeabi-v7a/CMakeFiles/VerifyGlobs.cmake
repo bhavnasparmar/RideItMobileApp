@@ -383,7 +383,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/.cxx/Debug/1jc5y3b2/armeabi-v7a/CMakeFiles/cmake.verify_globs")
 endif()
 
-# rnsvg_SRCS at /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt:24 (file)
+# rnsvg_SRCS at /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt:25 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-svg/android/src/main/jni/*.cpp")
 set(OLD_GLOB
   "/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-svg/android/src/main/jni/rnsvg.cpp"
@@ -393,7 +393,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/.cxx/Debug/1jc5y3b2/armeabi-v7a/CMakeFiles/cmake.verify_globs")
 endif()
 
-# rnsvg_SRCS at /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt:24 (file)
+# rnsvg_SRCS at /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt:25 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp/react/renderer/components/rnsvg/*.cpp")
 set(OLD_GLOB
   "/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-svg/android/src/main/jni/../../../../common/cpp/react/renderer/components/rnsvg/RNSVGImageShadowNode.cpp"
@@ -406,7 +406,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/.cxx/Debug/1jc5y3b2/armeabi-v7a/CMakeFiles/cmake.verify_globs")
 endif()
 
-# rnsvg_codegen_SRCS at /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt:25 (file)
+# rnsvg_codegen_SRCS at /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt:26 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg/*cpp")
 set(OLD_GLOB
   "/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-svg/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp"
