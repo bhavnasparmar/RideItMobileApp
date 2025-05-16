@@ -79,8 +79,8 @@ function App(): React.JSX.Element {
   useEffect(() => {
     const initializeApp = async () => {
       try {
-        const darkThemeValue = await AsyncStorage.getItem("darkTheme");
-        if (darkThemeValue !== null) {
+        const darkThemeValue =false //await AsyncStorage.getItem("darkTheme");
+        if (darkThemeValue == null) {
           setIsDark(JSON.parse(darkThemeValue));
         }
 
