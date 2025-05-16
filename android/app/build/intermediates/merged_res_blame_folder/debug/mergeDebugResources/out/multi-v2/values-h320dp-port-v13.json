@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.taxidouser.app-mergeDebugResources-67:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/macbookprom1/.gradle/caches/8.10.2/transforms/b2f21ac181391b9571bedd4b148134de/transformed/material-1.6.1/res/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "75",
+                        "endOffsets": "126"
+                    }
+                }
+            ]
+        }
+    ]
+}

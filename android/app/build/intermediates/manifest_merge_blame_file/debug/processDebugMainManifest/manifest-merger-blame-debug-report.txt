@@ -1,0 +1,1062 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.taxidouser"
+4    android:versionCode="8"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:3:5-79
+11-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:3:22-77
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:4:5-81
+12-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:4:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:5:5-67
+13-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:5:22-64
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:6:5-79
+14-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:6:22-76
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:7:5-81
+15-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:7:22-78
+16    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+16-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:8:5-85
+16-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:8:22-82
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:9:5-80
+17-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:9:22-76
+18    <uses-permission android:name="android.permission.READ_CONTACTS" />
+18-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:10:5-72
+18-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:10:22-69
+19    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+19-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:11:5-73
+19-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:11:22-70
+20    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+20-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:12:5-77
+20-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:12:22-74
+21    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+21-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:13:5-81
+21-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:13:22-79
+22    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+22-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:14:5-79
+22-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:14:22-77
+23    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+23-->[:react-native-community_netinfo] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-76
+23-->[:react-native-community_netinfo] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:22-73
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-68
+24-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:22-65
+25    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- Required to access Google Play Licensing -->
+25-->[:react-native-voice_voice] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-voice/voice/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:5-71
+25-->[:react-native-voice_voice] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-voice/voice/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:22-68
+26    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+26-->[:rn-fetch-blob] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-73
+26-->[:rn-fetch-blob] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:22-70
+27    <!--
+28    This manifest file is used only by Gradle to configure debug-only capabilities
+29    for React Native Apps.
+30    -->
+31    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+31-->[com.facebook.react:react-android:0.77.2] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/9c031d1bb6588f27760dd02fc9517a54/transformed/jetified-react-android-0.77.2-debug/AndroidManifest.xml:16:5-78
+31-->[com.facebook.react:react-android:0.77.2] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/9c031d1bb6588f27760dd02fc9517a54/transformed/jetified-react-android-0.77.2-debug/AndroidManifest.xml:16:22-75
+32    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+32-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:26:5-82
+32-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:26:22-79
+33    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+33-->[com.google.android.gms:play-services-measurement-api:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/84360763a9091412016cf9bfb5f675c2/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:25:5-79
+33-->[com.google.android.gms:play-services-measurement-api:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/84360763a9091412016cf9bfb5f675c2/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:25:22-76
+34    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+34-->[com.google.android.gms:play-services-measurement-api:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/84360763a9091412016cf9bfb5f675c2/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:26:5-88
+34-->[com.google.android.gms:play-services-measurement-api:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/84360763a9091412016cf9bfb5f675c2/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:26:22-85
+35    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+35-->[com.google.android.gms:play-services-measurement-api:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/84360763a9091412016cf9bfb5f675c2/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:27:5-82
+35-->[com.google.android.gms:play-services-measurement-api:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/84360763a9091412016cf9bfb5f675c2/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:27:22-79
+36    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+36-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:25:5-81
+36-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:25:22-78
+37    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+37-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:26:5-77
+37-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:26:22-74
+38
+39    <uses-feature
+39-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/89fe37ac6e269c7372ce2db66e1877d1/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:22:5-24:33
+40        android:glEsVersion="0x00020000"
+40-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/89fe37ac6e269c7372ce2db66e1877d1/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:23:8-40
+41        android:required="true" />
+41-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/89fe37ac6e269c7372ce2db66e1877d1/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:24:8-31
+42
+43    <queries>
+43-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/89fe37ac6e269c7372ce2db66e1877d1/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:27:5-30:15
+44
+45        <!-- Needs to be explicitly declared on Android R+ -->
+46        <package android:name="com.google.android.apps.maps" />
+46-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/89fe37ac6e269c7372ce2db66e1877d1/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:29:7-61
+46-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/89fe37ac6e269c7372ce2db66e1877d1/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:29:16-59
+47        <package android:name="com.facebook.katana" />
+47-->[com.facebook.android:facebook-common:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/48045c0cf5853db90c21f2fcc0d1e0ee/transformed/jetified-facebook-common-18.0.3/AndroidManifest.xml:16:9-55
+47-->[com.facebook.android:facebook-common:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/48045c0cf5853db90c21f2fcc0d1e0ee/transformed/jetified-facebook-common-18.0.3/AndroidManifest.xml:16:18-52
+48    </queries>
+49
+50    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+50-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:26:5-110
+50-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:26:22-107
+51    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+51-->[com.google.android.recaptcha:recaptcha:18.6.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/c62a3edc27bdb2cf767f9e90d4c7ced1/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:9:5-98
+51-->[com.google.android.recaptcha:recaptcha:18.6.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/c62a3edc27bdb2cf767f9e90d4c7ced1/transformed/jetified-recaptcha-18.6.1/AndroidManifest.xml:9:22-95
+52    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE" />
+52-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:18:5-92
+52-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:18:22-89
+53    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS" />
+53-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:19:5-83
+53-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:19:22-80
+54
+55    <permission
+55-->[androidx.core:core:1.15.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/59713ba305bca3238de24fb16435139e/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+56        android:name="com.taxidouser.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+56-->[androidx.core:core:1.15.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/59713ba305bca3238de24fb16435139e/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+57        android:protectionLevel="signature" />
+57-->[androidx.core:core:1.15.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/59713ba305bca3238de24fb16435139e/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+58
+59    <uses-permission android:name="com.taxidouser.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+59-->[androidx.core:core:1.15.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/59713ba305bca3238de24fb16435139e/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+59-->[androidx.core:core:1.15.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/59713ba305bca3238de24fb16435139e/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+60
+61    <application
+61-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:18:5-43:19
+62        android:name="com.taxidouser.MainApplication"
+62-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:19:7-38
+63        android:allowBackup="false"
+63-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:23:7-34
+64        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+64-->[androidx.core:core:1.15.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/59713ba305bca3238de24fb16435139e/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+65        android:debuggable="true"
+66        android:extractNativeLibs="false"
+67        android:icon="@mipmap/ic_launcher"
+67-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:21:7-41
+68        android:label="@string/app_name"
+68-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:20:7-39
+69        android:roundIcon="@mipmap/ic_launcher_round"
+69-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:22:7-52
+70        android:supportsRtl="true"
+70-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:25:7-33
+71        android:theme="@style/AppTheme"
+71-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:24:7-38
+72        android:usesCleartextTraffic="true" >
+72-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/debug/AndroidManifest.xml:6:9-44
+73        <meta-data
+73-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:26:7-28:66
+74            android:name="com.google.android.geo.API_KEY"
+74-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:27:9-54
+75            android:value="AIzaSyAEFXQPcN9HxgHppVmbwnNCBX3kfuoU344" />
+75-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:28:9-64
+76
+77        <activity
+77-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:30:7-42:18
+78            android:name="com.taxidouser.MainActivity"
+78-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:31:9-37
+79            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+79-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:33:9-118
+80            android:exported="true"
+80-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:36:9-32
+81            android:label="@string/app_name"
+81-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:32:9-41
+82            android:launchMode="singleTask"
+82-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:34:9-40
+83            android:screenOrientation="portrait"
+83-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:37:9-45
+84            android:windowSoftInputMode="adjustResize" >
+84-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:35:9-51
+85            <intent-filter>
+85-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:38:9-41:25
+86                <action android:name="android.intent.action.MAIN" />
+86-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:39:13-65
+86-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:39:21-62
+87
+88                <category android:name="android.intent.category.LAUNCHER" />
+88-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:40:13-73
+88-->/Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/src/main/AndroidManifest.xml:40:23-70
+89            </intent-filter>
+90        </activity>
+91
+92        <provider
+92-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-16:20
+93            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+93-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-83
+94            android:authorities="com.taxidouser.fileprovider"
+94-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:13-64
+95            android:exported="false"
+95-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-37
+96            android:grantUriPermissions="true" >
+96-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:13-47
+97            <meta-data
+97-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:13-15:63
+98                android:name="android.support.FILE_PROVIDER_PATHS"
+98-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:17-67
+99                android:resource="@xml/file_provider_paths" />
+99-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:17-60
+100        </provider>
+101
+102        <service
+102-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:9-14:40
+103            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"
+103-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:13-103
+104            android:exported="false" />
+104-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:13-37
+105        <service
+105-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:9-21:19
+106            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
+106-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:16:13-95
+107            android:exported="false" >
+107-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:17:13-37
+108            <intent-filter>
+108-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:18:13-20:29
+109                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+109-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:17-78
+109-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:25-75
+110            </intent-filter>
+111        </service>
+112
+113        <receiver
+113-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:23:9-30:20
+114            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
+114-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:24:13-96
+115            android:exported="true"
+115-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:13-36
+116            android:permission="com.google.android.c2dm.permission.SEND" >
+116-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:26:13-73
+117            <intent-filter>
+117-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:27:13-29:29
+118                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+118-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:28:17-81
+118-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:28:25-78
+119            </intent-filter>
+120        </receiver>
+121
+122        <meta-data
+122-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:32:9-34:37
+123            android:name="delivery_metrics_exported_to_big_query_enabled"
+123-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:33:13-74
+124            android:value="false" />
+124-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:34:13-34
+125        <meta-data
+125-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:35:9-37:36
+126            android:name="firebase_messaging_auto_init_enabled"
+126-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:36:13-64
+127            android:value="true" />
+127-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:37:13-33
+128        <meta-data
+128-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:38:9-40:37
+129            android:name="firebase_messaging_notification_delegation_enabled"
+129-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:39:13-78
+130            android:value="false" />
+130-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:40:13-34
+131        <meta-data
+131-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:41:9-43:32
+132            android:name="com.google.firebase.messaging.default_notification_channel_id"
+132-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:42:13-89
+133            android:value="" />
+133-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:43:13-29
+134        <meta-data
+134-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:44:9-46:47
+135            android:name="com.google.firebase.messaging.default_notification_color"
+135-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:45:13-84
+136            android:resource="@color/white" />
+136-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:46:13-44
+137        <meta-data
+137-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:9-11:36
+138            android:name="app_data_collection_default_enabled"
+138-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:13-63
+139            android:value="true" />
+139-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-33
+140
+141        <service
+141-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:9-21:19
+142            android:name="com.google.firebase.components.ComponentDiscoveryService"
+142-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:13-84
+143            android:directBootAware="true"
+143-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:13-43
+144            android:exported="false" >
+144-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:16:13-37
+145            <meta-data
+145-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:18:13-20:85
+146                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+146-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:17-120
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:20:17-82
+148            <meta-data
+148-->[com.google.firebase:firebase-analytics-ktx:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/5eb93daf0fea687ded880219dbb74347/transformed/jetified-firebase-analytics-ktx-22.4.0/AndroidManifest.xml:11:13-13:85
+149                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar"
+149-->[com.google.firebase:firebase-analytics-ktx:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/5eb93daf0fea687ded880219dbb74347/transformed/jetified-firebase-analytics-ktx-22.4.0/AndroidManifest.xml:12:17-129
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[com.google.firebase:firebase-analytics-ktx:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/5eb93daf0fea687ded880219dbb74347/transformed/jetified-firebase-analytics-ktx-22.4.0/AndroidManifest.xml:13:17-82
+151            <meta-data
+151-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:69:13-71:85
+152                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+152-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:70:17-109
+153                android:value="com.google.firebase.components.ComponentRegistrar" />
+153-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:71:17-82
+154            <meta-data
+154-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:57:13-59:85
+155                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+155-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:58:17-122
+156                android:value="com.google.firebase.components.ComponentRegistrar" />
+156-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:59:17-82
+157            <meta-data
+157-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:60:13-62:85
+158                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+158-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:61:17-119
+159                android:value="com.google.firebase.components.ComponentRegistrar" />
+159-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:62:17-82
+160            <meta-data
+160-->[com.google.firebase:firebase-firestore:25.1.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/8bb1049a6e2514da6c7b7d5ec6942ea9/transformed/jetified-firebase-firestore-25.1.3/AndroidManifest.xml:17:13-19:85
+161                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+161-->[com.google.firebase:firebase-firestore:25.1.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/8bb1049a6e2514da6c7b7d5ec6942ea9/transformed/jetified-firebase-firestore-25.1.3/AndroidManifest.xml:18:17-122
+162                android:value="com.google.firebase.components.ComponentRegistrar" />
+162-->[com.google.firebase:firebase-firestore:25.1.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/8bb1049a6e2514da6c7b7d5ec6942ea9/transformed/jetified-firebase-firestore-25.1.3/AndroidManifest.xml:19:17-82
+163            <meta-data
+163-->[com.google.firebase:firebase-firestore:25.1.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/8bb1049a6e2514da6c7b7d5ec6942ea9/transformed/jetified-firebase-firestore-25.1.3/AndroidManifest.xml:20:13-22:85
+164                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+164-->[com.google.firebase:firebase-firestore:25.1.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/8bb1049a6e2514da6c7b7d5ec6942ea9/transformed/jetified-firebase-firestore-25.1.3/AndroidManifest.xml:21:17-111
+165                android:value="com.google.firebase.components.ComponentRegistrar" />
+165-->[com.google.firebase:firebase-firestore:25.1.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/8bb1049a6e2514da6c7b7d5ec6942ea9/transformed/jetified-firebase-firestore-25.1.3/AndroidManifest.xml:22:17-82
+166            <meta-data
+166-->[com.google.android.gms:play-services-measurement-api:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/84360763a9091412016cf9bfb5f675c2/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:33:13-35:85
+167                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+167-->[com.google.android.gms:play-services-measurement-api:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/84360763a9091412016cf9bfb5f675c2/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:34:17-139
+168                android:value="com.google.firebase.components.ComponentRegistrar" />
+168-->[com.google.android.gms:play-services-measurement-api:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/84360763a9091412016cf9bfb5f675c2/transformed/jetified-play-services-measurement-api-22.4.0/AndroidManifest.xml:35:17-82
+169            <meta-data
+169-->[com.google.firebase:firebase-installations:18.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/2adeea36084a896ef4bdf5020b216a51/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
+170                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+170-->[com.google.firebase:firebase-installations:18.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/2adeea36084a896ef4bdf5020b216a51/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
+171                android:value="com.google.firebase.components.ComponentRegistrar" />
+171-->[com.google.firebase:firebase-installations:18.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/2adeea36084a896ef4bdf5020b216a51/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
+172            <meta-data
+172-->[com.google.firebase:firebase-installations:18.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/2adeea36084a896ef4bdf5020b216a51/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
+173                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+173-->[com.google.firebase:firebase-installations:18.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/2adeea36084a896ef4bdf5020b216a51/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
+174                android:value="com.google.firebase.components.ComponentRegistrar" />
+174-->[com.google.firebase:firebase-installations:18.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/2adeea36084a896ef4bdf5020b216a51/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
+175            <meta-data
+175-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/df49e43884fa2b40f407dcd6ce727edc/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+176                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+176-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/df49e43884fa2b40f407dcd6ce727edc/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+177                android:value="com.google.firebase.components.ComponentRegistrar" />
+177-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/df49e43884fa2b40f407dcd6ce727edc/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+178            <meta-data
+178-->[com.google.firebase:firebase-common:21.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/f9bd286e5d0b7f9f02c0f9f7055715a5/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+179                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+179-->[com.google.firebase:firebase-common:21.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/f9bd286e5d0b7f9f02c0f9f7055715a5/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+180                android:value="com.google.firebase.components.ComponentRegistrar" />
+180-->[com.google.firebase:firebase-common:21.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/f9bd286e5d0b7f9f02c0f9f7055715a5/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+181            <meta-data
+181-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/f75a2a53fc72556757e6ca5e9f730a0d/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
+182                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+182-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/f75a2a53fc72556757e6ca5e9f730a0d/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
+183                android:value="com.google.firebase.components.ComponentRegistrar" />
+183-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/f75a2a53fc72556757e6ca5e9f730a0d/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
+184        </service>
+185
+186        <provider
+186-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:23:9-27:38
+187            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+187-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:24:13-88
+188            android:authorities="com.taxidouser.reactnativefirebaseappinitprovider"
+188-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:13-86
+189            android:exported="false"
+189-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:26:13-37
+190            android:initOrder="99" />
+190-->[:react-native-firebase_app] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:27:13-35
+191
+192        <property
+192-->[:react-native-fbsdk-next] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-fbsdk-next/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:44:9-47:48
+193            android:name="android.adservices.AD_SERVICES_CONFIG"
+193-->[:react-native-fbsdk-next] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-fbsdk-next/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:45:13-65
+194            android:resource="@xml/ad_services_config" />
+194-->[:react-native-fbsdk-next] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-fbsdk-next/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:46:13-55
+195
+196        <provider
+196-->[:react-native-image-picker] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-16:20
+197            android:name="com.imagepicker.ImagePickerProvider"
+197-->[:react-native-image-picker] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-63
+198            android:authorities="com.taxidouser.imagepickerprovider"
+198-->[:react-native-image-picker] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:13-71
+199            android:exported="false"
+199-->[:react-native-image-picker] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-37
+200            android:grantUriPermissions="true" >
+200-->[:react-native-image-picker] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:13-47
+201            <meta-data
+201-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:13-15:63
+202                android:name="android.support.FILE_PROVIDER_PATHS"
+202-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:17-67
+203                android:resource="@xml/imagepicker_provider_paths" />
+203-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:17-60
+204        </provider>
+205        <provider
+205-->[:rn-fetch-blob] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:32:9-40:20
+206            android:name="com.RNFetchBlob.Utils.FileProvider"
+206-->[:rn-fetch-blob] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:33:13-62
+207            android:authorities="com.taxidouser.provider"
+207-->[:rn-fetch-blob] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:34:13-60
+208            android:exported="false"
+208-->[:rn-fetch-blob] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:35:13-37
+209            android:grantUriPermissions="true" >
+209-->[:rn-fetch-blob] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:36:13-47
+210            <meta-data
+210-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:13-15:63
+211                android:name="android.support.FILE_PROVIDER_PATHS"
+211-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:17-67
+212                android:resource="@xml/provider_paths" />
+212-->[:react-native-webview] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:17-60
+213        </provider>
+214
+215        <activity
+215-->[com.facebook.react:react-android:0.77.2] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/9c031d1bb6588f27760dd02fc9517a54/transformed/jetified-react-android-0.77.2-debug/AndroidManifest.xml:19:9-21:40
+216            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+216-->[com.facebook.react:react-android:0.77.2] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/9c031d1bb6588f27760dd02fc9517a54/transformed/jetified-react-android-0.77.2-debug/AndroidManifest.xml:20:13-77
+217            android:exported="false" />
+217-->[com.facebook.react:react-android:0.77.2] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/9c031d1bb6588f27760dd02fc9517a54/transformed/jetified-react-android-0.77.2-debug/AndroidManifest.xml:21:13-37
+218        <activity
+218-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:29:9-46:20
+219            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+219-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:30:13-80
+220            android:excludeFromRecents="true"
+220-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:31:13-46
+221            android:exported="true"
+221-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:32:13-36
+222            android:launchMode="singleTask"
+222-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:33:13-44
+223            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+223-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:34:13-72
+224            <intent-filter>
+224-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:35:13-45:29
+225                <action android:name="android.intent.action.VIEW" />
+225-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:36:17-69
+225-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:36:25-66
+226
+227                <category android:name="android.intent.category.DEFAULT" />
+227-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:38:17-76
+227-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:38:27-73
+228                <category android:name="android.intent.category.BROWSABLE" />
+228-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:39:17-78
+228-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:39:27-75
+229
+230                <data
+230-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:41:17-44:51
+231                    android:host="firebase.auth"
+231-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:42:21-49
+232                    android:path="/"
+232-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:43:21-37
+233                    android:scheme="genericidp" />
+233-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:44:21-48
+234            </intent-filter>
+235        </activity>
+236        <activity
+236-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:47:9-64:20
+237            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+237-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:48:13-79
+238            android:excludeFromRecents="true"
+238-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:49:13-46
+239            android:exported="true"
+239-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:50:13-36
+240            android:launchMode="singleTask"
+240-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:51:13-44
+241            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+241-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:52:13-72
+242            <intent-filter>
+242-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:53:13-63:29
+243                <action android:name="android.intent.action.VIEW" />
+243-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:36:17-69
+243-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:36:25-66
+244
+245                <category android:name="android.intent.category.DEFAULT" />
+245-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:38:17-76
+245-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:38:27-73
+246                <category android:name="android.intent.category.BROWSABLE" />
+246-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:39:17-78
+246-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:39:27-75
+247
+248                <data
+248-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:41:17-44:51
+249                    android:host="firebase.auth"
+249-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:42:21-49
+250                    android:path="/"
+250-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:43:21-37
+251                    android:scheme="recaptcha" />
+251-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:44:21-48
+252            </intent-filter>
+253        </activity>
+254
+255        <receiver
+255-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:29:9-40:20
+256            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+256-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:30:13-78
+257            android:exported="true"
+257-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:31:13-36
+258            android:permission="com.google.android.c2dm.permission.SEND" >
+258-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:32:13-73
+259            <intent-filter>
+259-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:27:13-29:29
+260                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+260-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:28:17-81
+260-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:28:25-78
+261            </intent-filter>
+262
+263            <meta-data
+263-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:37:13-39:40
+264                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+264-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:38:17-92
+265                android:value="true" />
+265-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:39:17-37
+266        </receiver>
+267        <!--
+268             FirebaseMessagingService performs security checks at runtime,
+269             but set to not exported to explicitly avoid allowing another app to call it.
+270        -->
+271        <service
+271-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:46:9-53:19
+272            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+272-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:47:13-82
+273            android:directBootAware="true"
+273-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:48:13-43
+274            android:exported="false" >
+274-->[com.google.firebase:firebase-messaging:24.1.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/60860f41cd8316c1e84babe12aeb6567/transformed/jetified-firebase-messaging-24.1.1/AndroidManifest.xml:49:13-37
+275            <intent-filter android:priority="-500" >
+275-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:18:13-20:29
+276                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+276-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:17-78
+276-->[:react-native-firebase_messaging] /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:25-75
+277            </intent-filter>
+278        </service>
+279
+280        <provider
+280-->[com.google.firebase:firebase-common:21.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/f9bd286e5d0b7f9f02c0f9f7055715a5/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+281            android:name="com.google.firebase.provider.FirebaseInitProvider"
+281-->[com.google.firebase:firebase-common:21.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/f9bd286e5d0b7f9f02c0f9f7055715a5/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+282            android:authorities="com.taxidouser.firebaseinitprovider"
+282-->[com.google.firebase:firebase-common:21.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/f9bd286e5d0b7f9f02c0f9f7055715a5/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+283            android:directBootAware="true"
+283-->[com.google.firebase:firebase-common:21.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/f9bd286e5d0b7f9f02c0f9f7055715a5/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+284            android:exported="false"
+284-->[com.google.firebase:firebase-common:21.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/f9bd286e5d0b7f9f02c0f9f7055715a5/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+285            android:initOrder="100" />
+285-->[com.google.firebase:firebase-common:21.0.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/f9bd286e5d0b7f9f02c0f9f7055715a5/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+286
+287        <meta-data
+287-->[com.google.maps.android:android-maps-utils:3.10.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/00620aa8922e7f6b96bcaf00a630cc2a/transformed/jetified-android-maps-utils-3.10.0/AndroidManifest.xml:23:9-25:69
+288            android:name="com.google.android.gms.version"
+288-->[com.google.maps.android:android-maps-utils:3.10.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/00620aa8922e7f6b96bcaf00a630cc2a/transformed/jetified-android-maps-utils-3.10.0/AndroidManifest.xml:24:13-58
+289            android:value="@integer/google_play_services_version" />
+289-->[com.google.maps.android:android-maps-utils:3.10.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/00620aa8922e7f6b96bcaf00a630cc2a/transformed/jetified-android-maps-utils-3.10.0/AndroidManifest.xml:25:13-66
+290
+291        <service
+291-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+292            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+292-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+293            android:enabled="true"
+293-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+294            android:exported="false" >
+294-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+295            <meta-data
+295-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+296                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+296-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+297                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+297-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+298        </service>
+299
+300        <activity
+300-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+301            android:name="androidx.credentials.playservices.HiddenActivity"
+301-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+302            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+302-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+303            android:enabled="true"
+303-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+304            android:exported="false"
+304-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+305            android:fitsSystemWindows="true"
+305-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+306            android:theme="@style/Theme.Hidden" >
+306-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6a7d61b9d7dec8716c9d03608fbf8e11/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+307        </activity>
+308
+309        <provider
+309-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:29:9-37:20
+310            android:name="androidx.startup.InitializationProvider"
+310-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:30:13-67
+311            android:authorities="com.taxidouser.androidx-startup"
+311-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:31:13-68
+312            android:exported="false" >
+312-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:32:13-37
+313            <meta-data
+313-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:34:13-36:52
+314                android:name="androidx.work.WorkManagerInitializer"
+314-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:35:17-68
+315                android:value="androidx.startup" />
+315-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:36:17-49
+316            <meta-data
+316-->[androidx.emoji2:emoji2:1.3.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/d12d4dd489f06731d8958d9a1e3a7190/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+317                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+317-->[androidx.emoji2:emoji2:1.3.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/d12d4dd489f06731d8958d9a1e3a7190/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+318                android:value="androidx.startup" />
+318-->[androidx.emoji2:emoji2:1.3.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/d12d4dd489f06731d8958d9a1e3a7190/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+319            <meta-data
+319-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/2b79b50c5a2dbe6b527dcc39d463e946/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+320                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+320-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/2b79b50c5a2dbe6b527dcc39d463e946/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+321                android:value="androidx.startup" />
+321-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/2b79b50c5a2dbe6b527dcc39d463e946/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+322            <meta-data
+322-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+323                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+323-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+324                android:value="androidx.startup" />
+324-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+325        </provider>
+326
+327        <service
+327-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:39:9-45:35
+328            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+328-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:40:13-88
+329            android:directBootAware="false"
+329-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:41:13-44
+330            android:enabled="@bool/enable_system_alarm_service_default"
+330-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:42:13-72
+331            android:exported="false" />
+331-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:43:13-37
+332        <service
+332-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:46:9-52:35
+333            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+333-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:47:13-84
+334            android:directBootAware="false"
+334-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:48:13-44
+335            android:enabled="@bool/enable_system_job_service_default"
+335-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:49:13-70
+336            android:exported="true"
+336-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:50:13-36
+337            android:permission="android.permission.BIND_JOB_SERVICE" />
+337-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:51:13-69
+338        <service
+338-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:53:9-59:35
+339            android:name="androidx.work.impl.foreground.SystemForegroundService"
+339-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:54:13-81
+340            android:directBootAware="false"
+340-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:55:13-44
+341            android:enabled="@bool/enable_system_foreground_service_default"
+341-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:56:13-77
+342            android:exported="false" />
+342-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:57:13-37
+343
+344        <receiver
+344-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:61:9-66:35
+345            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+345-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:62:13-88
+346            android:directBootAware="false"
+346-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:63:13-44
+347            android:enabled="true"
+347-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:64:13-35
+348            android:exported="false" />
+348-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:65:13-37
+349        <receiver
+349-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:67:9-77:20
+350            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+350-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:68:13-106
+351            android:directBootAware="false"
+351-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:69:13-44
+352            android:enabled="false"
+352-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:70:13-36
+353            android:exported="false" >
+353-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:71:13-37
+354            <intent-filter>
+354-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:73:13-76:29
+355                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+355-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:17-87
+355-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:25-84
+356                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+356-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:17-90
+356-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:25-87
+357            </intent-filter>
+358        </receiver>
+359        <receiver
+359-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:78:9-88:20
+360            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+360-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:79:13-104
+361            android:directBootAware="false"
+361-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:80:13-44
+362            android:enabled="false"
+362-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:81:13-36
+363            android:exported="false" >
+363-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:82:13-37
+364            <intent-filter>
+364-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:84:13-87:29
+365                <action android:name="android.intent.action.BATTERY_OKAY" />
+365-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:17-77
+365-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:25-74
+366                <action android:name="android.intent.action.BATTERY_LOW" />
+366-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:17-76
+366-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:25-73
+367            </intent-filter>
+368        </receiver>
+369        <receiver
+369-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:89:9-99:20
+370            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+370-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:90:13-104
+371            android:directBootAware="false"
+371-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:91:13-44
+372            android:enabled="false"
+372-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:92:13-36
+373            android:exported="false" >
+373-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:93:13-37
+374            <intent-filter>
+374-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:95:13-98:29
+375                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+375-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:17-83
+375-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:25-80
+376                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+376-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:17-82
+376-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:25-79
+377            </intent-filter>
+378        </receiver>
+379        <receiver
+379-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:100:9-109:20
+380            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+380-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:101:13-103
+381            android:directBootAware="false"
+381-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:102:13-44
+382            android:enabled="false"
+382-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:103:13-36
+383            android:exported="false" >
+383-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:104:13-37
+384            <intent-filter>
+384-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:106:13-108:29
+385                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+385-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:17-79
+385-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:25-76
+386            </intent-filter>
+387        </receiver>
+388        <receiver
+388-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:110:9-121:20
+389            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+389-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:111:13-88
+390            android:directBootAware="false"
+390-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:112:13-44
+391            android:enabled="false"
+391-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:113:13-36
+392            android:exported="false" >
+392-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:114:13-37
+393            <intent-filter>
+393-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:116:13-120:29
+394                <action android:name="android.intent.action.BOOT_COMPLETED" />
+394-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:117:17-79
+394-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:117:25-76
+395                <action android:name="android.intent.action.TIME_SET" />
+395-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:17-73
+395-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:25-70
+396                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+396-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:17-81
+396-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:25-78
+397            </intent-filter>
+398        </receiver>
+399        <receiver
+399-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:122:9-131:20
+400            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+400-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:123:13-99
+401            android:directBootAware="false"
+401-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:124:13-44
+402            android:enabled="@bool/enable_system_alarm_service_default"
+402-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:125:13-72
+403            android:exported="false" >
+403-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:126:13-37
+404            <intent-filter>
+404-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:128:13-130:29
+405                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+405-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:17-98
+405-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:25-95
+406            </intent-filter>
+407        </receiver>
+408        <receiver
+408-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:132:9-142:20
+409            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+409-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:133:13-78
+410            android:directBootAware="false"
+410-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:134:13-44
+411            android:enabled="true"
+411-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:135:13-35
+412            android:exported="true"
+412-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:136:13-36
+413            android:permission="android.permission.DUMP" >
+413-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:137:13-57
+414            <intent-filter>
+414-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:139:13-141:29
+415                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+415-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:17-88
+415-->[androidx.work:work-runtime:2.9.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b95d374187a5d1cc419be22e16dab11c/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:25-85
+416            </intent-filter>
+417        </receiver>
+418
+419        <service
+419-->[androidx.room:room-runtime:2.5.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/323429028008fbe87d258670d0301e71/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+420            android:name="androidx.room.MultiInstanceInvalidationService"
+420-->[androidx.room:room-runtime:2.5.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/323429028008fbe87d258670d0301e71/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+421            android:directBootAware="true"
+421-->[androidx.room:room-runtime:2.5.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/323429028008fbe87d258670d0301e71/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+422            android:exported="false" />
+422-->[androidx.room:room-runtime:2.5.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/323429028008fbe87d258670d0301e71/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+423
+424        <meta-data
+424-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/ffae8dab982737715481249a41f35189/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:11:9-13:43
+425            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+425-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/ffae8dab982737715481249a41f35189/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:12:13-84
+426            android:value="GlideModule" />
+426-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/ffae8dab982737715481249a41f35189/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:13:13-40
+427
+428        <activity
+428-->[com.google.android.gms:play-services-auth:21.3.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/e38c587162ea4797fe0b38fbcf9219ed/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:23:9-27:75
+429            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+429-->[com.google.android.gms:play-services-auth:21.3.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/e38c587162ea4797fe0b38fbcf9219ed/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:24:13-93
+430            android:excludeFromRecents="true"
+430-->[com.google.android.gms:play-services-auth:21.3.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/e38c587162ea4797fe0b38fbcf9219ed/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:25:13-46
+431            android:exported="false"
+431-->[com.google.android.gms:play-services-auth:21.3.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/e38c587162ea4797fe0b38fbcf9219ed/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:26:13-37
+432            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+432-->[com.google.android.gms:play-services-auth:21.3.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/e38c587162ea4797fe0b38fbcf9219ed/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:27:13-72
+433        <!--
+434            Service handling Google Sign-In user revocation. For apps that do not integrate with
+435            Google Sign-In, this service will never be started.
+436        -->
+437        <service
+437-->[com.google.android.gms:play-services-auth:21.3.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/e38c587162ea4797fe0b38fbcf9219ed/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:33:9-37:51
+438            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+438-->[com.google.android.gms:play-services-auth:21.3.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/e38c587162ea4797fe0b38fbcf9219ed/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:34:13-89
+439            android:exported="true"
+439-->[com.google.android.gms:play-services-auth:21.3.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/e38c587162ea4797fe0b38fbcf9219ed/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:35:13-36
+440            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+440-->[com.google.android.gms:play-services-auth:21.3.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/e38c587162ea4797fe0b38fbcf9219ed/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:36:13-107
+441            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+441-->[com.google.android.gms:play-services-auth:21.3.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/e38c587162ea4797fe0b38fbcf9219ed/transformed/jetified-play-services-auth-21.3.0/AndroidManifest.xml:37:13-48
+442        <uses-library
+442-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/89fe37ac6e269c7372ce2db66e1877d1/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:33:7-86
+443            android:name="org.apache.http.legacy"
+443-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/89fe37ac6e269c7372ce2db66e1877d1/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:33:21-58
+444            android:required="false" />
+444-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/89fe37ac6e269c7372ce2db66e1877d1/transformed/jetified-play-services-maps-19.1.0/AndroidManifest.xml:33:59-83
+445
+446        <receiver
+446-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:29:9-33:20
+447            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+447-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:30:13-85
+448            android:enabled="true"
+448-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:31:13-35
+449            android:exported="false" >
+449-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:32:13-37
+450        </receiver>
+451
+452        <service
+452-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:35:9-38:40
+453            android:name="com.google.android.gms.measurement.AppMeasurementService"
+453-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:36:13-84
+454            android:enabled="true"
+454-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:37:13-35
+455            android:exported="false" />
+455-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:38:13-37
+456        <service
+456-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:39:9-43:72
+457            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+457-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:40:13-87
+458            android:enabled="true"
+458-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:41:13-35
+459            android:exported="false"
+459-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:42:13-37
+460            android:permission="android.permission.BIND_JOB_SERVICE" />
+460-->[com.google.android.gms:play-services-measurement:22.4.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/70629529aecb6389be350d51ba066480/transformed/jetified-play-services-measurement-22.4.0/AndroidManifest.xml:43:13-69
+461
+462        <activity
+462-->[com.google.android.gms:play-services-base:18.5.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/7b3b5a22445744d2dd91e784b321753f/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+463            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+463-->[com.google.android.gms:play-services-base:18.5.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/7b3b5a22445744d2dd91e784b321753f/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+464            android:exported="false"
+464-->[com.google.android.gms:play-services-base:18.5.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/7b3b5a22445744d2dd91e784b321753f/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+465            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+465-->[com.google.android.gms:play-services-base:18.5.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/7b3b5a22445744d2dd91e784b321753f/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+466        <activity
+466-->[com.facebook.android:facebook-common:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/48045c0cf5853db90c21f2fcc0d1e0ee/transformed/jetified-facebook-common-18.0.3/AndroidManifest.xml:20:9-23:66
+467            android:name="com.facebook.FacebookActivity"
+467-->[com.facebook.android:facebook-common:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/48045c0cf5853db90c21f2fcc0d1e0ee/transformed/jetified-facebook-common-18.0.3/AndroidManifest.xml:21:13-57
+468            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+468-->[com.facebook.android:facebook-common:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/48045c0cf5853db90c21f2fcc0d1e0ee/transformed/jetified-facebook-common-18.0.3/AndroidManifest.xml:22:13-96
+469            android:theme="@style/com_facebook_activity_theme" />
+469-->[com.facebook.android:facebook-common:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/48045c0cf5853db90c21f2fcc0d1e0ee/transformed/jetified-facebook-common-18.0.3/AndroidManifest.xml:23:13-63
+470        <activity android:name="com.facebook.CustomTabMainActivity" />
+470-->[com.facebook.android:facebook-common:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/48045c0cf5853db90c21f2fcc0d1e0ee/transformed/jetified-facebook-common-18.0.3/AndroidManifest.xml:24:9-71
+470-->[com.facebook.android:facebook-common:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/48045c0cf5853db90c21f2fcc0d1e0ee/transformed/jetified-facebook-common-18.0.3/AndroidManifest.xml:24:19-68
+471        <activity
+471-->[com.facebook.android:facebook-common:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/48045c0cf5853db90c21f2fcc0d1e0ee/transformed/jetified-facebook-common-18.0.3/AndroidManifest.xml:25:9-39:20
+472            android:name="com.facebook.CustomTabActivity"
+472-->[com.facebook.android:facebook-common:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/48045c0cf5853db90c21f2fcc0d1e0ee/transformed/jetified-facebook-common-18.0.3/AndroidManifest.xml:26:13-58
+473            android:exported="true" >
+473-->[com.facebook.android:facebook-common:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/48045c0cf5853db90c21f2fcc0d1e0ee/transformed/jetified-facebook-common-18.0.3/AndroidManifest.xml:27:13-36
+474            <intent-filter>
+474-->[com.facebook.android:facebook-common:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/48045c0cf5853db90c21f2fcc0d1e0ee/transformed/jetified-facebook-common-18.0.3/AndroidManifest.xml:29:13-38:29
+475                <action android:name="android.intent.action.VIEW" />
+475-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:36:17-69
+475-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:36:25-66
+476
+477                <category android:name="android.intent.category.DEFAULT" />
+477-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:38:17-76
+477-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:38:27-73
+478                <category android:name="android.intent.category.BROWSABLE" />
+478-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:39:17-78
+478-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:39:27-75
+479
+480                <data
+480-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:41:17-44:51
+481                    android:host="cct.com.taxidouser"
+481-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:42:21-49
+482                    android:scheme="fbconnect" />
+482-->[com.google.firebase:firebase-auth:23.2.0] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/bbf9843a0f219164b908a46d9b61ac8a/transformed/jetified-firebase-auth-23.2.0/AndroidManifest.xml:44:21-48
+483            </intent-filter>
+484        </activity>
+485        <!--
+486         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+487         with the application context. This config is merged in with the host app's manifest,
+488         but there can only be one provider with the same authority activated at any given
+489         point; so if the end user has two or more different apps that use Facebook SDK, only the
+490         first one will be able to use the provider. To work around this problem, we use the
+491         following placeholder in the authority to identify each host application as if it was
+492         a completely different provider.
+493        -->
+494        <provider
+494-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:32:9-35:40
+495            android:name="com.facebook.internal.FacebookInitProvider"
+495-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:33:13-70
+496            android:authorities="com.taxidouser.FacebookInitProvider"
+496-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:34:13-72
+497            android:exported="false" />
+497-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:35:13-37
+498
+499        <receiver
+499-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:37:9-43:20
+500            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+500-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:38:13-86
+501            android:exported="false" >
+501-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:39:13-37
+502            <intent-filter>
+502-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:40:13-42:29
+503                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+503-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:41:17-95
+503-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:41:25-92
+504            </intent-filter>
+505        </receiver>
+506        <receiver
+506-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:44:9-50:20
+507            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+507-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:45:13-118
+508            android:exported="false" >
+508-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:46:13-37
+509            <intent-filter>
+509-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:47:13-49:29
+510                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+510-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:48:17-103
+510-->[com.facebook.android:facebook-core:18.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/622313fe1951dc176fa4738fdbeacaa2/transformed/jetified-facebook-core-18.0.3/AndroidManifest.xml:48:25-100
+511            </intent-filter>
+512        </receiver>
+513
+514        <uses-library
+514-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/9154500b0dc629740bb386f487c35efb/transformed/jetified-ads-adservices-1.1.0-beta11/AndroidManifest.xml:23:9-25:40
+515            android:name="android.ext.adservices"
+515-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/9154500b0dc629740bb386f487c35efb/transformed/jetified-ads-adservices-1.1.0-beta11/AndroidManifest.xml:24:13-50
+516            android:required="false" />
+516-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/9154500b0dc629740bb386f487c35efb/transformed/jetified-ads-adservices-1.1.0-beta11/AndroidManifest.xml:25:13-37
+517
+518        <receiver
+518-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+519            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+519-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+520            android:directBootAware="false"
+520-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+521            android:enabled="true"
+521-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+522            android:exported="true"
+522-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+523            android:permission="android.permission.DUMP" >
+523-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+524            <intent-filter>
+524-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+525                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+525-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+525-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+526            </intent-filter>
+527            <intent-filter>
+527-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+528                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+528-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+528-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+529            </intent-filter>
+530            <intent-filter>
+530-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+531                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+531-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+531-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+532            </intent-filter>
+533            <intent-filter>
+533-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+534                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+534-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+534-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/692a53a89394cab7108b76a61bc7d8c8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+535            </intent-filter>
+536        </receiver>
+537
+538        <service
+538-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/7156b6461b045e30138361437ed4969b/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+539            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+539-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/7156b6461b045e30138361437ed4969b/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+540            android:exported="false" >
+540-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/7156b6461b045e30138361437ed4969b/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+541            <meta-data
+541-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/7156b6461b045e30138361437ed4969b/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+542                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+542-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/7156b6461b045e30138361437ed4969b/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+543                android:value="cct" />
+543-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/7156b6461b045e30138361437ed4969b/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+544        </service>
+545        <service
+545-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6833763fe50d253732a51913a2977c82/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+546            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+546-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6833763fe50d253732a51913a2977c82/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+547            android:exported="false"
+547-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6833763fe50d253732a51913a2977c82/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+548            android:permission="android.permission.BIND_JOB_SERVICE" >
+548-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6833763fe50d253732a51913a2977c82/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+549        </service>
+550
+551        <receiver
+551-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6833763fe50d253732a51913a2977c82/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+552            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+552-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6833763fe50d253732a51913a2977c82/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+553            android:exported="false" />
+553-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/6833763fe50d253732a51913a2977c82/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+554
+555        <meta-data
+555-->[com.facebook.soloader:soloader:0.12.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/d15ac315649fb8467cea1df6303448b7/transformed/jetified-soloader-0.12.1/AndroidManifest.xml:12:9-14:37
+556            android:name="com.facebook.soloader.enabled"
+556-->[com.facebook.soloader:soloader:0.12.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/d15ac315649fb8467cea1df6303448b7/transformed/jetified-soloader-0.12.1/AndroidManifest.xml:13:13-57
+557            android:value="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+557-->[com.facebook.soloader:soloader:0.12.1] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/d15ac315649fb8467cea1df6303448b7/transformed/jetified-soloader-0.12.1/AndroidManifest.xml:14:13-34
+558        <activity
+558-->[com.google.android.play:core-common:2.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b676a615036d1fb44458bda8d7af7163/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:14:9-18:65
+559            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+559-->[com.google.android.play:core-common:2.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b676a615036d1fb44458bda8d7af7163/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:15:13-93
+560            android:exported="false"
+560-->[com.google.android.play:core-common:2.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b676a615036d1fb44458bda8d7af7163/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:16:13-37
+561            android:stateNotNeeded="true"
+561-->[com.google.android.play:core-common:2.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b676a615036d1fb44458bda8d7af7163/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:17:13-42
+562            android:theme="@style/Theme.PlayCore.Transparent" />
+562-->[com.google.android.play:core-common:2.0.3] /Users/macbookprom1/.gradle/caches/8.10.2/transforms/b676a615036d1fb44458bda8d7af7163/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:18:13-62
+563    </application>
+564
+565</manifest>

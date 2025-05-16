@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">541305365092</string>
+    <string name="google_api_key" translatable="false">AIzaSyDyuysv4NAzby6oi7xicvW8xWAnlL_yjm4</string>
+    <string name="google_app_id" translatable="false">1:541305365092:android:142946389095d5003cf571</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDyuysv4NAzby6oi7xicvW8xWAnlL_yjm4</string>
+    <string name="google_storage_bucket" translatable="false">taxidouser-b07f9.firebasestorage.app</string>
+    <string name="project_id" translatable="false">taxidouser-b07f9</string>
+</resources>

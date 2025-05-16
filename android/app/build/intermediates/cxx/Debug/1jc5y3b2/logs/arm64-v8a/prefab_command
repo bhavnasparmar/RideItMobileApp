@@ -1,0 +1,22 @@
+/Users/macbookprom1/Library/Java/JavaVirtualMachines/corretto-19.0.2/Contents/Home/bin/java \
+  --class-path \
+  /Users/macbookprom1/.gradle/caches/modules-2/files-2.1/com.google.prefab/cli/2.1.0/aa32fec809c44fa531f01dcfb739b5b3304d3050/cli-2.1.0-all.jar \
+  com.google.prefab.cli.AppKt \
+  --build-system \
+  cmake \
+  --platform \
+  android \
+  --abi \
+  arm64-v8a \
+  --os-version \
+  24 \
+  --stl \
+  c++_shared \
+  --ndk-version \
+  27 \
+  --output \
+  /var/folders/vz/38sywhtd2blgj641pc2x22hh0000gn/T/agp-prefab-staging16534314112159014005/staged-cli-output \
+  /Users/macbookprom1/.gradle/caches/8.10.2/transforms/9c031d1bb6588f27760dd02fc9517a54/transformed/jetified-react-android-0.77.2-debug/prefab \
+  /Users/macbookprom1/Documents/rideit/codecanyon-Fh8vHD71-taxido-react-native-online-taxi-booking-with-cab-rental-bidding-parcel-admin-laravel-panel/Taxido_user/android/app/build/intermediates/cxx/refs/react-native-reanimated/jkt2a491 \
+  /Users/macbookprom1/.gradle/caches/8.10.2/transforms/90773311d8af38d2592dba0ae56fb603/transformed/jetified-hermes-android-0.77.2-debug/prefab \
+  /Users/macbookprom1/.gradle/caches/8.10.2/transforms/f11952b525f3a5e4d0e94e235f377d46/transformed/jetified-fbjni-0.7.0/prefab
