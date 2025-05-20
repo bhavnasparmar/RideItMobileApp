@@ -71,34 +71,38 @@ export function OtpVerification({}) {
       email: null,
       fcm_token: fcmToken,
     };
-
-    dispatch(userVerifyOtp(payload))
-      .unwrap()
-      .then(async (res: any) => {
-        if (!res.success) {
-          notificationHelper("OTP", translateData?.invalidOtp, "error")
-        } else if (res.success && res.is_registered) {
-          notificationHelper("OTP Verify", "OTP Verify Successfully", "success")
-          setValue("token", res.access_token);
-          navigate("MyTabs");
-          dispatch(selfData());
-        } else {
-          if (!res.is_registered) {
-            notificationHelper("OTP Verify", "OTP Verify Successfully", "success")
+     notificationHelper("OTP Verify", "OTP Verify Successfully", "success")
             navigate("SignUp", { countryCode, phoneNumber });
             setSuccess(false);
             setMessage(translateData?.noAccountOTPText);
-          } else {
-            notificationHelper("OTP Verify", translateData?.invalidOtp, "error")
-            setSuccess(false);
-            setMessage(translateData?.OTPIncorrectMsg);
-          }
-        }
-      })
-      .catch((error: any) => {
-        setSuccess(false);
-        setMessage(translateData?.duringVerificationOTP);
-      });
+
+    // dispatch(userVerifyOtp(payload))
+    //   .unwrap()
+    //   .then(async (res: any) => {
+    //     if (!res.success) {
+    //       notificationHelper("OTP", translateData?.invalidOtp, "error")
+    //     } else if (res.success && res.is_registered) {
+    //       notificationHelper("OTP Verify", "OTP Verify Successfully", "success")
+    //       setValue("token", res.access_token);
+    //       navigate("MyTabs");
+    //       dispatch(selfData());
+    //     } else {
+    //       if (!res.is_registered) {
+    //         notificationHelper("OTP Verify", "OTP Verify Successfully", "success")
+    //         navigate("SignUp", { countryCode, phoneNumber });
+    //         setSuccess(false);
+    //         setMessage(translateData?.noAccountOTPText);
+    //       } else {
+    //         notificationHelper("OTP Verify", translateData?.invalidOtp, "error")
+    //         setSuccess(false);
+    //         setMessage(translateData?.OTPIncorrectMsg);
+    //       }
+    //     }
+    //   })
+    //   .catch((error: any) => {
+    //     setSuccess(false);
+    //     setMessage(translateData?.duringVerificationOTP);
+    //   });
   };
 
   const ResendOtp = () => {

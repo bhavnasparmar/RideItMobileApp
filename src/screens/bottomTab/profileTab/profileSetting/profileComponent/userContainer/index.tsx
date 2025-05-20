@@ -64,7 +64,7 @@ export function UserContainer() {
               </View>
             ) : (
               <Text style={[commonStyles.mediumTextBlack, { color: textColorStyle }]}>
-                {translateData.guest}
+                {translateData?.guest ? translateData?.guest : ""}
               </Text>
             )}
           </View>

@@ -14,41 +14,41 @@ export const useProfileData = () => {
 
   return [
     {
-      title: translateData.general,
+      title: translateData?.general ?  translateData?.general : "General",
       data: [
         {
           icon: <ProfileSetting />,
-          title: translateData.profileSettings,
+          title: translateData?.profileSettings ? translateData?.profileSettings : "",
           screenName: "EditProfile",
         },
         {
           icon: <Location />,
-          title: translateData.savedLocation,
+          title: translateData?.savedLocation ?  translateData?.savedLocation : "",
           screenName: "SavedLocation",
         },
         {
           icon: <PromoCode />,
-          title: translateData.promoCodeList,
+          title: translateData?.promoCodeList ? translateData?.promoCodeList : "",
           screenName: "PromoCodeScreen",
         },
       ],
     },
     {
-      title: translateData.appDetails,
+      title: translateData?.appDetails,
       data: [
         {
           icon: <AppPages />,
-          title: translateData.appPages,
+          title: translateData?.appPages ?  translateData?.appPages : "", 
           screenName: "AppPageScreen",
         },
         {
           icon: <Share />,
-          title: translateData.shareApp,
+          title: translateData?.shareApp ?  translateData?.shareApp : "Share",
           screenName: "Share",
         },
         {
           icon: <Chat />,
-          title: translateData.chatSupport,
+          title: translateData?.chatSupport ?  translateData?.chatSupport : "Chat Support",
           screenName: "SupportTicket",
         },
       ],
@@ -61,16 +61,16 @@ export const useGuestData = () => {
 
   return [
     {
-      title: translateData.appDetails,
+      title: translateData?.appDetails,
       data: [
         {
           icon: <AppPages />,
-          title: translateData.appPages,
+          title: translateData?.appPages ?   translateData?.appPages : "App Page",
           screenName: "AppPageScreen",
         },
         {
           icon: <Share />,
-          title: translateData.shareApp,
+          title: translateData?.shareApp ?  translateData?.shareApp : "Share",
           screenName: "Share",
         },
       ],

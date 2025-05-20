@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
+import {
+  ScrollView,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { AuthContainer } from "../../../components/authComponents/authContainer/index";
 import { InputText, Button } from "@src/commonComponent";
 import { AuthText } from "../../../components/authComponents/authText/index";
@@ -18,14 +24,20 @@ import { useTheme } from "@react-navigation/native";
 import { CountryPicker } from "react-native-country-codes-picker";
 
 export function SignUp() {
-  const { isDark, textRTLStyle, setToken, textColorStyle, isRTL, viewRTLStyle } = useValues();
-  const { colors } = useTheme()
-  const route : any= useAppRoute();
+  const {
+    isDark,
+    textRTLStyle,
+    setToken,
+    textColorStyle,
+    isRTL,
+    viewRTLStyle,
+  } = useValues();
+  const { colors } = useTheme();
+  const route: any = useAppRoute();
   const usercredentialCode = route.params?.countryCode ?? "91";
   const usercredential = route.params?.phoneNumber ?? "1234567890";
-  const [isEmailUser,  setIsEmailUser ] = useState(false);
+  const [isEmailUser, setIsEmailUser] = useState(false);
 
-  
   const [userName, setUserName] = useState("");
   const [countryCode, setCountryCode] = useState(usercredentialCode);
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -49,14 +61,12 @@ export function SignUp() {
   const [loading, setLoading] = useState<boolean>(false);
   const [show, setShow] = useState(false);
 
-
-
   useEffect(() => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const isEmail = emailRegex.test(usercredential.trim());
-  
+
     setIsEmailUser(isEmail);
-  
+
     if (isEmail) {
       setEmail(usercredential.trim());
     } else {
@@ -74,20 +84,21 @@ export function SignUp() {
   }, [dispatch]);
 
   const handleRegister = () => {
+ 
     let isValid = true;
 
-    if (!userName.trim()) {
-      setUserNameError(true);
-      isValid = false;
-    }
+    // if (!userName.trim()) {
+    //   setUserNameError(true);
+    //   isValid = false;
+    // }
 
-    if (!email.trim()) {
-      setEmailError(true);
-      isValid = false;
-    } else if (emailError) {
-      setEmailError(false);
-    }
-
+    // if (!email.trim()) {
+    //   setEmailError(true);
+    //   isValid = false;
+    // } else if (emailError) {
+    //   setEmailError(false);
+    // }
+  
     if (!phoneNumber.trim()) {
       setNumberError(translateData?.validNo);
       isValid = false;
@@ -108,33 +119,35 @@ export function SignUp() {
       setPasswordError("");
     }
 
-    if (!confirmPassword) {
-      setConfirmPasswordError(translateData?.errorConfirmPassword);
-      isValid = false;
-    } else if (password !== confirmPassword) {
-      setConfirmPasswordError(translateData?.passwordError);
-      isValid = false;
-    } else {
-      setConfirmPasswordError("");
-    }
-
+    // if (!confirmPassword) {
+    //   setConfirmPasswordError(translateData?.errorConfirmPassword);
+    //   isValid = false;
+    // } else if (password !== confirmPassword) {
+    //   setConfirmPasswordError(translateData?.passwordError);
+    //   isValid = false;
+    // } else {
+    //   setConfirmPasswordError("");
+    // }
 
     if (!isValid) {
       return;
     }
-
+ console.log("hiii")
     setLoading(true);
     const payload = {
-      username: userName,
-      name: userName,
-      email: email,
+      //username: userName,
+      // name: userName,
+      //   email: email,
       country_code: countryCode,
       phone: phoneNumber,
       fcm_token: fcmToken,
       password: password,
-      password_confirmation: confirmPassword,
+      // password_confirmation: confirmPassword,
     };
-
+    setValue("token", "dummytoken");
+    setToken("dummytoken");
+    replace("MyTabs");
+ //   dispatch(selfData());
     // dispatch(userRegistration(payload))
     //   .unwrap()
     //   .then((res) => {
@@ -150,14 +163,13 @@ export function SignUp() {
     //   .finally(() => setLoading(false));
   };
 
-
-  const code=()=>{
-    if(!countryCode){
-      setShow(true)
-    }else if(email){
-      setShow(true)
+  const code = () => {
+    if (!countryCode) {
+      setShow(true);
+    } else if (email) {
+      setShow(true);
     }
-  }
+  };
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={external.main}>
@@ -166,11 +178,19 @@ export function SignUp() {
           topSpace={windowHeight(100)}
           container={
             <View
-             // showsVerticalScrollIndicator={false}
+            // showsVerticalScrollIndicator={false}
             >
               <AuthText
-                title={translateData?.createAccount ? translateData?.createAccount : "Create Account"}
-                subtitle={translateData?.registerContent ?  translateData?.registerContent : "Explore your life by joining with"}
+                title={
+                  translateData?.createAccount
+                    ? translateData?.createAccount
+                    : "Create Account"
+                }
+                subtitle={
+                  translateData?.registerContent
+                    ? translateData?.registerContent
+                    : "Explore your life by joining with"
+                }
               />
               <View>
                 {/* <InputText
@@ -198,11 +218,22 @@ export function SignUp() {
                   }
                 /> */}
 
-                <Text style={[styles.numberTitle, { textAlign: textRTLStyle, color: isDark ? appColors.whiteColor : appColors.primaryText }]}>
-                  {translateData?.mobileNumber ?  translateData?.mobileNumber : "Mobile Number"}
+                <Text
+                  style={[
+                    styles.numberTitle,
+                    {
+                      textAlign: textRTLStyle,
+                      color: isDark
+                        ? appColors.whiteColor
+                        : appColors.primaryText,
+                    },
+                  ]}
+                >
+                  {translateData?.mobileNumber
+                    ? translateData?.mobileNumber
+                    : "Mobile Number"}
                 </Text>
                 <View style={styles.countryCodeContainer}>
-
                   <View>
                     <View
                       style={[
@@ -212,25 +243,23 @@ export function SignUp() {
                         { flexDirection: viewRTLStyle },
                       ]}
                     >
-
-
                       <View
                         style={[
                           styles.countryCodeContainer1,
                           {
-                            borderColor: isDark ? appColors.bgDark : appColors.lightGray,
-                            alignItems: 'center',
-
+                            borderColor: isDark
+                              ? appColors.bgDark
+                              : appColors.lightGray,
+                            alignItems: "center",
                           },
                         ]}
                       >
-
                         <TouchableOpacity
                           activeOpacity={0.7}
                           onPress={code}
                           style={[
                             styles.countryCode,
-                            { flexDirection: viewRTLStyle }
+                            { flexDirection: viewRTLStyle },
                           ]}
                         >
                           <Text style={styles.dialCode}>{countryCode}</Text>
@@ -244,27 +273,29 @@ export function SignUp() {
                             setShow(false);
                           }}
                           style={{
-
                             modal: {
                               height: 500,
-                              backgroundColor: isDark ? appColors.bgDark : appColors.whiteColor,
-
+                              backgroundColor: isDark
+                                ? appColors.bgDark
+                                : appColors.whiteColor,
                             },
                             countryName: {
                               color: textColorStyle,
                               textAlign: textRTLStyle,
-
                             },
                             dialCode: {
                               color: textColorStyle,
                             },
                             countryButtonStyles: {
-                              backgroundColor: isDark ? appColors.darkPrimary : colors.card,
-                              flexDirection: isRTL ? "row-reverse" : 'row',
-
+                              backgroundColor: isDark
+                                ? appColors.darkPrimary
+                                : colors.card,
+                              flexDirection: isRTL ? "row-reverse" : "row",
                             },
                             textInput: {
-                              backgroundColor: isDark ? appColors.darkHeader : appColors.lightGray,
+                              backgroundColor: isDark
+                                ? appColors.darkHeader
+                                : appColors.lightGray,
                               color: textColorStyle,
                               textAlign: textRTLStyle,
                               paddingHorizontal: windowWidth(20),
@@ -275,32 +306,45 @@ export function SignUp() {
                           }}
                           lang={""}
                           flatListProps={{
-                            contentContainerStyle: { flexDirection: isRTL ? "row-reverse" : 'row' },
+                            contentContainerStyle: {
+                              flexDirection: isRTL ? "row-reverse" : "row",
+                            },
                           }}
                         />
-
                       </View>
-
 
                       <View
                         style={[
                           styles.phoneNumberInput,
                           {
                             width: "74%",
-                            backgroundColor: isDark ? appColors.bgDark : appColors.lightGray,
+                            backgroundColor: isDark
+                              ? appColors.bgDark
+                              : appColors.lightGray,
                             flexDirection: viewRTLStyle,
-                            borderColor: isDark ? appColors.bgDark : appColors.lightGray,
-
-
+                            borderColor: isDark
+                              ? appColors.bgDark
+                              : appColors.lightGray,
                           },
                         ]}
                       >
-
                         <TextInput
-                          style={[[commonStyles.regularText, { color: isDark ? appColors.whiteColor : appColors.blackColor }], [styles.inputText, { textAlign: textRTLStyle }]]}
-                          placeholderTextColor={isDark ? appColors.darkText : appColors.regularText}
-                         // placeholder={translateData?.enterPhone}
-                         placeholder="Enter phone or email"
+                          style={[
+                            [
+                              commonStyles.regularText,
+                              {
+                                color: isDark
+                                  ? appColors.whiteColor
+                                  : appColors.blackColor,
+                              },
+                            ],
+                            [styles.inputText, { textAlign: textRTLStyle }],
+                          ]}
+                          placeholderTextColor={
+                            isDark ? appColors.darkText : appColors.regularText
+                          }
+                          // placeholder={translateData?.enterPhone}
+                          placeholder="Enter phone or email"
                           //keyboardType="number-pad"
                           editable={isEmailUser}
                           value={phoneNumber}
@@ -314,9 +358,7 @@ export function SignUp() {
                               setNumberError("");
                             }
                           }}
-              
                         />
-                        
                       </View>
                     </View>
                     {numberError && (
@@ -382,8 +424,16 @@ export function SignUp() {
                 <View style={styles.passwordView}>
                   <InputText
                     showTitle={true}
-                    title={translateData?.password ? translateData?.password : "Password" }
-                    placeholder={translateData?.enterPassword ? translateData?.enterPassword : "Enter Password" }
+                    title={
+                      translateData?.password
+                        ? translateData?.password
+                        : "Password"
+                    }
+                    placeholder={
+                      translateData?.enterPassword
+                        ? translateData?.enterPassword
+                        : "Enter Password"
+                    }
                     borderColor={
                       isDark ? appColors.bgDark : appColors.lightGray
                     }
@@ -400,9 +450,12 @@ export function SignUp() {
                     value={password}
                     onChangeText={(text) => {
                       setPassword(text);
-                      setPasswordError(text && text.length < 8 ? translateData?.passwordDigit : "");
+                      setPasswordError(
+                        text && text.length < 8
+                          ? translateData?.passwordDigit
+                          : ""
+                      );
                     }}
-
                     rightIcon={
                       <TouchableOpacity
                         activeOpacity={0.7}
@@ -414,7 +467,6 @@ export function SignUp() {
                     }
                     secureText={!isPasswordVisible}
                     warningText={passwordError}
-
                   />
                 </View>
                 {/* <View style={styles.confirmPasswordView}>
@@ -457,11 +509,13 @@ export function SignUp() {
                   />
                 </View> */}
               </View>
-              <View
-                style={styles.btn}
-              >
+              <View style={styles.btn}>
                 <Button
-                  title={translateData?.register ?  translateData?.register : "Get OTP"}
+                  title={
+                    translateData?.register
+                      ? translateData?.register
+                      : "Get OTP"
+                  }
                   onPress={handleRegister}
                   loading={loading}
                 />
@@ -473,6 +527,3 @@ export function SignUp() {
     </ScrollView>
   );
 }
-
-
-

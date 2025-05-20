@@ -86,7 +86,7 @@ export const ProfileContainer = forwardRef((props, ref) => {
     setIsRTL();
     setIsDark();
     dispatch(settingDataGet());
-    notificationHelper("Logout", translateData.logoutMsg, "error");
+    notificationHelper("Logout", translateData?.logoutMsg ?  translateData?.logoutMsg : "Logout Msg", "error");
     reset({
       index: 0,
       routes: [{ name: "SignIn" }],
@@ -116,7 +116,7 @@ export const ProfileContainer = forwardRef((props, ref) => {
 
   const deleteAccounts = () => {
     dispatch(accountDelete());
-    notificationHelper("Account Delete", translateData.accountDelete, "error")
+    notificationHelper("Account Delete", translateData?.accountDelete ? translateData?.accountDelete : "Account Delete", "error")
     reset({
       index: 0,
       routes: [{ name: "SignIn" }],

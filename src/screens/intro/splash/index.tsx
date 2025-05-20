@@ -15,7 +15,8 @@ import useSmartLocation from "@src/components/helper/locationHelper";
 import store from "@src/api/store";
 
 export function Splash() {
-  const { replace } = useAppNavigation();
+    const { navigate,replace } = useAppNavigation();
+ 
   const { isDark } = useValues();
   const dispatch = useDispatch();
   const { settingData, taxidoSettingData } = useSelector((state) => state.setting);
@@ -40,10 +41,14 @@ export function Splash() {
 
   useEffect(() => {
     const fetchData = async () => {
-      dispatch(homeScreenPrimary())
-       dispatch(taxidosettingDataGet());
-       dispatch(translateDataGet());
-       dispatch(settingDataGet());
+      setTimeout(() => {
+           navigate('SignIn')
+      }, 1000);
+
+      // dispatch(homeScreenPrimary())
+      //  dispatch(taxidosettingDataGet());
+      //  dispatch(translateDataGet());
+      //  dispatch(settingDataGet());
     };
     fetchData();
   }, [dispatch]);
