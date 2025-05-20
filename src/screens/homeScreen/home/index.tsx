@@ -38,12 +38,12 @@ export function HomeScreen() {
 
 
   useEffect(() => {
-    dispatch(allRides());
-    dispatch(serviceDataGet());
-    dispatch(vehicleData());
-    dispatch(walletData());
-    dispatch(paymentsData());
-    dispatch(notificationDataGet());
+    // dispatch(allRides());
+    // dispatch(serviceDataGet());
+    // dispatch(vehicleData());
+    // dispatch(walletData());
+    // dispatch(paymentsData());
+    // dispatch(notificationDataGet());
     getVehicleTypes();
   }, []);
 
@@ -54,7 +54,7 @@ export function HomeScreen() {
         lng: longitude,
       },
     ];
-    dispatch(vehicleTypeDataGet({ locations }));
+   // dispatch(vehicleTypeDataGet({ locations }));
   };
 
   useEffect(() => {
@@ -173,7 +173,7 @@ export function HomeScreen() {
                     { color: textColorStyle },
                   ]}
                 >
-                  {translateData?.exitTitle}
+                  {translateData?.exitTitle? translateData?.exitTitle : "hiii"}
                 </Text>
               </View>
               <View
@@ -186,13 +186,13 @@ export function HomeScreen() {
               >
                 <Button
                   width={"47%"}
-                  title={translateData.no}
+                  title={translateData?.no? translateData?.no : "No"}
                   onPress={() => setSelected(false)}
                 />
                 <Button
                   width={"47%"}
                   backgroundColor={appColors.lightGray}
-                  title={translateData.yes}
+                  title={translateData?.yes?translateData?.yes : "Yes"}
                   textColor={appColors.primaryText}
                   onPress={()=>{exitAndRestart()}}
                 />
@@ -203,7 +203,7 @@ export function HomeScreen() {
       </View>
       {self?.total_active_rides > 0 && (
         <View style={styles.swipeView}>
-          <SwipeButton buttonText={translateData.backToActive} />
+          <SwipeButton buttonText={translateData.backToActive ?  translateData.backToActive : "goback"} />
         </View>
       )}
     </View>

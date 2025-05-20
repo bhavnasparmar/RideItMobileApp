@@ -55,7 +55,7 @@ export function ProfileSetting() {
     <View style={styles.main}>
       <SafeAreaView style={[styles.container, { backgroundColor: bgFullStyle }]}>
         <View style={[commonStyles.heightHeader]}>
-          <HeaderTab tabName={`${translateData.settingTitle}`} />
+          <HeaderTab tabName={`${translateData?.settingTitle ? translateData.settingTitle : "title"}`} />
         </View>
 
         <ScrollView
@@ -71,11 +71,11 @@ export function ProfileSetting() {
           <ProfileContainer ref={profileContainerRef} />
           {token ? (
             <Text style={[styles.versionCode]}>
-              {translateData.versionCode}: 0.{versionApp}
+              {translateData?.versionCode ? translateData?.versionCode :"Version Code"}: 0.{versionApp}
             </Text>
           ) : (
             <Text style={[styles.versionCode, { marginTop: windowHeight(11) }]}>
-              {translateData.versionCode}: 0.{versionApp}
+              {translateData?.versionCode ? translateData?.versionCode :"Version Code"}: 0.{versionApp}
             </Text>
           )}
         </ScrollView>
@@ -84,7 +84,7 @@ export function ProfileSetting() {
           <View style={styles.signInMainView}>
             <View style={styles.signInView}>
               <Button
-                title={translateData.signIn}
+                title={translateData?.signIn ? translateData?.signIn :"Sign In"}
                 textColor={appColors.whiteColor}
                 backgroundColor={appColors.primary}
                 onPress={handleSignIn}
