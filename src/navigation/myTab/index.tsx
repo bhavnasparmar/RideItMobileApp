@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { HomeScreen } from '../../screens/homeScreen/home/index';
 import {
@@ -46,14 +46,14 @@ export function MyTabs() {
     //   label: 'History',
     //   icon: ({ focused }) => focused ? <HistoryFill /> : <HistoryEmpty />,
     // },
-    // {
-    //   name: 'Profile',
-    //   component: ProfileSetting,
-    //   label: 'Setting',
-    //   icon: ({ focused }) => focused
-    //     ? <SettingPrimary />
-    //     : <Setting colors={appColors.regularText} />,
-    // },
+     {
+      name: 'Profile',
+      component: ProfileSetting,
+      label: 'Setting',
+      icon: ({ focused } : any) => focused
+        ? <SettingPrimary />
+        : <Setting colors={appColors.regularText} />,
+    },
   ];
 
   const orderedScreens = isRTL ? [...screens].reverse() : screens;

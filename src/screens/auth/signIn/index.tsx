@@ -60,23 +60,26 @@ export function SignIn() {
       email_or_phone: phoneNumber,
       country_code: formatCountryCode(countryCode),
     };
-    dispatch(userLogin(payload))
-      .unwrap()
-      .then((res: any) => {
-        if (res?.success) {
-          navigate("OtpVerification", { countryCode, phoneNumber, demouser });
+     navigate("OtpVerification", { countryCode, phoneNumber, demouser });
           notificationHelper("OTP", "Otp Sent Successfully", "success");
 
-          setWarning(false);
-        } else {
-          messageRef.current?.animate();
-          setMessage(
-            res.message.includes("Connection")
-              ? "Something Went Wrong. Please Try Again Later."
-              : res.message
-          );
-        }
-      });
+    // dispatch(userLogin(payload))
+    //   .unwrap()
+    //   .then((res: any) => {
+    //     if (res?.success) {
+    //       navigate("OtpVerification", { countryCode, phoneNumber, demouser });
+    //       notificationHelper("OTP", "Otp Sent Successfully", "success");
+
+    //       setWarning(false);
+    //     } else {
+    //       messageRef.current?.animate();
+    //       setMessage(
+    //         res.message.includes("Connection")
+    //           ? "Something Went Wrong. Please Try Again Later."
+    //           : res.message
+    //       );
+    //     }
+    //   });
   };
 
   const gotoGuest = () => {
