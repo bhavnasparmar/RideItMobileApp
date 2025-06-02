@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
     width: windowWidth(435),
     height: windowHeight(140),
     marginTop: windowHeight(15),
+      borderRadius : windowWidth(12)
   },
   itemSeparator: {
     width: windowWidth(25),
@@ -31,6 +32,7 @@ const styles = StyleSheet.create({
   bannerContainer: {
     justifyContent: "space-evenly",
     marginHorizontal: windowWidth(8),
+    borderRadius : windowWidth(12)
   },
 });
 export { styles };

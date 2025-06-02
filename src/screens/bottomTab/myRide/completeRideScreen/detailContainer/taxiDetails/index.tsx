@@ -92,16 +92,16 @@ export function TaxiDetails({ paddingHorizontal, texiDetail }: taxidetailsProps)
           <View style={[styles.descContainer, { flexDirection: viewRTLStyle }]}>
             <Text style={styles.engineInfo}>{texiDetail?.rental_vehicle.description}</Text>
             <Text style={styles.rentPrice}>
-              {zoneValue.currency_symbol}{texiDetail?.rental_vehicle.vehicle_per_day_price * zoneValue?.exchange_rate}
-              <Text style={{ color: appColors.gray, fontFamily: appFonts.medium, fontSize: fontSizes.FONT19 }}>/{translateData.day}</Text>
+              {zoneValue?.currency_symbol}{texiDetail?.rental_vehicle.vehicle_per_day_price * zoneValue?.exchange_rate}
+              <Text style={{ color: appColors.gray, fontFamily: appFonts.medium, fontSize: fontSizes.FONT19 }}>/{translateData?.day}</Text>
             </Text>
           </View>
           <View style={{ paddingHorizontal: windowWidth(19), marginTop: windowHeight(9) }}>
             <View style={{ borderBottomWidth: windowHeight(1), borderStyle: 'dashed', borderColor: isDark ? appColors.darkBorder : appColors.border }} />
             <View style={{ flexDirection: viewRTLStyle, justifyContent: 'space-between', marginTop: windowHeight(9) }}>
-              <Text style={{ color: isDark ? appColors.whiteColor : appColors.primaryText, fontFamily: appFonts.semiBold, fontSize: fontSizes.FONT20 }}>{translateData.driverPriceText}</Text>
+              <Text style={{ color: isDark ? appColors.whiteColor : appColors.primaryText, fontFamily: appFonts.semiBold, fontSize: fontSizes.FONT20 }}>{translateData?.driverPriceText}</Text>
               <View style={{ flexDirection: viewRTLStyle }}>
-                <Text style={{ color: appColors.price, fontFamily: appFonts.medium, fontSize: fontSizes.FONT19 }}>{zoneValue.currency_symbol}{texiDetail?.rental_vehicle.driver_per_day_charge * zoneValue?.exchange_rate}</Text>
+                <Text style={{ color: appColors.price, fontFamily: appFonts.medium, fontSize: fontSizes.FONT19 }}>{zoneValue?.currency_symbol}{texiDetail?.rental_vehicle.driver_per_day_charge * zoneValue?.exchange_rate}</Text>
                 <Text style={{ color: appColors.gray, fontFamily: appFonts.medium, fontSize: fontSizes.FONT19 }}>/day</Text>
               </View>
 
@@ -152,7 +152,7 @@ export function TaxiDetails({ paddingHorizontal, texiDetail }: taxidetailsProps)
               marginBottom: windowHeight(8.5),
               marginHorizontal: windowWidth(7),
             }]}>          <Seat />
-              <Text style={styles.iconTitle}>{texiDetail?.rental_vehicle.seatingCapacity} {translateData.seat}</Text>
+              <Text style={styles.iconTitle}>{texiDetail?.rental_vehicle.seatingCapacity} {translateData?.seat}</Text>
             </View>
             <View style={[{ flexDirection: viewRTLStyle }, {
               backgroundColor: isDark ? appColors.bgDark : appColors.lightGray, padding: windowWidth(10),
@@ -184,7 +184,7 @@ export function TaxiDetails({ paddingHorizontal, texiDetail }: taxidetailsProps)
             </View>
           </View>
           <View style={{ borderBottomWidth: windowHeight(1), borderStyle: 'dashed', borderColor: isDark ? appColors.darkBorder : appColors.border, bottom: windowHeight(8), marginHorizontal: windowWidth(19) }} />
-          <Text style={{ color: isDark ? appColors.whiteColor : appColors.primaryText, fontFamily: appFonts.semiBold, fontSize: fontSizes.FONT20, textAlign: textRTLStyle, marginHorizontal: windowWidth(18), marginTop: windowHeight(2) }}>{translateData.MoreTextInformation}</Text>
+          <Text style={{ color: isDark ? appColors.whiteColor : appColors.primaryText, fontFamily: appFonts.semiBold, fontSize: fontSizes.FONT20, textAlign: textRTLStyle, marginHorizontal: windowWidth(18), marginTop: windowHeight(2) }}>{translateData?.MoreTextInformation}</Text>
 
           <View style={{
             marginHorizontal: windowWidth(19),

@@ -20,7 +20,7 @@ export function MinimumPrice () {
           commonStyles.mediumTextBlack12,
           { color: textColorStyle },
         ]}>
-        {translateData.minPrice}
+        {translateData?.minPrice}
       </Text>
     </View>
   );

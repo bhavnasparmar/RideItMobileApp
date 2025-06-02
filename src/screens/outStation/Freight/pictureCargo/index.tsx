@@ -39,11 +39,11 @@ export function PictureCargo({ onImageSelect, service_name }) {
       onPress={openImagePicker}>
       {service_name === 'freight' ? (
         <Text style={[styles.cargoText, { color: textColorStyle }, { textAlign: textRTLStyle }]}>
-          {translateData.pictureOfYourCargo}
+          {translateData?.pictureOfYourCargo}
         </Text>
       ) : service_name === 'parcel' ? (
         <Text style={[styles.cargoText, { color: textColorStyle }, { textAlign: textRTLStyle }]}>
-          {translateData.pictureOfYourPackedParcel}
+          {translateData?.pictureOfYourPackedParcel}
         </Text>
       ) : null}
 
@@ -54,7 +54,7 @@ export function PictureCargo({ onImageSelect, service_name }) {
           <>
             <View style={styles.dashedBorder}>
               <Download />
-              <Text style={styles.uploadText}>{translateData.updateTextBottom}</Text>
+              <Text style={styles.uploadText}>{translateData?.updateTextBottom}</Text>
             </View>
           </>
         )}

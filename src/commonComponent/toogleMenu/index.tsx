@@ -68,10 +68,10 @@ export function ToggleMenu({ title, options, onSelect, initialPlaceholder, posit
                     fontSize: fontSizes.FONT16
                   },
                   selectedOption
-                    ? { color: title === translateData.selectPaymentMethodtoogle ? appColors.primary : textColorStyle, fontFamily: appFonts.regular }
+                    ? { color: title === translateData?.selectPaymentMethodtoogle ? appColors.primary : textColorStyle, fontFamily: appFonts.regular }
                     : {
                       fontSize: fontSizes.FONT16,
-                      color: title === translateData.selectPaymentMethodtoogle ? appColors.primary : textColorStyle, fontFamily: appFonts.regular
+                      color: title === translateData?.selectPaymentMethodtoogle ? appColors.primary : textColorStyle, fontFamily: appFonts.regular
                     }
                 ]}
               >

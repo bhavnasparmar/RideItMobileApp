@@ -609,7 +609,7 @@ export function DetailContainer() {
                 <Marker
                   key={index}
                   coordinate={{ latitude: driver.lat, longitude: driver.lng }}
-                  title={`${translateData.driver} ${index + 1}`}
+                  title={`${translateData?.driver} ${index + 1}`}
                 >
                   <CustomMarker
                     imageUrl={selectedVehicleData.vehicle_map_icon.original_url}
@@ -623,7 +623,7 @@ export function DetailContainer() {
                     latitude: pickupCoords.lat,
                     longitude: pickupCoords.lng,
                   }}
-                  title={translateData.pickupLocation}
+                  title={translateData?.pickupLocation}
                   pinColor={appColors.primary}
                 />
               )}
@@ -675,7 +675,7 @@ export function DetailContainer() {
                     { color: textColorStyle, textAlign: textRTLStyle },
                   ]}
                 >
-                  {translateData.chooseaPackage}
+                  {translateData?.chooseaPackage}
                 </Text>
                 <KmDetails
                   onPress={handlePress}
@@ -691,7 +691,7 @@ export function DetailContainer() {
                           { color: textColorStyle, textAlign: textRTLStyle },
                         ]}
                       >
-                        {translateData.vehicletype}
+                        {translateData?.vehicletype}
                       </Text>
                       <FlatList
                         horizontal
@@ -711,7 +711,7 @@ export function DetailContainer() {
                             { textAlign: textRTLStyle },
                           ]}
                         >
-                          {translateData.offerYourFare}
+                          {translateData?.offerYourFare}
                         </Text>
                         <View
                           style={[
@@ -727,7 +727,7 @@ export function DetailContainer() {
                               styles.textInput,
                               { color: textColorStyle },
                             ]}
-                            placeholder={translateData.enterFareAmount}
+                            placeholder={translateData?.enterFareAmount}
                             backgroundColor={bgContainer}
                             value={fareValue}
                             keyboardType="number-pad"
@@ -771,7 +771,7 @@ export function DetailContainer() {
                             },
                           ]}
                         >
-                          {zoneValue.currency_symbol} {Math.round(recommendedPackageCharge) * zoneValue.exchange_rate}
+                          {zoneValue?.currency_symbol} {Math.round(recommendedPackageCharge) * zoneValue.exchange_rate}
                           <Text
                             style={[
                               styles.priceTitle,
@@ -783,7 +783,7 @@ export function DetailContainer() {
                             ]}
                           >
                             {" "}
-                            - {translateData.recommendedPrice}
+                            - {translateData?.recommendedPrice}
                           </Text>
                         </Text>
                       </View>
@@ -798,7 +798,7 @@ export function DetailContainer() {
                           { color: textColorStyle, textAlign: textRTLStyle },
                         ]}
                       >
-                        {translateData.paymentMethodSelect}
+                        {translateData?.paymentMethodSelect}
                       </Text>
                       <View style={styles.paymentContainer}>
                         <ScrollView>
@@ -827,7 +827,7 @@ export function DetailContainer() {
                               },
                             ]}
                           >
-                            {translateData.talkingRide}
+                            {translateData?.talkingRide}
                           </Text>
                           <Text
                             style={[
@@ -840,7 +840,7 @@ export function DetailContainer() {
                               },
                             ]}
                           >
-                            {translateData.notice}
+                            {translateData?.notice}
                           </Text>
                         </TouchableOpacity>
                         <View style={[external.mt_20]}>
@@ -867,7 +867,7 @@ export function DetailContainer() {
                                   { color: textColorStyle },
                                 ]}
                               >
-                                {translateData.myself}
+                                {translateData?.myself}
                               </Text>
                             </View>
                             <Pressable
@@ -903,7 +903,7 @@ export function DetailContainer() {
                             >
                               <NewContact />
                               <Text style={[styles.chooseAnotherAccount]}>
-                                {translateData.contact}
+                                {translateData?.contact}
                               </Text>
                             </TouchableOpacity>
                             <Forword />
@@ -919,13 +919,13 @@ export function DetailContainer() {
                           <Button
                             width={"47%"}
                             backgroundColor={appColors.lightGray}
-                            title={translateData.cancel}
+                            title={translateData?.cancel}
                             textColor={appColors.primaryText}
                             onPress={handleSkip}
                           />
                           <Button
                             width={"47%"}
-                            title={translateData.continue}
+                            title={translateData?.continue}
                             onPress={chooseRider}
                           />
                         </View>
@@ -968,7 +968,7 @@ export function DetailContainer() {
                           styles.selectedText,
                         ]}
                       >
-                        {translateData.selectPayment}
+                        {translateData?.selectPayment}
                       </Text>
                     </TouchableOpacity>
 
@@ -994,7 +994,7 @@ export function DetailContainer() {
                           styles.selectedText,
                         ]}
                       >
-                        {translateData.switchRider}
+                        {translateData?.switchRider}
                       </Text>
                     </TouchableOpacity>
                   </View>
@@ -1012,8 +1012,8 @@ export function DetailContainer() {
                   <Button
                     title={
                       isExpanding
-                        ? translateData.cancelRide
-                        : translateData.bookRide
+                        ? translateData?.cancelRide
+                        : translateData?.bookRide
                     }
                     onPress={handleBookRide}
                   />
@@ -1022,7 +1022,7 @@ export function DetailContainer() {
                 <View style={[external.mh_10]}>
                   <View style={[external.mv_13]}>
                     <Button
-                      title={translateData.cancelRide}
+                      title={translateData?.cancelRide}
                       backgroundColor={appColors.textRed}
                       onPress={handleCancelRide}
                     />
@@ -1072,7 +1072,7 @@ export function DetailContainer() {
                         },
                       ]}
                     >
-                      {translateData.rentalRide}
+                      {translateData?.rentalRide}
                     </Text>
                     <Image style={styles.carTwo} source={Images.carTwo} />
                     <View>
@@ -1093,7 +1093,7 @@ export function DetailContainer() {
                             },
                           ]}
                         >
-                          {translateData.incorporated}
+                          {translateData?.incorporated}
                         </Text>
                         <View
                           style={{
@@ -1121,7 +1121,7 @@ export function DetailContainer() {
                           },
                         ]}
                       >
-                        {translateData.policiesFees}
+                        {translateData?.policiesFees}
                       </Text>
                       <View style={[external.mt_5]}>
                         <ModalContainer data={feesPolicies} />

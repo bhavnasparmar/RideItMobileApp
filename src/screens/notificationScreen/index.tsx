@@ -17,7 +17,7 @@ export function Notifications() {
         commonStyles.flexContainer,
         { backgroundColor: isDark ? appColors.bgDark : appColors.notificationColor },
       ]}>
-      <HeaderContainer value={translateData.header} />
+      <HeaderContainer value={translateData?.header} />
       <TopCategory />
     </View>
   );

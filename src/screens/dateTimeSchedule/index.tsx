@@ -86,7 +86,7 @@ export function DateTimeSchedule({ onPress }: { onPress: () => void }) {
         <Close />
       </TouchableOpacity>
       <View style={styles.subContainer}>
-        <Text style={styles.title}>{translateData.titleDate}</Text>
+        <Text style={styles.title}>{translateData?.titleDate}</Text>
         <Text style={styles.selectDate}>{day} {selectedMonth} {selectedYear}, {hour}:{time} {periods[selectedPeriodIndex]}</Text>
       </View>
       <View style={[styles.dropdownRow, { flexDirection: viewRTLStyle }]}>

@@ -193,8 +193,8 @@ export function LocationSelect() {
 
         <TextInput
           style={[styles.textInput, { backgroundColor: isDark ? appColors.darkPrimary : appColors.whiteColor }, { color: isDark ? appColors.whiteColor : appColors.blackColor }]}
-          value={currentAddress || `${translateData.addressNotFound}`}
-          placeholder={translateData.searchHere}
+          value={currentAddress || `${translateData?.addressNotFound}`}
+          placeholder={translateData?.searchHere}
           editable={false}
         />
       </View>
@@ -202,7 +202,7 @@ export function LocationSelect() {
         style={styles.confirmButton}
         onPress={handleConfirmLocation}
       >
-        <Text style={styles.confirmText}>{translateData.confirmLocation}</Text>
+        <Text style={styles.confirmText}>{translateData?.confirmLocation}</Text>
       </TouchableOpacity>
       <View style={styles.pointerMarker}>
         <Image source={Images.pin} style={styles.pinImage} />

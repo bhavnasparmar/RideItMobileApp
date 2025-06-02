@@ -32,20 +32,20 @@ export function MyTabs() {
         ? <Home colors={appColors.primary} width={24} height={24} />
         : <HomeLight />,
     },
-    // {
-    //   name: 'CategoryScreen',
-    //   component: CategoryScreen,
-    //   label: 'Services',
-    //   icon: ({ focused }) => focused
-    //     ? <Category fill={appColors.primary} colors={appColors.primary} />
-    //     : <Category colors={appColors.regularText} />,
-    // },
-    // {
-    //   name: 'RideScreen',
-    //   component: RideScreen,
-    //   label: 'History',
-    //   icon: ({ focused }) => focused ? <HistoryFill /> : <HistoryEmpty />,
-    // },
+    {
+      name: 'CategoryScreen',
+      component: CategoryScreen,
+      label: 'Services',
+      icon: ({ focused } : any) => focused
+        ? <Category fill={appColors.primary} colors={appColors.primary} />
+        : <Category colors={appColors.regularText} />,
+    },
+    {
+      name: 'RideScreen',
+      component: RideScreen,
+      label: 'History',
+      icon: ({ focused } : any) => focused ? <HistoryFill /> : <HistoryEmpty />,
+    },
      {
       name: 'Profile',
       component: ProfileSetting,

@@ -195,7 +195,7 @@ export function ChatScreen() {
               { color: appColors.primary, textAlign: textRTLStyle },
             ]}
           >
-            {translateData.online}
+            {translateData?.online}
           </Text>
         </View>
         <TouchableOpacity
@@ -231,7 +231,7 @@ export function ChatScreen() {
                 onPress={() => {
                 }}
               >
-                <Text style={styles.modalText}>{translateData.callNow}</Text>
+                <Text style={styles.modalText}>{translateData?.callNow}</Text>
               </TouchableOpacity>
               <View
                 style={[styles.modalBorder, { borderColor: colors.border }]}
@@ -242,7 +242,7 @@ export function ChatScreen() {
                 style={styles.modalTextView}
                 onPress={clearChat}
               >
-                <Text style={styles.modalText}>{translateData.clearChat}</Text>
+                <Text style={styles.modalText}>{translateData?.clearChat}</Text>
               </TouchableOpacity>
             </View>
           </TouchableOpacity>
@@ -351,7 +351,7 @@ export function ChatScreen() {
             ]}
             value={input}
             onChangeText={setInput}
-            placeholder={translateData.typeHere}
+            placeholder={translateData?.typeHere}
             multiline
             placeholderTextColor={appColors.subtitle}
           />

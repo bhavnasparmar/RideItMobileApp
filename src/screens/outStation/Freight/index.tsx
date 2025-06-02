@@ -59,7 +59,7 @@ export function Freight({ pickupLocation, stops, destination, service_ID, zoneVa
       {service_name === 'parcel' ? (
         <View>
           <Text style={[styles.weightText, { color: textColorStyle, textAlign: textRTLStyle }]}>
-            {translateData.parcelReceiverName}
+            {translateData?.parcelReceiverName}
           </Text>
           <TextInput
             style={[styles.inputView, {
@@ -71,13 +71,13 @@ export function Freight({ pickupLocation, stops, destination, service_ID, zoneVa
               textAlign: textRTLStyle,
             }]}
             keyboardType="ascii-capable"
-            placeholder={translateData.enterReceiverName}
+            placeholder={translateData?.enterReceiverName}
             placeholderTextColor={appColors.regularText}
             value={receiverName}
             onChangeText={(text) => setReceiverName(text)}
           />
           <Text style={[styles.parcelText, { color: textColorStyle, textAlign: textRTLStyle }]}>
-            {translateData.parcelReceiverNumber}
+            {translateData?.parcelReceiverNumber}
           </Text>
           <CountryCodeContainer
             countryCode={countryCode}
@@ -89,7 +89,7 @@ export function Freight({ pickupLocation, stops, destination, service_ID, zoneVa
           />
 
           <Text style={[styles.weightText, { color: textColorStyle, textAlign: textRTLStyle }]}>
-            {translateData.weightKg} (KG)
+            {translateData?.weightKg} (KG)
           </Text>
           <TextInput
             style={[styles.inputView, {
@@ -99,7 +99,7 @@ export function Freight({ pickupLocation, stops, destination, service_ID, zoneVa
               textAlign: textRTLStyle
             }]}
             keyboardType="number-pad"
-            placeholder={translateData.enterParcelWeight}
+            placeholder={translateData?.enterParcelWeight}
             placeholderTextColor={appColors.regularText}
             value={parcelWeight}
             onChangeText={(text) => setParcelWeight(text)}
@@ -111,7 +111,7 @@ export function Freight({ pickupLocation, stops, destination, service_ID, zoneVa
       <PictureCargo onImageSelect={handleImageSelect} service_name={service_name} />
 
       <View style={[external.mv_15]}>
-        <Button title={translateData.bookRide} onPress={gotoRide} />
+        <Button title={translateData?.bookRide} onPress={gotoRide} />
       </View>
       <CommonModal
         isVisible={selected}
@@ -120,7 +120,7 @@ export function Freight({ pickupLocation, stops, destination, service_ID, zoneVa
           <View>
             <Calander onPress={closeModal} />
             <View style={styles.buttonView}>
-              <Button title={translateData.Continue} onPress={() => setSelected(false)} />
+              <Button title={translateData?.Continue} onPress={() => setSelected(false)} />
             </View>
           </View>
         }

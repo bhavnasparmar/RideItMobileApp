@@ -33,7 +33,9 @@ export function HomeScreen() {
   const { translateData, settingData, taxidoSettingData } = useSelector((state: any) => state.setting);
   const { reset } = useAppNavigation();
   const { self } = useSelector((state) => state.account);
-  const { homeScreenDataPrimary, loading } = useSelector((state) => state.home);
+   const { homeScreenDataPrimary, loading } = useSelector((state) => state.home);
+  //  const {  loading } = useSelector((state) => state.home);
+  // const homeScreenDataPrimary = {banners :[{banner_image_url : require('../../../assets/images/banner.jpg')}]}
   const { latitude, longitude } = useStoredLocation();
 
 
@@ -112,7 +114,7 @@ export function HomeScreen() {
       <SafeAreaView style={styles.container}>
         <HeaderContainer />
       </SafeAreaView>
-      {loading || isDataEmpty ? (
+      {(loading || isDataEmpty )? (
         <HomeLoader />
       ) : (
         <ScrollView
@@ -135,7 +137,7 @@ export function HomeScreen() {
               onSwipeEnd={() => setIsScrolling(true)}
               bannerData={homeScreenDataPrimary.banners}
             />
-          )}
+           )} 
           {homeScreenDataPrimary?.service_categories?.length > 0 && (
             <TopCategory
               categoryData={homeScreenDataPrimary.service_categories}
@@ -151,7 +153,7 @@ export function HomeScreen() {
               style={styles.todayOfferContainer}
             >
               <TodayOfferContainer
-                couponsData={homeScreenDataPrimary.coupons}
+                couponsData={homeScreenDataPrimary?.coupons}
               />
             </View>
           )}
@@ -203,7 +205,7 @@ export function HomeScreen() {
       </View>
       {self?.total_active_rides > 0 && (
         <View style={styles.swipeView}>
-          <SwipeButton buttonText={translateData.backToActive ?  translateData.backToActive : "goback"} />
+          <SwipeButton buttonText={translateData?.backToActive ?  translateData?.backToActive : "goback"} />
         </View>
       )}
     </View>

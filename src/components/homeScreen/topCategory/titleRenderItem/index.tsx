@@ -23,13 +23,14 @@ export function TitleRenderItem({ item, index, selectedIndex, onPress, isScrolla
 
         style={styles.image}
         source={
-          item?.service_category_image_url
-            ? { uri: item.service_category_image_url }
-            : Images.imagePlaceholder
+           item?.service_category_image_url
+          // item?.service_category_image_url
+          //   ? { uri: item.service_category_image_url }
+          //   : Images.imagePlaceholder
         }
       />
       <Text style={[styles.text, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>
-        {item.name}
+        {item?.name ? item?.name:'jjhj'}
       </Text>
       <View style={[styles.highlightLine, selectedIndex !== index && styles.invisibleLine]} />
     </TouchableOpacity>

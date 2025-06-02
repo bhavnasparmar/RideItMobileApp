@@ -22,10 +22,10 @@ const AddTopUp = () => {
           { color: colors.text, textAlign: textRTLStyle },
         ]}
       >
-        {translateData.addTopupBalance}
+        {translateData?.addTopupBalance}
       </Text>
       <Text style={[styles.amount, { textAlign: textRTLStyle }]}>
-        {translateData.enterAmount}
+        {translateData?.enterAmount}
       </Text>
 
       <View style={styles.subContainer}>
@@ -45,7 +45,7 @@ const AddTopUp = () => {
               styles.textinput,
               { backgroundColor: colors.card, color: colors.text },
             ]}
-            placeholder={translateData.amount}
+            placeholder={translateData?.amount}
             placeholderTextColor={appColors.regularText}
             keyboardType={"numeric"}
           />
@@ -54,7 +54,7 @@ const AddTopUp = () => {
           <Button
             backgroundColor={appColors.alertBg}
             textColor={appColors.whiteColor}
-            title={translateData.withdrawBalance}
+            title={translateData?.withdrawBalance}
             width={0}
           />
         </View>

@@ -10,7 +10,7 @@ export function MultiStop() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>
-        {translateData.multiStopTextFirst}{'\n'} {translateData.multiStopTextSec}
+        {translateData?.multiStopTextFirst}{'\n'} {translateData?.multiStopTextSec}
       </Text>
     </View>
   );

@@ -17,11 +17,11 @@ export function CancellationDetails() {
   return (
     <View style={[styles.container, { backgroundColor: bgFullStyle }]}>
       <Text style={[styles.billText, { color: textColorStyle, textAlign: textRTLStyle }]}>
-        {translateData.cancellationReason}
+        {translateData?.cancellationReason}
       </Text>
       <SolidLine marginVertical={10} color={linearColorStyle} />
       <Text style={[styles.paragraph, { color: textColorStyle, textAlign: textRTLStyle }]}>
-        {translateData.reason}
+        {translateData?.reason}
       </Text>
     </View>
   );

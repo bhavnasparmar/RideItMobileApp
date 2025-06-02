@@ -41,12 +41,12 @@ export function NoService() {
         <View style={[styles.main, { backgroundColor: bgContainer }]}>
             <Image source={isDark ? Images.noServiceImageDark : Images.noServiceImage} resizeMode="contain" style={styles.image} />
             <View style={[styles.container, { flexDirection: viewRTLStyle }]}>
-                <Text style={[styles.title, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData.ServiceUnavailableNo}</Text>
+                <Text style={[styles.title, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData?.ServiceUnavailableNo}</Text>
                 <Info />
             </View>
-            <Text style={styles.text}>{translateData.ServiceUnavailableNoTextt}</Text>
+            <Text style={styles.text}>{translateData?.ServiceUnavailableNoTextt}</Text>
             <View style={styles.btn}>
-                <Button title={translateData.refresh} onPress={gotoRefresh} loading={refreshLoading} />
+                <Button title={translateData?.refresh} onPress={gotoRefresh} loading={refreshLoading} />
             </View>
         </View>
     )

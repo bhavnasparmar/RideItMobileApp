@@ -67,7 +67,7 @@ export function List({ dataList }: ListProps) {
                     },
                   ]}
                 >
-                  {zoneValue.currency_symbol}
+                  {zoneValue?.currency_symbol}
                   {zoneValue.exchange_rate * data.amount}
                 </Text>
               </View>

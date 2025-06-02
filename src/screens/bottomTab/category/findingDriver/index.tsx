@@ -43,7 +43,7 @@ export function FindingDriver() {
   return (
     <View style={[commonStyles.flexContainer]}>
       <Header
-        value={translateData.driverTitle}
+        value={translateData?.driverTitle}
         container={
           <ScrollView
             contentContainerStyle={[external.Pb_80]}
@@ -59,7 +59,7 @@ export function FindingDriver() {
                 <View style={[styles.findingView,{flexDirection:viewRTLStyle}]}>
                   <Image style={styles.img} source={Images.taxi} />
                   <Text style={[commonStyles.mediumTextBlack12, { color: textColorStyle }]}>
-                    {translateData.privateRide}
+                    {translateData?.privateRide}
                   </Text>
                 </View>
                 <SolidLine />
@@ -71,10 +71,10 @@ export function FindingDriver() {
                     external.mt_3,
                   ]}>
                   <Text style={[commonStyles.regularText]}>
-                    {translateData.time}
+                    {translateData?.time}
                   </Text>
                   <Text style={[commonStyles.regularText]}>
-                    {translateData.cashOnly}
+                    {translateData?.cashOnly}
                   </Text>
                 </View>
               </View>
@@ -84,7 +84,7 @@ export function FindingDriver() {
               {completed && (
                 <Button
                   backgroundColor={appColors.whiteColor}
-                  title={translateData.cancel}
+                  title={translateData?.cancel}
                   textColor={appColors.subtitle}
                 />
               )}

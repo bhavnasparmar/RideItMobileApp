@@ -10,8 +10,8 @@ export function ProfileContainer() {
   const { taxidoSettingData } = useSelector((state: any) => state.setting);
 
   const char = self?.name ? self.name.charAt(0) : "";
-  const [greeting, setGreeting] = useState("");
-  const [welcom, setWelcome] = useState("");
+  const [greeting, setGreeting] = useState("Hello");
+  const [welcom, setWelcome] = useState("Welcome Back");
 
   useEffect(() => {
     const greetingsMsg = ["Hi", "Hey", "Hello"];
@@ -37,7 +37,7 @@ export function ProfileContainer() {
         {self?.profile_image?.original_url ? (
           <Image
             style={styles.imageStyle}
-            source={{ uri: self?.profile_image?.original_url }}
+            source={self?.profile_image?.original_url }
           />
         ) : (
           <View style={styles.textView}>

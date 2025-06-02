@@ -53,7 +53,7 @@ export function AmbulancePayment() {
 
     return (
         <View style={styles.main}>
-            <Header value={translateData.paymentHeader} />
+            <Header value={translateData?.paymentHeader} />
             <ScrollView showsVerticalScrollIndicator={false} style={{ backgroundColor: isDark ? '#1F1F1F' : '#F5F5F5' }}>
                 <View
                     style={[styles.mainContainer, { flexDirection: viewRTLStyle, backgroundColor: isDark ? appColors.darkPrimary : appColors.whiteColor, borderColor: isDark ? appColors.darkBorder : appColors.border }]}
@@ -65,13 +65,13 @@ export function AmbulancePayment() {
                         <Text
                             style={[styles.pickUp, { textAlign: textRTLStyle, color: isDark ? appColors.whiteColor : appColors.primaryText }]}
                         >
-                            {translateData.pickupLocation}
+                            {translateData?.pickupLocation}
                         </Text>
                         <Text
                             style={[styles.locationText, { textAlign: textRTLStyle }]}
                         >
                             {/* {location?.length > 75 ? location.substring(0, 75) + "..." : location} */}
-                            {translateData.addressPayment}
+                            {translateData?.addressPayment}
 
                         </Text>
                     </View>
@@ -79,7 +79,7 @@ export function AmbulancePayment() {
                 <Text
                     style={[styles.description, { textAlign: textRTLStyle, color: isDark ? appColors.whiteColor : appColors.primaryText }]}
                 >
-                    {translateData.additionalDescription}
+                    {translateData?.additionalDescription}
                 </Text>
                 <View
                     style={[styles.ambulanceView, { flexDirection: viewRTLStyle, backgroundColor: isDark ? appColors.darkPrimary : appColors.whiteColor, borderColor: isDark ? appColors.darkBorder : appColors.border }]}
@@ -92,7 +92,7 @@ export function AmbulancePayment() {
                             style={[styles.textInput, { backgroundColor: isDark ? appColors.darkPrimary : appColors.whiteColor, borderColor: isDark ? appColors.darkBorder : appColors.border, textAlign: textRTLStyle, color: isDark ? appColors.whiteColor : appColors.primaryText }]}
                             multiline
                             numberOfLines={5}
-                            placeholder={translateData.writePlaceholder}
+                            placeholder={translateData?.writePlaceholder}
                             placeholderTextColor={appColors.gray}
                         />
                     </View>
@@ -113,10 +113,10 @@ export function AmbulancePayment() {
                         style={styles.textView}>
                         <Text
                             style={[styles.itemText, { color: isDark ? appColors.whiteColor : appColors.primaryText, textAlign: textRTLStyle }]}
-                        >{translateData.cityHospitalambulance}  </Text>
+                        >{translateData?.cityHospitalambulance}  </Text>
                         <Text
                             style={[styles.text, { textAlign: textRTLStyle }]}>
-                            {translateData.emergencySupport}
+                            {translateData?.emergencySupport}
                         </Text>
                         <View style={[styles.minView, { backgroundColor: isDark ? appColors.darkBorder : appColors.border }]} />
                         <View style={[styles.emergencySupportView, { flexDirection: viewRTLStyle }]}>
@@ -132,51 +132,51 @@ export function AmbulancePayment() {
                 }]}>
                     <TextInput
                         style={[styles.input, { color: isDark ? appColors.whiteColor : '#797D83', textAlign: textRTLStyle }]}
-                        placeholder={translateData.applyPromoCode}
+                        placeholder={translateData?.applyPromoCode}
                         placeholderTextColor={appColors.regularText}
                     />
                     <TouchableOpacity style={styles.buttonAdd} activeOpacity={0.7}
                     >
-                        <Text style={styles.buttonAddText}>{translateData.apply}</Text>
+                        <Text style={styles.buttonAddText}>{translateData?.apply}</Text>
                     </TouchableOpacity>
                 </View>
 
-                <Text style={[styles.billSummaryText, { textAlign: textRTLStyle, color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData.billSummary}</Text>
+                <Text style={[styles.billSummaryText, { textAlign: textRTLStyle, color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData?.billSummary}</Text>
                 <View style={[styles.billView, { backgroundColor: bgContainer, borderColor: isDark ? appColors.darkBorder : appColors.border }]}>
                     <View style={[styles.ambulancePriceView, { flexDirection: viewRTLStyle }]}>
-                        <Text style={[styles.totalBillText, { fontFamily: appFonts.medium, color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData.ambulancePrice}</Text>
+                        <Text style={[styles.totalBillText, { fontFamily: appFonts.medium, color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData?.ambulancePrice}</Text>
                         <Text style={[styles.totalBillText, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>$100</Text>
 
                     </View>
                     <View style={[styles.ambulancePriceView, { flexDirection: viewRTLStyle }]}>
-                        <Text style={[styles.totalBillText, { fontFamily: appFonts.medium, color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData.couponSavings}</Text>
+                        <Text style={[styles.totalBillText, { fontFamily: appFonts.medium, color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData?.couponSavings}</Text>
                         <Text style={styles.savingPrice}>-$10</Text>
 
                     </View>
                     <View style={[styles.ambulanceBottomView, { backgroundColor: isDark ? appColors.darkBorder : appColors.border }]} />
                     <View style={[styles.ambulancePriceView, { flexDirection: viewRTLStyle }]}>
-                        <Text style={[styles.totalBillText, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData.totalBill}</Text>
+                        <Text style={[styles.totalBillText, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData?.totalBill}</Text>
                         <Text style={styles.bottomPrice}>$100</Text>
 
                     </View>
 
 
                 </View>
-                <Text style={[styles.paymentMethodText, { textAlign: textRTLStyle, color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData.paymentMethod}</Text>
+                <Text style={[styles.paymentMethodText, { textAlign: textRTLStyle, color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData?.paymentMethod}</Text>
 
                 <View style={[styles.paymentMethodView, {
                     backgroundColor: bgContainer,
                     borderColor: isDark ? appColors.darkBorder : appColors.border,
                 }]}>
                     <PaymentMethodItem
-                        label={translateData.creditCardAmbulance}
+                        label={translateData?.creditCardAmbulance}
                         method="creditCard"
                         selectedPaymentMethod={selectedPaymentMethod}
                         onPress={onPress}
                     />
                     <View style={[styles.lineMethod, { backgroundColor: isDark ? appColors.darkBorder : appColors.border }]} />
                     <PaymentMethodItem
-                        label={translateData.payPalAmbulance}
+                        label={translateData?.payPalAmbulance}
                         method="paypal"
                         selectedPaymentMethod={selectedPaymentMethod}
                         onPress={onPress}
@@ -184,7 +184,7 @@ export function AmbulancePayment() {
                     <View style={[styles.lineMethod, { backgroundColor: isDark ? appColors.darkBorder : appColors.border }]} />
 
                     <PaymentMethodItem
-                        label={translateData.googlePayAmbulance}
+                        label={translateData?.googlePayAmbulance}
                         method="googlePay"
                         selectedPaymentMethod={selectedPaymentMethod}
                         onPress={onPress}
@@ -193,7 +193,7 @@ export function AmbulancePayment() {
 
                     <View style={styles.cash}>
                         <PaymentMethodItem
-                            label={translateData.cashAmbulance}
+                            label={translateData?.cashAmbulance}
                             method="cash"
                             selectedPaymentMethod={selectedPaymentMethod}
                             onPress={onPress}
@@ -202,7 +202,7 @@ export function AmbulancePayment() {
                 </View>
                 <View style={styles.btnn}>
                     <View style={styles.proceedToPayBtn}>
-                        <Button title={translateData.proceedToPay} />
+                        <Button title={translateData?.proceedToPay ? translateData?.proceedToPay : " Proses To Pay"} />
                     </View>
                 </View>
 

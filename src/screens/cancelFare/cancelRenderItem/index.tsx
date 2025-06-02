@@ -118,7 +118,7 @@ export function CancelRender({ item }: { item: any }) {
                   commonStyles.mediumTextBlack12,
                   { color: appColors.primary, fontSize: fontSizes.FONT20 },
                 ]}
-              >{zoneValue.currency_symbol}{zoneValue?.exchange_rate * item.amount}</Text>
+              >{zoneValue?.currency_symbol}{zoneValue?.exchange_rate * item.amount}</Text>
             </View>
             <View
               style={[
@@ -130,7 +130,7 @@ export function CancelRender({ item }: { item: any }) {
               <Text
                 style={[commonStyles.regularText, { color: textColorStyle }]}
               >
-                {translateData.driverOnly}
+                {translateData?.driverOnly}
               </Text>
               <View style={{ flexDirection: viewRTLStyle }}>
                 <View style={styles.rating}>
@@ -155,14 +155,14 @@ export function CancelRender({ item }: { item: any }) {
             ]}
           >
             <Button
-              title={translateData.skip}
+              title={translateData?.skip}
               width={"48%"}
               backgroundColor={linearColorStyle}
               textColor={textColorStyle}
               onPress={handleReject}
             />
             <Button
-              title={translateData.accept}
+              title={translateData?.accept}
               width={"48%"}
               backgroundColor={appColors.primary}
               onPress={handleAccept}

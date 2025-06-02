@@ -97,7 +97,7 @@ const SelectMethod = () => {
   return (
     <View style={styles.mainContainer}>
       <View style={styles.titleContainer}>
-        <Text style={styles.title}>{translateData.selectMethod}</Text>
+        <Text style={styles.title}>{translateData?.selectMethod}</Text>
       </View>
       <View
         style={[
@@ -114,8 +114,8 @@ const SelectMethod = () => {
         />
       </View>
       <View style={styles.dashBorder} />
-      <Text style={styles.titleTopup}>{translateData.addTopupBalanceText}</Text>
-      <Text style={styles.titleAmount}>{translateData.enterAmount}</Text>
+      <Text style={styles.titleTopup}>{translateData?.addTopupBalanceText}</Text>
+      <Text style={styles.titleAmount}>{translateData?.enterAmount}</Text>
       <View
         style={[
           styles.inputView,
@@ -134,7 +134,7 @@ const SelectMethod = () => {
             styles.textinput,
             { backgroundColor: colors.card, color: colors.text },
           ]}
-          placeholder={translateData.amount}
+          placeholder={translateData?.amount}
           placeholderTextColor={appColors.regularText}
           keyboardType={"numeric"}
           value={amount}
@@ -142,7 +142,7 @@ const SelectMethod = () => {
         />
       </View>
       <View style={styles.addBtn}>
-        <Button title={translateData.addBalance} onPress={addBalance} />
+        <Button title={translateData?.addBalance} onPress={addBalance} />
       </View>
     </View>
   );

@@ -148,11 +148,11 @@ export function Calander() {
         <Back />
       </TouchableOpacity>
       <View style={[styles.header]}>
-        <Text style={[styles.headerTitle, { color: textColorStyle }]}>{translateData.dateTimeSchedule}</Text>
+        <Text style={[styles.headerTitle, { color: textColorStyle }]}>{translateData?.dateTimeSchedule}</Text>
       </View>
       <View style={[styles.banner, { backgroundColor: isDark ? appColors.darkPrimary : appColors.whiteColor }]}>
-        <Text style={[styles.bannerTitle, { color: textColorStyle }]}>{translateData.timeNote} </Text>
-        <Text style={[styles.bannerTitle, { color: textColorStyle }]}>{translateData.pickedUp}</Text>
+        <Text style={[styles.bannerTitle, { color: textColorStyle }]}>{translateData?.timeNote} </Text>
+        <Text style={[styles.bannerTitle, { color: textColorStyle }]}>{translateData?.pickedUp}</Text>
       </View>
       <View style={[styles.lineContainer, { flexDirection: viewRTLStyle }]}>
         <Image source={Images.line2} style={styles.line2} />
@@ -181,7 +181,7 @@ export function Calander() {
             style={[styles.dropdown, { backgroundColor: isDark ? appColors.darkPrimary : appColors.whiteColor, borderColor: isDark ? appColors.darkPrimary : appColors.border }]}
             textStyle={[styles.dropDownText, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}
             zIndex={2}
-            placeholder={translateData.selectMonth}
+            placeholder={translateData?.selectMonth}
             dropDownContainerStyle={{ backgroundColor: isDark ? appColors.bgDark : appColors.lightGray, borderColor: isDark ? appColors.bgDark : appColors.border, maxHeight: windowHeight(450) }}
             tickIconStyle={{
               tintColor: isDark ? appColors.whiteColor : appColors.blackColor,
@@ -409,7 +409,7 @@ export function Calander() {
         </View>
       </View>
       <View style={styles.btnView}>
-        <Button title={translateData.confirm} onPress={gotoBack} />
+        <Button title={translateData?.confirm} onPress={gotoBack} />
       </View>
     </ScrollView>
   );

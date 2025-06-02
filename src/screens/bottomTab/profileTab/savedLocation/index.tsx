@@ -82,7 +82,7 @@ export function SavedLocation() {
         navigation.navigate("Ride", { selectedLocation: location, savefieldValue: savefield });
       } else {
         Clipboard.setString(location);
-        notificationHelper("Coppied", translateData.copyClipboard, "warning")
+        notificationHelper("Coppied", translateData?.copyClipboard, "warning")
 
       }
     },
@@ -106,11 +106,11 @@ export function SavedLocation() {
         <View style={[styles.noDataContainer, { flexDirection: viewRTLStyle }]}>
           <NoInternet
             btnHide
-            title={translateData.noLocation}
-            details={translateData.noLocationDes}
+            title={translateData?.noLocation ?  translateData?.noLocation :"No Location"}
+            details={translateData?.noLocationDes}
             image={isDark ? Images.noLocationDark : Images.noLocation}
             infoIcon
-            status={`${translateData.statusCode}: ${statusCode}`}
+            status={`${translateData?.statusCode}: ${statusCode}`}
           />
         </View>
       );
@@ -265,7 +265,7 @@ export function SavedLocation() {
           </TouchableOpacity>
 
           <Text style={[styles.headerTitle, { color: textColorStyle }]}>
-            {translateData.savedLocation}
+            {translateData?.savedLocation ? translateData?.savedLocation : "Save Location"}
           </Text>
 
           <TouchableOpacity
@@ -306,7 +306,7 @@ export function SavedLocation() {
                   { color: textColorStyle },
                 ]}
               >
-                {translateData.deleteAddress}
+                {translateData?.deleteAddress ? translateData?.deleteAddress : "Address Delete"}
               </Text>
 
               <View
@@ -317,16 +317,16 @@ export function SavedLocation() {
                   { flexDirection: viewRTLStyle },
                 ]}
               >
-                <Button
+                <Button 
                   backgroundColor={appColors.lightGray}
-                  title={translateData.cancel}
+                  title={translateData?.cancel ? translateData?.cancel :"Cancel"}
                   width="47.5%"
                   onPress={() => setModalVisible(false)}
                   textColor={appColors.primaryText}
                 />
                 <Button
                   backgroundColor={appColors.textRed}
-                  title={translateData.deleteBtn}
+                  title={translateData?.deleteBtn ?translateData?.deleteBtn:"Delete"}
                   width="47.5%"
                   onPress={deleteAddress}
                 />

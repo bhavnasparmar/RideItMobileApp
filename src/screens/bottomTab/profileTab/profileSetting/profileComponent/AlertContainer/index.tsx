@@ -10,12 +10,12 @@ export function AlertContainer() {
   return (
     <View style={[styles.container]}>
       <View style={[styles.alertBox]}>
-        <Text style={[styles.alertText]}>{translateData.profileAlertzone}</Text>
+        <Text style={[styles.alertText]}>{translateData?.profileAlertzone ? translateData?.profileAlertzone :"Profile Alert Zone"}</Text>
         {alertData?.map(item => {
           return (
             <View style={[styles.alertItem]}>
               <View style={[styles.alertIcon]} />
-              <Text style={[styles.alertItemText]}>{item.title}</Text>
+              <Text style={[styles.alertItemText]}>{item?.title}</Text>
             </View>
           );
         })}

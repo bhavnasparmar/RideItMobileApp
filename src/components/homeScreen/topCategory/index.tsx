@@ -128,7 +128,7 @@ export function TopCategory({ categoryData }) {
                     color: isDark ? appColors.whiteColor : appColors.primaryText
                   }]}
                 >
-                  {translateData.whereNext}
+                  {translateData?.whereNext}
                 </Text>
               </View>
               <Text
@@ -136,7 +136,7 @@ export function TopCategory({ categoryData }) {
 
                   textAlign: textRTLStyle
                 }]}
-              >{translateData.homeRecentSearch}
+              >{translateData?.homeRecentSearch}
               </Text>
               <FlatList
                 data={recentDatas.slice(0, 2)}

@@ -47,11 +47,11 @@ const styles = StyleSheet.create({
   emptySpace: {
     height: windowHeight(80),
   },
-  sociallogin: {
-    color: appColors.primaryText,
-    fontFamily: appFonts.medium,
-    marginHorizontal: windowWidth(8),
-  },
+  // sociallogin: {
+  //   color: appColors.primaryText,
+  //   fontFamily: appFonts.medium,
+  //   marginHorizontal: windowWidth(8),
+  // },
   socialContainer: {
     justifyContent: "space-between",
     marginTop: windowHeight(10),
@@ -126,6 +126,29 @@ const styles = StyleSheet.create({
     color: appColors.primary,
     fontFamily: appFonts.medium,
   },
+    socialLogin  : {
+        padding : windowWidth(10),
+        borderRadius : windowHeight(10),
+       // borderWidth : 1,
+        marginHorizontal : windowWidth(20),
+        marginTop : windowWidth(15),
+       // borderColor : appColors.gray,
+        width : windowWidth(150),
+        flexDirection : "row",
+        justifyContent : "center",
+        alignItems : "center",   
+        backgroundColor : appColors.lightGray
+    },
+    socialImg : {
+        width : windowWidth(30),
+        height : windowWidth(30),
+    },
+    socialText : {
+      color : appColors.gray,
+      fontWeight : "bold",
+      marginLeft :  windowWidth(5),
+      
+    }
 });
 
 export default styles;

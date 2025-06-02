@@ -114,12 +114,12 @@ export function BookRide() {
     };
     const monthIndex = monthMap[month];
     if (!monthIndex) {
-      return translateData.bookRideInvalidDate;
+      return translateData?.bookRideInvalidDate;
     }
 
     const timeParts = TimeValue.match(/(\d{1,2}):(\d{2})\s?(AM|PM)/);
     if (!timeParts) {
-      return translateData.bookRideInvalidTime;
+      return translateData?.bookRideInvalidTime;
     }
 
     let [_, hours, minutes, period] = timeParts;
@@ -867,15 +867,15 @@ export function BookRide() {
               style={styles.serviceImg}
             />
             <Text style={[styles.modalText, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>
-              {translateData.noService}
+              {translateData?.noService}
             </Text>
             <Text style={[styles.modalDetail, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>
-              {translateData.noServiceDes}
+              {translateData?.noServiceDes}
             </Text>
             <View
               style={[styles.buttonContainer, { flexDirection: viewRTLStyle }]}
             >
-              <Button title={translateData.goBack} onPress={backScreen} />
+              <Button title={translateData?.goBack} onPress={backScreen} />
             </View>
           </View>
         </View>
@@ -954,7 +954,7 @@ export function BookRide() {
                       latitude: driver?.lat,
                       longitude: driver?.lng,
                     }}
-                    title={`${translateData.driver} ${index + 1}`}
+                    title={`${translateData?.driver} ${index + 1}`}
                   >
                     <CustomMarker
                       imageUrl={selectedVehicleData?.vehicle_map_icon_url}
@@ -968,7 +968,7 @@ export function BookRide() {
                       latitude: pickupCoords.lat,
                       longitude: pickupCoords.lng,
                     }}
-                    title={translateData.pickupLocation}
+                    title={translateData?.pickupLocation}
                     pinColor={appColors.primary}
                   />
                 )}
@@ -978,7 +978,7 @@ export function BookRide() {
                       latitude: destinationCoords.lat,
                       longitude: destinationCoords.lng,
                     }}
-                    title={translateData.destination}
+                    title={translateData?.destination}
                     pinColor={appColors.primary}
                   />
                 )}
@@ -986,7 +986,7 @@ export function BookRide() {
                   <Marker
                     key={index}
                     coordinate={{ latitude: stop.lat, longitude: stop.lng }}
-                    title={`${translateData.stop} ${index + 1}`}
+                    title={`${translateData?.stop} ${index + 1}`}
                     pinColor={appColors.subtitle}
                   />
                 ))}
@@ -1058,7 +1058,7 @@ export function BookRide() {
                       { color: textColorStyle, textAlign: textRTLStyle },
                     ]}
                   >
-                    {translateData.vehicletype}
+                    {translateData?.vehicletype}
                   </Text>
                   {isExpanding && (
                     <View
@@ -1076,7 +1076,7 @@ export function BookRide() {
                           fontFamily: appFonts.regular,
                         }}
                       >
-                        {translateData.findingDriver}
+                        {translateData?.findingDriver}
                       </Text>
                       <FastImage
                         source={Images.loaderGIF}
@@ -1105,7 +1105,7 @@ export function BookRide() {
                         { textAlign: textRTLStyle },
                       ]}
                     >
-                      {translateData.offerYourFare}
+                      {translateData?.offerYourFare}
                     </Text>
                     <View
                       style={[
@@ -1119,7 +1119,7 @@ export function BookRide() {
                       ]}
                     >
                       <View style={styles.coin}>
-                        <Text>{zoneValue.currency_symbol}</Text>
+                        <Text>{zoneValue?.currency_symbol}</Text>
                       </View>
                       <TextInput
                         style={[styles.textInput, { color: textColorStyle }]}
@@ -1132,7 +1132,7 @@ export function BookRide() {
                             setFareValue(text);
                           }
                         }}
-                        placeholder={translateData.enterFareAmount}
+                        placeholder={translateData?.enterFareAmount}
                         backgroundColor={bgContainer}
                         keyboardType="number-pad"
                         placeholderTextColor={appColors.regularText}
@@ -1171,7 +1171,7 @@ export function BookRide() {
                         style={[styles.priceTitle, { color: textColorStyle }]}
                       >
                         {" "}
-                        - {translateData.recommendedPrice}
+                        - {translateData?.recommendedPrice}
                       </Text>
                     </Text>
                   ) : (
@@ -1190,7 +1190,7 @@ export function BookRide() {
                       >
                         {taxidoSettingData?.taxido_values?.activation?.bidding == 1
                           ?
-                          ` - ${translateData.recommendedPrice}`
+                          ` - ${translateData?.recommendedPrice}`
                           : ` - Fare Price`
                         }
                       </Text>
@@ -1216,7 +1216,7 @@ export function BookRide() {
                       { color: textColorStyle, textAlign: textRTLStyle },
                     ]}
                   >
-                    {translateData.paymentMethodSelect}
+                    {translateData?.paymentMethodSelect}
                   </Text>
                 </View>
                 <ScrollView
@@ -1252,7 +1252,7 @@ export function BookRide() {
                           { color: textColorStyle, textAlign: textRTLStyle },
                         ]}
                       >
-                        {translateData.talkingRide}
+                        {translateData?.talkingRide}
                       </Text>
                       <TouchableOpacity onPress={closeModal} activeOpacity={0.7} style={{ bottom: windowHeight(1.7) }}>
                         <Close />
@@ -1270,7 +1270,7 @@ export function BookRide() {
                         },
                       ]}
                     >
-                      {translateData.notice}
+                      {translateData?.notice}
                     </Text>
                   </TouchableOpacity>
                   <View style={[external.mt_20]}>
@@ -1301,7 +1301,7 @@ export function BookRide() {
                             },
                           ]}
                         >
-                          {translateData.myself}
+                          {translateData?.myself}
                         </Text>
                       </View>
                       <Pressable
@@ -1324,7 +1324,7 @@ export function BookRide() {
                       <View style={[external.fd_row, external.ai_center]}>
                         <NewContact />
                         <Text style={[styles.chooseAnotherAccount, { marginLeft: windowWidth(10) }]}>
-                          {translateData.contact}
+                          {translateData?.contact}
                         </Text>
                       </View>
                       <Forword />
@@ -1377,7 +1377,7 @@ export function BookRide() {
                       selectedOption === "selectPayment" && styles.selectedText,
                     ]}
                   >
-                    {seletedPayment ? seletedPayment : translateData.payment}
+                    {seletedPayment ? seletedPayment : translateData?.payment}
 
                   </Text>
                 )}
@@ -1390,7 +1390,7 @@ export function BookRide() {
                   ]}
                 >
                   {selectedOption === "selectPayment"
-                    ? translateData.selectPayment
+                    ? translateData?.selectPayment
                     : selectedOption}
                 </Text> */}
                 {selectedOption && (
@@ -1401,7 +1401,7 @@ export function BookRide() {
                       selectedOption === "selectPayment" && styles.selectedText,
                     ]}
                   >
-                    {seletedPayment ? seletedPayment : translateData.payment}
+                    {seletedPayment ? seletedPayment : translateData?.payment}
 
                   </Text>
                 )}
@@ -1434,7 +1434,7 @@ export function BookRide() {
                     selectedOption === "switchRider" && styles.selectedText,
                   ]}
                 >
-                  {translateData.myself}
+                  {translateData?.myself}
                 </Text>
               </TouchableOpacity>
             </View>
@@ -1442,7 +1442,7 @@ export function BookRide() {
               <View style={[external.mh_10]}>
                 <View style={[external.mv_13]}>
                   <Button
-                    title={isExpanding ? translateData.cancelRide : translateData.bookRide}
+                    title={isExpanding ? translateData?.cancelRide : translateData?.bookRide}
                     onPress={handleBookRide}
                   />
                 </View>
@@ -1451,7 +1451,7 @@ export function BookRide() {
               <View style={[external.mh_10]}>
                 <View style={[external.mv_13]}>
                   <Button
-                    title={translateData.cancelRide}
+                    title={translateData?.cancelRide}
                     backgroundColor={appColors.textRed}
                     onPress={handleCancelRide}
                   />
@@ -1494,7 +1494,7 @@ export function BookRide() {
             <View style={styles.modalContainer}>
               <View style={styles.modalContent}>
                 <Text style={styles.modalText}>
-                  {translateData.cancelTheride}
+                  {translateData?.cancelTheride}
                 </Text>
                 <View
                   style={[
@@ -1507,14 +1507,14 @@ export function BookRide() {
                     style={[styles.button, styles.cancelButton]}
                     onPress={handleCloseModal}
                   >
-                    <Text style={styles.buttonText}>{translateData.Cancel}</Text>
+                    <Text style={styles.buttonText}>{translateData?.Cancel}</Text>
                   </TouchableOpacity>
                   <TouchableOpacity
                     activeOpacity={0.7}
                     style={[styles.button, styles.confirmButton]}
                     onPress={handleConfirmCancel}
                   >
-                    <Text style={styles.buttonText}>{translateData.yesCancel}</Text>
+                    <Text style={styles.buttonText}>{translateData?.yesCancel}</Text>
                   </TouchableOpacity>
                 </View>
               </View>
@@ -1529,7 +1529,7 @@ export function BookRide() {
           >
             <View style={styles.modalContainer}>
               <View style={styles.modalContent}>
-                <Text style={styles.modalText}>{translateData.selectVehicleType}</Text>
+                <Text style={styles.modalText}>{translateData?.selectVehicleType}</Text>
                 <View
                   style={[
                     styles.buttonContainer,
@@ -1542,7 +1542,7 @@ export function BookRide() {
                     style={[styles.button, styles.cancelButton]}
                     onPress={handleCloseModal}
                   >
-                    <Text style={styles.buttonText}>{translateData.modelCloseBtn}</Text>
+                    <Text style={styles.buttonText}>{translateData?.modelCloseBtn}</Text>
                   </TouchableOpacity>
                 </View>
               </View>

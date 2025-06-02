@@ -24,35 +24,35 @@ export function OutStationDetails({ onPress }) {
     <View>
       <InputText
         showTitle={true}
-        title={translateData.dateAndTimeText}
+        title={translateData?.dateAndTimeText}
         backgroundColor={bgContainer}
-        placeholder={translateData.selectDateTimeT}
+        placeholder={translateData?.selectDateTimeT}
         rightIcon={<Calender />}
         onPress={() => setSelected(true)}
       />
       <InputText
         showTitle={true}
-        title={translateData.numberOfPassengerText}
+        title={translateData?.numberOfPassengerText}
         backgroundColor={bgContainer}
-        placeholder={translateData.enterTotalPassengerNo}
+        placeholder={translateData?.enterTotalPassengerNo}
         keyboard={"number-pad"}
       />
       <InputText
         showTitle={true}
-        title={translateData.enterYourOfferRate}
+        title={translateData?.enterYourOfferRate}
         backgroundColor={bgContainer}
-        placeholder={translateData.enterFareAmount}
+        placeholder={translateData?.enterFareAmount}
         keyboard={"number-pad"}
       />
       <InputText
         showTitle={true}
-        title={translateData.commentsText}
+        title={translateData?.commentsText}
         backgroundColor={bgContainer}
-        placeholder={translateData.enterYourComments}
+        placeholder={translateData?.enterYourComments}
       />
       <View style={[external.mv_15, external.mt_25]}>
         <Button
-          title={translateData.bookRideText}
+          title={translateData?.bookRideText ?  translateData?.bookRideText : "Book Ride"}
           onPress={() => navigate("FindingDriver", { isOutstation: true })}
         />
       </View>
@@ -63,7 +63,7 @@ export function OutStationDetails({ onPress }) {
           <View>
             <Calander onPress={closemenu} />
             <View style={styles.mv}>
-              <Button title={translateData.continueText} onPress={() => setSelected(false)} />
+              <Button title={translateData?.continueText ?  translateData?.continueText :'Continue'} onPress={() => setSelected(false)} />
             </View>
           </View>
         }

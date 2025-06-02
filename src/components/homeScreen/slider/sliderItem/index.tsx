@@ -11,7 +11,7 @@ export function OfferItem({ item }: OfferItemType) {
       <Image
         resizeMode="stretch"
         style={styles.img}
-        source={{ uri: item?.banner_image_url }}
+        source={item?.banner_image_url}
       />
       <View style={[external.mh_20, external.mt_25]} />
     </View>

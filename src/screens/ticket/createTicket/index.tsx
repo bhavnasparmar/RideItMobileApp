@@ -121,34 +121,34 @@ export function CreateTicket() {
     let isValid = true;
 
     if (!subjectValue.trim()) {
-      setSubjectError(translateData.enterSubject);
+      setSubjectError(translateData?.enterSubject);
       isValid = false;
     } else {
       setSubjectError('');
     }
 
     if (!description.trim()) {
-      setDescriptionError(translateData.ticketPleaseEnterdescription);
+      setDescriptionError(translateData?.ticketPleaseEnterdescription);
       isValid = false;
     } else {
       setDescriptionError('');
     }
 
     if (!selectedPriority) {
-      setPriorityError(translateData.selectPriority);
+      setPriorityError(translateData?.selectPriority);
       isValid = false;
     } else {
       setPriorityError('');
     }
 
     if (!selectedDepartment) {
-      setDepartmentError(translateData.selectDepartment);
+      setDepartmentError(translateData?.selectDepartment);
       isValid = false;
     } else {
       setDepartmentError('');
     }
     if (files.length === 0) {
-      setFilesError(translateData.ticketImageisRequired);
+      setFilesError(translateData?.ticketImageisRequired);
       isValid = false;
     } else {
       setFilesError('');
@@ -209,18 +209,18 @@ export function CreateTicket() {
 
   return (
     <View style={{ backgroundColor: linearColorStyle, height: "100%" }}>
-      <Header value={translateData.createTicket} />
+      <Header value={translateData?.createTicket} />
       <ScrollView style={styles.mainInput} showsVerticalScrollIndicator={false}>
         <View>
           <InputText
-            title={translateData.subject}
-            placeholder={translateData.enterSubject}
+            title={translateData?.subject}
+            placeholder={translateData?.enterSubject}
             showTitle={true}
             value={subjectValue}
             onChangeText={(text) => {
               setSubjectValue(text);
               if (!text.trim()) {
-                setSubjectError(translateData.enterSubject);
+                setSubjectError(translateData?.enterSubject);
               } else {
                 setSubjectError('');
               }
@@ -242,7 +242,7 @@ export function CreateTicket() {
               { fontFamily: appFonts.medium },
             ]}
           >
-            {translateData.descriptionLabel}
+            {translateData?.descriptionLabel}
           </Text>
           <TextInput
             style={[
@@ -254,7 +254,7 @@ export function CreateTicket() {
               { color: textColorStyle },
               { fontFamily: appFonts.regular },
             ]}
-            placeholder={translateData.writehere}
+            placeholder={translateData?.writehere}
             placeholderTextColor={
               isDark ? appColors.darkText : appColors.regularText
             }
@@ -265,7 +265,7 @@ export function CreateTicket() {
             onChangeText={(text) => {
               setDescription(text);
               if (!text.trim()) {
-                setDescriptionError(translateData.ticketPleaseEnterdescription);
+                setDescriptionError(translateData?.ticketPleaseEnterdescription);
               } else {
                 setDescriptionError('');
               }
@@ -282,7 +282,7 @@ export function CreateTicket() {
             { fontFamily: appFonts.medium },
           ]}
         >
-          {translateData.priority}
+          {translateData?.priority}
         </Text>
         <DropDownPicker
           open={open}
@@ -296,7 +296,7 @@ export function CreateTicket() {
               setPriorityError('');
             }
           }}
-          placeholder={translateData.selectPriority}
+          placeholder={translateData?.selectPriority}
           style={[
             styles.dropDownContainer,
             {
@@ -343,7 +343,7 @@ export function CreateTicket() {
             { fontFamily: appFonts.medium },
           ]}
         >
-          {translateData.department}
+          {translateData?.department}
         </Text>
         <View>
           <DropDownPicker
@@ -358,7 +358,7 @@ export function CreateTicket() {
                 setDepartmentError('');
               }
             }}
-            placeholder={translateData.selectDepartment}
+            placeholder={translateData?.selectDepartment}
             style={[
               styles.dropDownContainer,
               {
@@ -404,7 +404,7 @@ export function CreateTicket() {
             { fontFamily: appFonts.medium },
           ]}
         >
-          {translateData.uploadFile}
+          {translateData?.uploadFile}
         </Text>
         <View>
           {files.length > 0 ? (
@@ -441,7 +441,7 @@ export function CreateTicket() {
             >
               <View style={styles.docContainer}>
                 <Download />
-                <Text style={styles.uploadText}>{translateData.upload}</Text>
+                <Text style={styles.uploadText}>{translateData?.upload}</Text>
               </View>
             </TouchableOpacity>
           )}
@@ -451,7 +451,7 @@ export function CreateTicket() {
         </View>
         <TouchableOpacity onPress={TicketRequest} style={styles.submitBtn} activeOpacity={0.7}
         >
-          <Text style={styles.submitText}>{translateData.submit}</Text>
+          <Text style={styles.submitText}>{translateData?.submit}</Text>
         </TouchableOpacity>
       </ScrollView>
     </View>

@@ -189,7 +189,7 @@ export function AmbulanceSearch() {
 
     return (
         <View style={[styles.container, { backgroundColor: bgFullStyle }]}>
-            <Header value={translateData.ambulance} />
+            <Header value={translateData?.ambulance} />
             <View style={[styles.inputContainer, { backgroundColor: bgFullStyle }]}>
                 <View style={{ height: windowHeight(180) }}>
                     {/* <HomeSlider
@@ -216,14 +216,14 @@ export function AmbulanceSearch() {
                             </View>
                             <TextInput
                                 placeholderTextColor={isDark ? appColors.whiteColor : appColors.blackColor}
-                                placeholder={translateData.pickupLocation}
+                                placeholder={translateData?.pickupLocation}
                                 style={[styles.input, { textAlign: textRTLStyle }]}
                                 value={pickup}
                                 onChangeText={(text) => handleInputChange(text, true)}
                             />
                         </View>
                     </View>
-                    <Text style={[styles.suggestionText, { textAlign: textRTLStyle }]}>{suggestions.length > 0 ? translateData.suggestedAddresses : translateData.recentAddresses}</Text>
+                    <Text style={[styles.suggestionText, { textAlign: textRTLStyle }]}>{suggestions.length > 0 ? translateData?.suggestedAddresses : translateData?.recentAddresses}</Text>
                     <View style={styles.listView}>
                         <FlatList
                             data={suggestions.length > 0 ? suggestions : []}
@@ -288,7 +288,7 @@ export function AmbulanceSearch() {
                         longitudeDelta: 0.05
                     }}
                 >
-                    {pickupCoords && <Marker coordinate={pickupCoords} title={translateData.PickupAmbulance} />}
+                    {pickupCoords && <Marker coordinate={pickupCoords} title={translateData?.PickupAmbulance} />}
                     {pickupCoords && (
                         <MapViewDirections
                             origin={pickupCoords}
@@ -301,7 +301,7 @@ export function AmbulanceSearch() {
             </View>
             <View style={styles.buttonView}>
                 <View style={styles.buttonHz_Space}>
-                    <Button title={translateData.confirmLocation} onPress={gotoBookAmbulance} />
+                    <Button title={translateData?.confirmLocation ? translateData?.confirmLocation :"Confirm Location"} onPress={gotoBookAmbulance} />
                 </View>
             </View>
         </View>

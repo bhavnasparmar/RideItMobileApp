@@ -286,7 +286,7 @@ export function RentalLocation() {
   return (
     <ScrollView style={[external.fx_1, { backgroundColor: linearColorStyle }]} showsVerticalScrollIndicat={false}>
       <Header
-        value={translateData.location}
+        value={translateData?.location}
         backgroundColor={isDark ? appColors.colorBg : appColors.whiteColor}
       />
       {ScreenValue === "Schedule" && (
@@ -299,9 +299,9 @@ export function RentalLocation() {
           ]}
         >
           <InputText
-            title={translateData.dateAndTime}
+            title={translateData?.dateAndTime}
             backgroundColor={linearColorStyleTwo}
-            placeholder={translateData.selectDateTime}
+            placeholder={translateData?.selectDateTime}
             rightIcon={<Calender />}
             onPress={() => setSelectedCal(true)}
           />
@@ -353,7 +353,7 @@ export function RentalLocation() {
               <PickLocation />
             </View>
             <Text style={[styles.locationText, { color: textColorStyle }]}>
-              {translateData.locateonmap}
+              {translateData?.locateonmap}
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -363,7 +363,7 @@ export function RentalLocation() {
             <View style={external.mh_5}>
               <Save />
             </View>
-            <Text style={styles.saveText}>{translateData.savedLocation}</Text>
+            <Text style={styles.saveText}>{translateData?.savedLocation}</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -375,7 +375,7 @@ export function RentalLocation() {
             { color: textColorStyle, textAlign: textRTLStyle },
           ]}
         >
-          {fieldLength >= 3 ? translateData.addressSuggestionText : translateData.recentTextAddress}
+          {fieldLength >= 3 ? translateData?.addressSuggestionText : translateData?.recentTextAddress}
         </Text>
         <View
           style={[
@@ -447,12 +447,12 @@ export function RentalLocation() {
             />
           ) : (
             <Text style={[styles.noDataText, { color: textColorStyle }]}>
-              {translateData.nodataFound}
+              {translateData?.nodataFound}
             </Text>
           )}
         </View>
         <View style={[external.mv_15]}>
-          <Button title={translateData.done} onPress={gotoBook} loading={loading} />
+          <Button title={translateData?.done ? translateData?.done :"Done"} onPress={gotoBook} loading={loading} />
         </View>
       </View>
       <Modal
@@ -463,8 +463,8 @@ export function RentalLocation() {
       >
         <View style={styles.modalOverlay}>
           <View style={styles.modalContainer}>
-            <Text style={styles.modalText}>{translateData.enterPickupLocation}</Text>
-            <Button title={translateData.close} onPress={modelOpen} />
+            <Text style={styles.modalText}>{translateData?.enterPickupLocation}</Text>
+            <Button title={translateData?.close ? translateData?.close :"Close"} onPress={modelOpen} />
           </View>
         </View>
       </Modal>

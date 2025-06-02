@@ -39,7 +39,7 @@ export function DriverProfile({ borderRadius, showInfoIcon, showCarTitle }: Driv
                 <Image source={Images.profileUser} style={[styles.userImage, { borderRadius: borderRadius }]} />
                 <View>
                     <View style={[commonStyles.directionRow, { flexDirection: viewRtlStyle }]}>
-                        <Text style={[styles.userName, { color: colors.text }]}>{translateData.name}</Text>
+                        <Text style={[styles.userName, { color: colors.text }]}>{translateData?.name}</Text>
                         {showInfoIcon && (
                             <View style={commonStyles.iconSpace}>
                                 <Info />
@@ -50,7 +50,7 @@ export function DriverProfile({ borderRadius, showInfoIcon, showCarTitle }: Driv
 
                         {showCarTitle && (
                             <View style={{ flexDirection: viewRtlStyle }}>
-                                <Text style={styles.carTitle}>{translateData.gvFewsf}</Text>
+                                <Text style={styles.carTitle}>{translateData?.gvFewsf}</Text>
                                 <View style={styles.line} />
                             </View>
                         )}

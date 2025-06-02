@@ -49,7 +49,7 @@ export function OnTheWayDetails({ }) {
         show={true}
         icon={
           <Text style={[commonStyles.mediumText23, { color: appColors.primary }]}>
-            {translateData.modelCancelText}
+            {translateData?.modelCancelText}
           </Text>
         }
         onPressIcon={() => setSelected(!selected)}
@@ -58,13 +58,13 @@ export function OnTheWayDetails({ }) {
         style={styles.textView}>
         <View style={[styles.viewText, { flexDirection: viewRTLStyle }]}>
           <Text style={[commonStyles.mediumTextBlack, { color: appColors.whiteColor }]}>
-            {translateData.theDriversOnTheWay}
+            {translateData?.theDriversOnTheWay}
           </Text>
           <Text style={[commonStyles.extraBold, { color: appColors.whiteColor }]}>6 min</Text>
         </View>
         <Text
           style={[commonStyles.regularText, external.mt_3, { color: appColors.categoryTitle }]}>
-          {translateData.pleaseDontBeLate}
+          {translateData?.pleaseDontBeLate}
         </Text>
       </View>
       <DetailScreen />
@@ -75,7 +75,7 @@ export function OnTheWayDetails({ }) {
           <TouchableOpacity onPress={() => setSelected(!selected)} activeOpacity={0.7}
           >
             <Text style={[commonStyles.mediumTextBlack, external.ti_center]}>
-              {translateData.whyDoYouWantToCancel}
+              {translateData?.whyDoYouWantToCancel}
             </Text>
             <FlatList
               renderItem={renderItem}

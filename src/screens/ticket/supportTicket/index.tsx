@@ -103,7 +103,7 @@ export function SupportTicket() {
             <Back />
           </TouchableOpacity>
           <Text style={[styles.title, { color: textColorStyle }]}>
-            {translateData.supportTicket}
+            {translateData?.supportTicket ? translateData?.supportTicket : "Support Ticket"}
           </Text>
           <TouchableOpacity
             activeOpacity={0.7}
@@ -165,13 +165,13 @@ export function SupportTicket() {
           />
           <View style={[styles.emptyTicketView, { flexDirection: viewRTLStyle }]}>
             <Text style={[styles.emptyTicket, { color: textColorStyle }]}>
-              {translateData.noTicket}
+              {translateData?.noTicket}
             </Text>
             <View style={styles.marginHr}>
               <Info />
             </View>
           </View>
-          <Text style={styles.noTicketText}>{translateData.noTicketDes}</Text>
+          <Text style={styles.noTicketText}>{translateData?.noTicketDes}</Text>
         </View>
       )}
     </View>

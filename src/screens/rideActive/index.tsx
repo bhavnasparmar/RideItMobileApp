@@ -289,7 +289,7 @@ export function RideActive() {
               />
             </Marker.Animated>
 
-            <Marker coordinate={destination} title={translateData.destination} />
+            <Marker coordinate={destination} title={translateData?.destination} />
 
             <MapViewDirections
               origin={location}
@@ -382,7 +382,7 @@ export function RideActive() {
                     <Close />
                   </TouchableOpacity>
                   <Text style={[styles.cancelTitle, { color: textColorStyle }]}>
-                    {translateData.whyCancel}
+                    {translateData?.whyCancel}
                   </Text>
                   {canceldata?.data?.map((item) => (
                     <TouchableOpacity
@@ -424,7 +424,7 @@ export function RideActive() {
                   <Button
                     backgroundColor={appColors.primary}
                     width={300}
-                    title={translateData.close}
+                    title={translateData?.close}
                     onPress={() => setModalCancelVisible(false)}
                   />
                 </View>
@@ -444,7 +444,7 @@ export function RideActive() {
             }]}
           >
             <Button
-              title={translateData.cancelRide}
+              title={translateData?.cancelRide}
               width={"100%"}
               backgroundColor={appColors.textRed}
               textColor={appColors.whiteColor}

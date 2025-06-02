@@ -17,7 +17,7 @@ export function CancelRideScreen() {
         <ScrollView
           showsVerticalScrollIndicator={false}
           contentContainerStyle={[external.Pb_80]}>
-          <RideContainer mapShow={true} status={translateData.cancel} color={appColors.alertRed} />
+          <RideContainer mapShow={true} status={translateData?.cancel} color={appColors.alertRed} />
           <CancellationDetails />
         </ScrollView>
       }

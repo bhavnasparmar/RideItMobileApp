@@ -44,14 +44,14 @@ export function TopCategory() {
         >
           <Image style={styles.image} source={Images.bellNotification} />
           <Text style={[styles.title, { color: textColorStyle }]}>
-            {translateData.nothinghhere}
+            {translateData?.nothinghhere}
           </Text>
           <Text style={[styles.text]}>
-            {translateData.clickToRefresh}
+            {translateData?.clickToRefresh}
             {'\n'} {again_Amazing}
           </Text>
           <View style={styles.refreshButtonContainer}>
-            <Button title={translateData.refresh} onPress={() => dispatch(notificationDataGet())} />
+            <Button title={translateData?.refresh ?  translateData?.refresh : "Refresh"} onPress={() => dispatch(notificationDataGet())} />
           </View>
         </View>
       )}
