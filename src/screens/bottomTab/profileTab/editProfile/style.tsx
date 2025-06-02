@@ -40,7 +40,7 @@ export const styles = StyleSheet.create({
   inputContainer: {
     marginHorizontal: windowHeight(14),
     height:windowHeight(100),
-    bottom:windowHeight(7),
+   // bottom:windowHeight(7),
     flex:1,
   },
   buttonContainer: {
@@ -111,4 +111,16 @@ export const styles = StyleSheet.create({
     bottom: windowHeight(0),
   },
   countryMainView:{ marginTop: windowHeight(14.9) },
+    dropdownContainer: {
+        height: windowHeight(34),
+        width: windowWidth(400),
+    },
+      dropdown: {
+        borderColor: appColors.border,
+        height: windowHeight(34),
+    },
+    dropDownText: {
+        color: appColors.primaryText,
+        fontFamily: appFonts.medium
+    },
 });

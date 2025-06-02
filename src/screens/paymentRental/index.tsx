@@ -291,14 +291,14 @@ export function PaymentRental() {
         >
           <View style={styles.totalView}>
             <Text style={{ color: appColors.categoryTitle }}>
-              {translateData.used}
+              {translateData?.used}
             </Text>
             <Text style={{ color: appColors.whiteColor }}>{elapsedTime}</Text>
           </View>
           <View style={styles.totalMainView} />
           <View style={styles.totalView}>
             <Text style={{ color: appColors.categoryTitle }}>
-              {translateData.total}
+              {translateData?.total}
             </Text>
             <Text style={{ color: appColors.whiteColor }}>
               {rideData?.hourly_package?.hour}:00:00
@@ -320,7 +320,7 @@ export function PaymentRental() {
         >
           <View style={styles.totalView}>
             <Text style={{ color: appColors.categoryTitle }}>
-              {translateData.used}
+              {translateData?.used}
             </Text>
             <Text style={{ color: appColors.whiteColor }}>
               {(distanceCovered / 1000).toFixed(1)}KM
@@ -329,7 +329,7 @@ export function PaymentRental() {
           <View style={styles.totalMainView} />
           <View style={styles.totalView}>
             <Text style={{ color: appColors.categoryTitle }}>
-              {translateData.total}
+              {translateData?.total}
             </Text>
             <Text style={{ color: appColors.whiteColor }}>
               {rideData?.hourly_package?.distance}
@@ -360,7 +360,7 @@ export function PaymentRental() {
                 style={[styles.background, { backgroundColor: bgFullStyle }]}
               >
                 <Text style={[styles.title, { color: textColorStyle }]}>
-                  {translateData.modalTitle}
+                  {translateData?.modalTitle}
                 </Text>
                 <View style={styles.userAlign}>
                   <Image
@@ -368,10 +368,10 @@ export function PaymentRental() {
                     style={styles.modalImage}
                   />
                   <Text style={[styles.modalName, { color: textColorStyle }]}>
-                    {translateData.name}
+                    {translateData?.name}
                   </Text>
                   <Text style={[styles.modalMail, { color: textColorStyle }]}>
-                    {translateData.mailID}
+                    {translateData?.mailID}
                   </Text>
                 </View>
                 <Image source={Images.lineBottom} style={styles.lineImage} />
@@ -381,7 +381,7 @@ export function PaymentRental() {
                     { color: textColorStyle, textAlign: textRTLStyle },
                   ]}
                 >
-                  {translateData.driverRating}
+                  {translateData?.driverRating}
                 </Text>
                 <View
                   style={[
@@ -415,7 +415,7 @@ export function PaymentRental() {
                     { color: textColorStyle, textAlign: textRTLStyle },
                   ]}
                 >
-                  {translateData.addComments}
+                  {translateData?.addComments}
                 </Text>
                 <TextInput
                   style={[
@@ -431,7 +431,7 @@ export function PaymentRental() {
                     width={330}
                     backgroundColor={appColors.primary}
                     textColor={appColors.whiteColor}
-                    title={translateData.submit}
+                    title={translateData?.submit}
                     onPress={review}
                   />
                 </View>

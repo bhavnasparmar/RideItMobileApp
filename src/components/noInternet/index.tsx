@@ -77,7 +77,7 @@ export function NoInternet({
               fontSize: fontSizes.FONT18,
               fontFamily: appFonts.medium,
               top: windowHeight(1)
-            }}>{translateData.noInternettText}
+            }}>{translateData?.noInternettText}
             </Text>
             <Menu
               renderer={Popover}
@@ -94,7 +94,7 @@ export function NoInternet({
             fontSize: fontSizes.FONT16,
             fontFamily: appFonts.regular,
             marginTop: windowHeight(2)
-          }}>{translateData.noInternettTitttle}</Text>
+          }}>{translateData?.noInternettTitttle}</Text>
         </View>
       )}
     </View>

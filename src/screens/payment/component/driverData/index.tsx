@@ -151,7 +151,7 @@ export function DriverData({ driverDetails, duration }) {
                 { color: textColorStyle, marginBottom: 10 },
               ]}
             >
-              {translateData.shareTrip}
+              {translateData?.shareTrip}
             </Text>
           </TouchableOpacity>
         ) : null}

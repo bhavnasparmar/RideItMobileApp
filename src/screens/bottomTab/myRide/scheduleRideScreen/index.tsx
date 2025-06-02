@@ -12,7 +12,7 @@ export function ScheduleRideScreen() {
 
     return (
         <Header
-            value={translateData.scheduleRide}
+            value={translateData?.scheduleRide}
             container={
                 <ScrollView
                     showsVerticalScrollIndicator={false}

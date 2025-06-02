@@ -130,7 +130,7 @@ export function TopUpWallet() {
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
 
         <View style={commonStyles.flexContainer}>
-          <Header value={translateData.topupWallet} />
+          <Header value={translateData?.topupWallet} />
           <View
             style={{
               backgroundColor: isDark ? linearColorStyle : appColors.lightGray,
@@ -145,7 +145,7 @@ export function TopUpWallet() {
                     { color: textColorStyle, textAlign: textRTLStyle },
                   ]}
                 >
-                  {translateData.selectMethod}
+                  {translateData?.selectMethod}
                 </Text>
               </View>
 
@@ -182,7 +182,7 @@ export function TopUpWallet() {
                   { color: textColorStyle, textAlign: textRTLStyle },
                 ]}
               >
-                {translateData.addTopupBalance}
+                {translateData?.addTopupBalance}
               </Text>
               <Text
                 style={[
@@ -193,7 +193,7 @@ export function TopUpWallet() {
                   },
                 ]}
               >
-                {translateData.enterAmount}
+                {translateData?.enterAmount}
               </Text>
 
               <View
@@ -207,7 +207,7 @@ export function TopUpWallet() {
                 ]}
               >
                 <Text style={styles.icons}>
-                  {zoneValue.currency_symbol}
+                  {zoneValue?.currency_symbol}
                 </Text>
                 <TextInput
                   style={[
@@ -217,7 +217,7 @@ export function TopUpWallet() {
                       color: colors.text,
                     },
                   ]}
-                  placeholder={translateData.amount}
+                  placeholder={translateData?.amount}
                   placeholderTextColor={appColors.regularText}
                   keyboardType="numeric"
                   value={amount}
@@ -227,7 +227,7 @@ export function TopUpWallet() {
             </View>
           </View>
           <View style={styles.addBtn}>
-            <Button loading={topupLoading} title={translateData.addBalance} onPress={addBalance} />
+            <Button loading={topupLoading} title={translateData?.addBalance} onPress={addBalance} />
           </View>
         </View>
       </TouchableWithoutFeedback>

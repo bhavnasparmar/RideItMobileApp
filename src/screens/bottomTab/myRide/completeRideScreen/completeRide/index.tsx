@@ -30,16 +30,16 @@ export function CompleteRide() {
 
   return (
     <Header
-      value={translateData.completeRides}
+      value={translateData?.completeRides}
       container={
         <ScrollView
           showsVerticalScrollIndicator={false}
           contentContainerStyle={[external.Pb_80]}>
-          <RideContainer mapShow={true} status={translateData.completed} color={appColors.completeColor} />
+          <RideContainer mapShow={true} status={translateData?.completed} color={appColors.completeColor} />
           <RideDetails />
           <TouchableOpacity onPress={handlePreeCancel} style={styles.helpView} activeOpacity={0.7}
           >
-            <Text style={styles.needHelpText}>{translateData.needHelp}</Text>
+            <Text style={styles.needHelpText}>{translateData?.needHelp}</Text>
           </TouchableOpacity>
           <Modal
             transparent={true}
@@ -54,7 +54,7 @@ export function CompleteRide() {
                 >
                   <Close />
                 </TouchableOpacity>
-                <Text style={[styles.cancelTitle, { color: textColorStyle }]}>{translateData.whyCancel}</Text>
+                <Text style={[styles.cancelTitle, { color: textColorStyle }]}>{translateData?.whyCancel}</Text>
                 {cancelReason?.map(item => (
                   <TouchableOpacity key={item.id} style={[styles.container2, { backgroundColor: bgContainer, flexDirection: viewRTLStyle }]} onPress={gotoHelp} activeOpacity={0.7}
                   >
@@ -67,13 +67,13 @@ export function CompleteRide() {
                     </View>
                   </TouchableOpacity>
                 ))}
-                <Button backgroundColor={appColors.primary} width={300} title={translateData.close} onPress={() => setModalCancelVisible(false)}
+                <Button backgroundColor={appColors.primary} width={300} title={translateData?.close} onPress={() => setModalCancelVisible(false)}
                 />
               </View>
             </View>
           </Modal>
           <View style={[external.mh_20, external.mt_10, external.mb_20]}>
-            <Button title={translateData.downloadInvoice} />
+            <Button title={translateData?.downloadInvoice} />
           </View>
         </ScrollView>
       }

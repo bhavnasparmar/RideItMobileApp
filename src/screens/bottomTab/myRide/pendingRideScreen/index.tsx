@@ -84,15 +84,15 @@ export function PendingRideScreen() {
         const base64data = fileReader.result.split(",")[1];
         await RNFetchBlob.fs.writeFile(filePath, base64data, "base64");
         Alert.alert(
-          `${translateData.downloadSuccessful}`,
-          `${translateData.fileSave} ${filePath}`
+          `${translateData?.downloadSuccessful}`,
+          `${translateData?.fileSave} ${filePath}`
         );
       };
 
       fileReader.readAsDataURL(responseBlob);
     } catch (error) {
       console.error("Fetch Error:", error);
-      Alert.alert(`${translateData.downloadError}`, error.message);
+      Alert.alert(`${translateData?.downloadError}`, error.message);
     }
   };
 
@@ -130,7 +130,7 @@ export function PendingRideScreen() {
           setModalVisible(false);
         } else {
           setModalVisible(false);
-          notificationHelper("Review", translateData.reviewSubmited, "success");
+          notificationHelper("Review", translateData?.reviewSubmited, "success");
           navigation.goBack();
         }
       })
@@ -167,7 +167,7 @@ export function PendingRideScreen() {
   const formattedDate = formatDates(item.created_at);
   return (
     <Header
-      value={`${rideStatus} ${translateData.ride}`}
+      value={`${rideStatus} ${translateData?.ride}`}
       container={
         <ScrollView
           showsVerticalScrollIndicator={false}
@@ -264,7 +264,7 @@ export function PendingRideScreen() {
                   <Text
                     style={[styles.tripCostText, { textAlign: textRTLStyle }]}
                   >
-                    {zoneValue.currency_symbol}{item.total}
+                    {zoneValue?.currency_symbol}{item.total}
                   </Text>
                 </View>
                 <View
@@ -370,7 +370,7 @@ export function PendingRideScreen() {
                   <Text
                     style={[styless.startDateText, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}
                   >
-                    {translateData.startDate}
+                    {translateData?.startDate}
                   </Text>
                   <View
                     style={[styless.vieww, {
@@ -396,7 +396,7 @@ export function PendingRideScreen() {
                   <Text
                     style={[styless.startDateText, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}
                   >
-                    {translateData.startTime}
+                    {translateData?.startTime}
                   </Text>
                   <View
                     style={[styless.vieww, {
@@ -426,7 +426,7 @@ export function PendingRideScreen() {
                   <Text
                     style={[styless.startDateText, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}
                   >
-                    {translateData.endDate}
+                    {translateData?.endDate}
                   </Text>
                   <View
                     style={[styless.vieww, {
@@ -458,7 +458,7 @@ export function PendingRideScreen() {
                       fontFamily: appFonts.medium,
                     }}
                   >
-                    {translateData.endTime}
+                    {translateData?.endTime}
                   </Text>
                   <View
                     style={[styless.vieww, {
@@ -491,7 +491,7 @@ export function PendingRideScreen() {
                   <Text
                     style={styless.timeText}
                   >
-                    {translateData.totalDays}
+                    {translateData?.totalDays}
                   </Text>
                   <View
                     style={[styless.vieww, {
@@ -523,7 +523,7 @@ export function PendingRideScreen() {
                 <Text
                   style={styless.startDateText}
                 >
-                  {translateData.startDate}
+                  {translateData?.startDate}
                 </Text>
                 <View
                   style={[styless.clockSmall, {
@@ -548,7 +548,7 @@ export function PendingRideScreen() {
                 <Text
                   style={styless.startDateText}
                 >
-                  {translateData.startTime}
+                  {translateData?.startTime}
                 </Text>
                 <View
                   style={[styless.clockSmall, {
@@ -589,7 +589,7 @@ export function PendingRideScreen() {
                 <Text
                   style={styless.startDateText}
                 >
-                  {translateData.startDate}
+                  {translateData?.startDate}
                 </Text>
                 <View
                   style={[styless.clockSmall, {
@@ -614,7 +614,7 @@ export function PendingRideScreen() {
                 <Text
                   style={[styless.startDateText, { left: windowWidth(9) }]}
                 >
-                  {translateData.startTime}
+                  {translateData?.startTime}
                 </Text>
                 <View
                   style={[styless.clockSmall, {
@@ -654,7 +654,7 @@ export function PendingRideScreen() {
                 <Text
                   style={styless.startDateText}
                 >
-                  {translateData.startDate}
+                  {translateData?.startDate}
                 </Text>
                 <View
                   style={[styless.clockSmall, {
@@ -679,7 +679,7 @@ export function PendingRideScreen() {
                 <Text
                   style={styless.startDateText}
                 >
-                  {translateData.startTime}
+                  {translateData?.startTime}
                 </Text>
                 <View
                   style={[styless.clockSmall, {
@@ -707,7 +707,7 @@ export function PendingRideScreen() {
                 <Text
                   style={styless.cancellation_reasonText}
                 >
-                  {translateData.reason}
+                  {translateData?.reason}
                 </Text>
 
                 <View
@@ -747,14 +747,14 @@ export function PendingRideScreen() {
                     { color: isDark ? appColors.whiteColor : appColors.primaryText, textAlign: textRTLStyle },
                   ]}
                 >
-                  {translateData.paymentMethod}
+                  {translateData?.paymentMethod}
                 </Text>
                 <View
                   style={[styles.border, { borderColor: isDark ? appColors.darkBorder : appColors.border }]}
                 />
                 <View style={[styles.contain, { flexDirection: viewRTLStyle }]}>
                   <Text style={[styles.type, { color: appColors.regularText }]}>
-                    {translateData.paymentMethod}
+                    {translateData?.paymentMethod}
                   </Text>
                   <Text style={[styles.type, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>
                     {item?.payment_method}
@@ -762,7 +762,7 @@ export function PendingRideScreen() {
                 </View>
                 <View style={[styles.contain, { flexDirection: viewRTLStyle }]}>
                   <Text style={[styles.type, { color: appColors.regularText }]}>
-                    {translateData.status}
+                    {translateData?.status}
                   </Text>
                   <Text style={[styles.type, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>
                     {item?.payment_status}
@@ -793,7 +793,7 @@ export function PendingRideScreen() {
                 textAlign: isRTL ? "left" : "right",
               }]}
             >
-              {translateData.needHelp}
+              {translateData?.needHelp}
             </Text>
           </View>
           <View
@@ -835,7 +835,7 @@ export function PendingRideScreen() {
                     </TouchableOpacity>
 
                     <Text style={[styles.title, { color: textColorStyle }]}>
-                      {translateData.modalTitle}
+                      {translateData?.modalTitle}
                     </Text>
 
                     <View style={styles.userAlign}>
@@ -859,7 +859,7 @@ export function PendingRideScreen() {
                     <Text
                       style={[styles.rate, { color: textColorStyle, textAlign: textRTLStyle }]}
                     >
-                      {translateData.driverRating}
+                      {translateData?.driverRating}
                     </Text>
 
                     <View style={[styles.containerReview, { flexDirection: viewRTLStyle }]}>
@@ -884,7 +884,7 @@ export function PendingRideScreen() {
                     <Text
                       style={[styles.comment, { color: textColorStyle, textAlign: textRTLStyle }]}
                     >
-                      {translateData.addComments}
+                      {translateData?.addComments}
                     </Text>
 
                     <View style={styless.textinput}>
@@ -903,7 +903,7 @@ export function PendingRideScreen() {
                         width={windowWidth(378)}
                         backgroundColor={appColors.primary}
                         textColor={appColors.whiteColor}
-                        title={translateData.submit}
+                        title={translateData?.submit}
                         onPress={reviewSubmit}
                       />
                     </View>

@@ -63,9 +63,9 @@ export function LocationSave() {
   };
 
   const options = [
-    { label: `${translateData.home}`, value: "home" },
-    { label: `${translateData.work}`, value: "work" },
-    { label: `${translateData.other}`, value: "other" },
+    { label: `${translateData?.home ? translateData?.home : "Home"}`, value: "home" },
+    { label: `${translateData?.work ? translateData?.work : "work"}`, value: "work" },
+    { label: `${translateData?.other ?  translateData?.other :"Other"}`, value: "other" },
   ];
   const [selectedOption, setSelectedOption] = useState(options[0].value);
 
@@ -250,17 +250,17 @@ export function LocationSave() {
         <TextInput
           style={[styles.textInput, { backgroundColor: linearColorStyle }, { color: textColorStyle }]}
           value={currentAddress}
-          placeholder={translateData.searchHere}
+          placeholder={translateData?.searchHere ?  translateData?.searchHere : "Search Here"}
           editable={false}
           selection={{ start: 0, end: 0 }}
         />
       </View>
       <TouchableOpacity
         style={styles.confirmButton}
-        onPress={handleConfirmLocation}
+         onPress={handleConfirmLocation}
         activeOpacity={0.7}
       >
-        <Text style={styles.confirmText}>{translateData.confirmLocation}</Text>
+        <Text style={styles.confirmText}>{translateData?.confirmLocation ?  translateData?.confirmLocation : "Confirm Location"}</Text>
       </TouchableOpacity>
       <View style={styles.pointerMarker}>
         <Image source={Images.pin} style={styles.pinImage} />
@@ -268,7 +268,7 @@ export function LocationSave() {
       <CommonModal
         isVisible={visible}
         value={
-          <View>
+          <View >
             <TouchableOpacity
               activeOpacity={0.7}
               style={styles.modelView}
@@ -276,7 +276,7 @@ export function LocationSave() {
             >
               <Close />
             </TouchableOpacity>
-            <Text style={[styles.title, { color: textColorStyle }]}>{translateData.addNewLocation}</Text>
+            <Text style={[styles.title, { color: textColorStyle }]}>{translateData?.addNewLocation ? translateData?.addNewLocation : "Add New Address"}</Text>
             <View style={styles.container}>
               <View style={[styles.optionContain, { flexDirection: viewRTLStyle }]}>
                 {options.map((option) => (
@@ -318,9 +318,9 @@ export function LocationSave() {
                 fontFamily: appFonts.medium,
                 marginTop: windowHeight(8),
                 textAlign: textRTLStyle,
-              }}>{translateData.addressTitle}</Text>
+              }}>{translateData?.addressTitle ? translateData?.addressTitle : "Address Title"}</Text>
               <TextInput
-                placeholder={translateData.enterYouTitle}
+                placeholder={translateData?.enterYouTitle ? translateData?.enterYouTitle :"Enter your Title"}
                 placeholderTextColor={appColors.regularText}
                 style={[styles.titleInput, { color: textColorStyle }, { borderColor: isDark ? appColors.darkBorder : appColors.border }, { textAlign: textRTLStyle }]}
                 value={locationTitle}
@@ -332,14 +332,14 @@ export function LocationSave() {
                 backgroundColor={appColors.lightButton}
                 onPress={() => setModelVisible(false)}
                 textColor={appColors.primary}
-                title={translateData.cancel}
+                title={translateData?.cancel ? translateData?.cancel : 'Cancel'}
                 width={"47%"}
               />
               <Button
                 backgroundColor={appColors.primary}
                 onPress={addAddress}
                 textColor={appColors.whiteColor}
-                title={translateData.save}
+                title={translateData?.save ?  translateData?.save : "Save"}
                 width={"47%"}
               />
             </View>

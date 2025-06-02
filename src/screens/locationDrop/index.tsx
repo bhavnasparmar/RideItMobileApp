@@ -343,14 +343,14 @@ export function LocationDrop() {
   };
 
   const outOfCity = () => {
-    Alert.alert(`${translateData.outOfCity}`, `${translateData.outOfCityDes}`);
+    Alert.alert(`${translateData?.outOfCity}`, `${translateData?.outOfCityDes}`);
     setProceedLoading(false)
   };
 
   const insideCity = () => {
     Alert.alert(
-      `${translateData.insideCity}`,
-      `${translateData.insideCityDes}`
+      `${translateData?.insideCity}`,
+      `${translateData?.insideCityDes}`
     );
     setProceedLoading(false)
   };
@@ -630,7 +630,7 @@ export function LocationDrop() {
           >
             <View>
               <Header
-                value={translateData.location}
+                value={translateData?.location}
                 backgroundColor={
                   isDark ? appColors.darkPrimary : appColors.whiteColor
                 }
@@ -683,7 +683,7 @@ export function LocationDrop() {
                             placeholderTextColor={
                               isDark ? appColors.darkText : appColors.regularText
                             }
-                            placeholder={translateData.pickupLocationTittle}
+                            placeholder={translateData?.pickupLocationTittle}
                             value={pickupLocation}
                             onChangeText={(text) => handleInputChange(text, 1)}
                             onFocus={() => handleFocus(1)}
@@ -772,7 +772,7 @@ export function LocationDrop() {
                               placeholderTextColor={
                                 isDark ? appColors.darkText : appColors.regularText
                               }
-                              placeholder={translateData.addStopPlaceHolderText}
+                              placeholder={translateData?.addStopPlaceHolderText}
                               value={stop}
                               onChangeText={(text) => handleInputChange(text, index + 3)}
                               onFocus={() => handleFocus(index + 3)}
@@ -839,7 +839,7 @@ export function LocationDrop() {
                               placeholderTextColor={
                                 isDark ? appColors.darkText : appColors.regularText
                               }
-                              placeholder={translateData.enterDestinationPlaceholderText}
+                              placeholder={translateData?.enterDestinationPlaceholderText}
                               value={destination}
                               onChangeText={(text) => handleInputChange(text, 2)}
                               onFocus={() => handleFocus(2)}
@@ -877,7 +877,7 @@ export function LocationDrop() {
                   <InputText
                     borderColor={isDark ? appColors.darkBorder : appColors.border}
                     backgroundColor={isDark ? appColors.darkPrimary : appColors.lightGray}
-                    placeholder={translateData.DateandTextTime}
+                    placeholder={translateData?.DateandTextTime}
                     rightIcon={<Calender />}
                     onPress={() =>
                       navigate("Calander", {
@@ -965,7 +965,7 @@ export function LocationDrop() {
               {(service_category_slug === "intercity" || service_category_slug === "schedule") && (
                 <View style={styles.viewContainerToll}>
                   <Driving />
-                  <Text style={styles.fareStyle}>{translateData.note}</Text>
+                  <Text style={styles.fareStyle}>{translateData?.note}</Text>
                 </View>
               )}
             </View>
@@ -979,8 +979,8 @@ export function LocationDrop() {
                 ]}
               >
                 {fieldLength >= 3
-                  ? translateData.addressSuggestion
-                  : translateData.recent}
+                  ? translateData?.addressSuggestion
+                  : translateData?.recent}
               </Text>
               <View
                 style={[
@@ -1069,14 +1069,14 @@ export function LocationDrop() {
                         },
                       ]}
                     >
-                      {translateData.noAddressFound}
+                      {translateData?.noAddressFound}
                     </Text>
                   </View>
                 )}
               </View>
               <View style={[external.mb_15]}>
                 <Button
-                  title={translateData.proceed}
+                  title={translateData?.proceed ? translateData?.proceed :"Proceed"}
                   onPress={gotoBook}
                   disabled={isProcessing}
                   loading={proceedLoading}
@@ -1092,10 +1092,10 @@ export function LocationDrop() {
               <View style={styles.modalOverlay}>
                 <View style={styles.modalContainer}>
                   <Text style={styles.modalText}>
-                    {translateData.bookingNote}
+                    {translateData?.bookingNote}
                   </Text>
                   <Button
-                    title={translateData.close}
+                    title={translateData?.close ? translateData?.close : "Close"}
                     onPress={() => setModalVisible(false)}
                   />
                 </View>

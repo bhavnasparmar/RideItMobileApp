@@ -7,7 +7,7 @@ import {
 
 const initialState = {
   loading: false,
-  self: null,
+  self: {name : 'Prakash Kumar',phone : 9313258143,email:'Prakash@yopmail.com',country_code : '91',profile_image : {original_url : require('../../../assets/images/profileImage/profileUser.png')}},
   defaultAddress: null,
   accountDetails: null,
 };

@@ -9,9 +9,9 @@ import { appColors } from "@src/themes";
 import { SkeletonEditImage } from "./component";
 import { useTheme } from "@react-navigation/native";
 
-export function ImageContainer({ data, storeProfile }) {
+export function ImageContainer({ data, storeProfile } :any) {
   const { bgFullStyle, isDark } = useValues();
-  const [imageUri, setImageUri] = useState<string | undefined>();
+  const [imageUri, setImageUri] = useState<any>();
   const [loading, setLoading] = useState<boolean>(true);
   const { colors } = useTheme()
 
@@ -70,7 +70,7 @@ export function ImageContainer({ data, storeProfile }) {
     <View style={styles.profileImageContainer}>
       <View style={[styles.profileImageWrapper, { borderColor: isDark ? appColors.darkBorder : appColors.border }]}>
         {imageUri ? (
-          <Image style={styles.profileImage} source={{ uri: imageUri }} />
+          <Image style={styles.profileImage} source={imageUri} />
         ) : (
           <Text style={[styles.char, { color: appColors.whiteColor }]}>
             {data?.name?.charAt(0) || ""}

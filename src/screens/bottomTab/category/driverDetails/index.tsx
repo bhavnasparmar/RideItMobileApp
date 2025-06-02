@@ -14,7 +14,7 @@ export function DriverDetails() {
   return (
     <View style={[commonStyles.flexContainer]}>
       <Header
-        value={translateData.findingDriver}
+        value={translateData?.findingDriver}
         container={
           <ScrollView
             contentContainerStyle={[external.Pb_80]}

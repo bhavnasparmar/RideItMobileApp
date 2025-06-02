@@ -44,12 +44,12 @@ export function UserContainer() {
             {self?.profile_image?.original_url ? (
               <Image
                 style={styles.userImage}
-                source={{ uri: self?.profile_image?.original_url }}
+                source={self?.profile_image?.original_url}
               />
             ) : (
               <View style={styles.nameTag}>
                 <Text style={[styles.char, { color: appColors.whiteColor }]}>
-                  {char || translateData.g}
+                  {char || translateData?.g}
                 </Text>
               </View>
             )}
@@ -74,14 +74,14 @@ export function UserContainer() {
               onPress={() => navigate("Wallet")}
               activeOpacity={0.7}
             >
-              <Text style={styles.walletBalance}>{translateData.balance}</Text>
+              <Text style={styles.walletBalance}>{translateData?.balance ? translateData?.balance : 'My wallet balance'}</Text>
               <Text
                 style={[
                   commonStyles.mediumTextBlack,
                   { color: appColors.whiteColor, fontSize: fontSizes.FONT20 },
                 ]}
               >
-                {zoneValue.currency_symbol}
+                {zoneValue?.currency_symbol ? zoneValue?.currency_symbol : '₹'}
                 {(zoneValue?.exchange_rate ?? 0) * (walletTypedata?.balance ?? 0)}
               </Text>
             </TouchableOpacity>

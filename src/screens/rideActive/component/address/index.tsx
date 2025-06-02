@@ -32,7 +32,7 @@ export function Address({ DropLocation }: { DropLocation: string }) {
             <TouchableOpacity style={styles.changeView} activeOpacity={0.7}
             >
                 <View style={[styles.dropOffText, { flexDirection: viewRTLStyle }]}>
-                    <Text style={{ color: appColors.regularText, textAlign: textRTLStyle }}> {'\u2022 '}{translateData.dropOff}</Text>
+                    <Text style={{ color: appColors.regularText, textAlign: textRTLStyle }}> {'\u2022 '}{translateData?.dropOff}</Text>
                 </View>
             </TouchableOpacity>
         </TouchableOpacity>

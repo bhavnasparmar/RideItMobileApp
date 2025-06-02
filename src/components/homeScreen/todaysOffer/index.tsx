@@ -12,7 +12,7 @@ import { useValues } from "@App";
 import styles from "./styles";
 import { windowHeight } from "@src/themes";
 
-export function TodayOfferContainer({ couponsData }) {
+export function TodayOfferContainer({ couponsData }:any) {
   const dispatch = useDispatch();
   const { couponsList, statusCode } = useSelector((state) => state.coupon);
   const { categoryOptionID } = useContext(LocationContext);
@@ -37,21 +37,21 @@ export function TodayOfferContainer({ couponsData }) {
   return (
     <View>
       <View style={[styles.titleContainer, { marginHorizontal: windowHeight(12) }]}>
-        <TitleContainer title={translateData.trendingOffer} />
+        <TitleContainer title={translateData?.trendingOffer ? translateData?.trendingOffer : "Tranding Offer's"} />
       </View>
 
       <View style={[styles.couponsList, external.mh_10]}>
-        {couponsData && couponsData.length > 0 ? (
-          <Coupons couponsList={{ ...couponsList, data: couponsData.slice(0, 3) }} />
+        {!couponsData && couponsData.length > 0 ? (
+          <Coupons couponsList={couponsList?.slice(0, 3)} route={undefined} />
         ) : couponsData === undefined || couponsData === null ? null : (
           <View style={[styles.NoInternetView, { flexDirection: viewRTLStyle }]}>
             <NoInternet
               btnHide
-              title={translateData.noCoupons}
-              details={translateData.noCouponDes}
+              title={translateData?.noCoupons ? translateData?.noCoupons : 'No any new Offer'}
+              details={translateData?.noCouponDes}
               image={isDark ? Images.noOfferDark : Images.noOffer}
               infoIcon
-              status={`${translateData.statusCode} ${statusCode || 204}`}
+              status={`${translateData?.statusCode} ${statusCode || 204}`}
             />
           </View>
         )}

@@ -90,7 +90,7 @@ export function DriverData({ driverDetails }: { driverDetails: any }) {
       </Text>
       <View style={[styles.taxiDetail, { flexDirection: viewRTLStyle }]}>
         <Text style={[styles.taxiType, { color: textColorStyle }]}>
-          {translateData.texiDetail}
+          {translateData?.texiDetail}
         </Text>
         {status === "ongoing" ? (
           <View
@@ -107,7 +107,7 @@ export function DriverData({ driverDetails }: { driverDetails: any }) {
                 { color: textColorStyle, marginBottom: 10 },
               ]}
             >
-              {translateData.shareTrip}
+              {translateData?.shareTrip}
             </Text>
           </View>
         ) : null}

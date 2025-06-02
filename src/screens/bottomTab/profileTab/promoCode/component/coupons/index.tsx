@@ -16,17 +16,17 @@ import { useAppNavigation } from "@src/utils/navigation";
 import { useSelector } from "react-redux";
 import { notificationHelper } from "@src/commonComponent";
 
-export function Coupons({ couponsList, route }) {
+export function Coupons({ couponsList, route } : any) {
   const { isDark, textColorStyle, viewRTLStyle, textRTLStyle } = useValues();
   const bgImage = isDark ? Images.promoCodeList : Images.promoCodeBg;
   const { navigate, goBack } = useAppNavigation();
   const { translateData } = useSelector((state: any) => state.setting);
   const { zoneValue } = useSelector((state: any) => state.zone);
+console.log("couponsList",couponsList)
 
-
-  const copyToClipboard = (coupon) => {
-    Clipboard.setString(coupon.code);
-    notificationHelper("Coppied", translateData.copyClipboard, "warning")
+  const copyToClipboard = (coupon: any) => {
+    Clipboard.setString(coupon?.code);
+    notificationHelper("Coppied", translateData?.copyClipboard, "warning")
     if (route?.params?.getCoupon) {
       route.params.getCoupon(coupon);
     }
@@ -45,11 +45,12 @@ export function Coupons({ couponsList, route }) {
 
   return (
     <>
-      {couponsList?.data?.map((item, index) => {
+    <Text>hello</Text>
+      {couponsList?.map((item: any, index: React.Key | null | undefined) => {
         const discountText =
-          item.type === "percentage"
-            ? `${translateData.flat} ${Math.round(item.amount)}${translateData.offPercentage}`
-            : `${translateData.flatDoller} ${zoneValue?.currency_symbol}${Math.round(item.amount)} ${translateData.off}`;
+          item?.type === "percentage"
+            ? `${translateData?.flat} ${Math.round(item?.amount)}${translateData?.offPercentage}`
+            : `${translateData?.flatDoller} ${zoneValue?.currency_symbol}${Math.round(item.amount)} ${translateData?.off}`;
 
         return (
           <TouchableOpacity
@@ -81,9 +82,9 @@ export function Coupons({ couponsList, route }) {
                       { textAlign: textRTLStyle },
                     ]}
                   >
-                    {item.description.length > 90
-                      ? `${item.description.slice(0, 90)}...`
-                      : item.description}
+                    {item?.description.length > 90
+                      ? `${item?.description.slice(0, 90)}...`
+                      : item?.description}
                   </Text>
                   {item.end_date && (
                     <Text
@@ -94,7 +95,7 @@ export function Coupons({ couponsList, route }) {
                         },
                       ]}
                     >
-                      {translateData.validTill} : {item.end_date}
+                      {translateData?.validTill} : {item?.end_date}
                     </Text>
                   )}
                 </View>
@@ -128,7 +129,7 @@ export function Coupons({ couponsList, route }) {
                       { color: appColors.primary },
                     ]}
                   >
-                    {translateData.copy}
+                    {translateData?.copy}
                   </Text>
                 </TouchableOpacity>
               </View>

@@ -30,8 +30,8 @@ export function ModalContainers({ onPress, selectedItemData, distance }: modalIt
           </View>
           <View style={{ flexDirection: viewRTLStyle }}>
             <Text style={styles.price}>
-              {zoneValue.currency_symbol}{Math.round(zoneValue?.exchange_rate * (selectedItemData?.min_per_unit_charge * distance))}-
-              {zoneValue.currency_symbol}{Math.round(zoneValue?.exchange_rate * (selectedItemData?.max_per_unit_charge * distance))}
+              {zoneValue?.currency_symbol}{Math.round(zoneValue?.exchange_rate * (selectedItemData?.min_per_unit_charge * distance))}-
+              {zoneValue?.currency_symbol}{Math.round(zoneValue?.exchange_rate * (selectedItemData?.max_per_unit_charge * distance))}
             </Text>
           </View>
         </View>
@@ -45,28 +45,28 @@ export function ModalContainers({ onPress, selectedItemData, distance }: modalIt
               <View style={styles.clock}>
                 <Clock color={isDark ? appColors.whiteColor : appColors.primaryText} />
               </View>
-              <Text style={[styles.fiveMinAway, { color: textColorStyle }]}>{translateData.time}</Text>
+              <Text style={[styles.fiveMinAway, { color: textColorStyle }]}>{translateData?.time}</Text>
             </View>
             <Text style={[styles.fourPmText, { color: textColorStyle }]}>{'\u2022'} 4:00PM</Text>
           </View>
           <Text style={[commonStyles.regularText, { textAlign: textRTLStyle }]}>
-            {translateData.subTitle}
+            {translateData?.subTitle}
           </Text>
           <View style={styles.solidLine}>
             <SolidLine />
           </View>
-          <Text style={[styles.termsText, { color: textColorStyle, textAlign: textRTLStyle }]}>{translateData.terms}</Text>
+          <Text style={[styles.termsText, { color: textColorStyle, textAlign: textRTLStyle }]}>{translateData?.terms}</Text>
           <View>
             <Text style={[commonStyles.regularText, external.mb_15, { textAlign: textRTLStyle }]}>
-              {'\u2022'} {translateData.bookRideCancelCharge} {zoneValue.currency_symbol}{zoneValue?.exchange_rate * selectedItemData?.cancellation_charge} {translateData.deducted}
+              {'\u2022'} {translateData?.bookRideCancelCharge} {zoneValue?.currency_symbol}{zoneValue?.exchange_rate * selectedItemData?.cancellation_charge} {translateData?.deducted}
             </Text>
             <Text style={[commonStyles.regularText, external.mb_15, { textAlign: textRTLStyle }]}>
-              {'\u2022'} {translateData.bookRideArrive} {selectedItemData?.waiting_time_limit} {translateData.forcedCancelTheRide}
+              {'\u2022'} {translateData?.bookRideArrive} {selectedItemData?.waiting_time_limit} {translateData?.forcedCancelTheRide}
             </Text>
           </View>
         </View>
         <View style={[external.mv_10]}>
-          <Button title={translateData.done} onPress={onPress} />
+          <Button title={translateData?.done} onPress={onPress} />
         </View>
       </View>
     </View >

@@ -35,7 +35,7 @@ export function LocationCategory() {
   return (
     <View style={[external.mh_20, external.mb_25, external.mt_25]}>
       <Text style={[commonStyles.mediumTextBlack, { color: textColorStyle, textAlign: textRTLStyle }]}>
-        {translateData.selectCategory}
+        {translateData?.selectCategory}
       </Text>
       <View style={[external.ai_center, { flexDirection: viewRTLStyle }]}>
         {locationCategory?.map((item: LocationItem, index: number) => (

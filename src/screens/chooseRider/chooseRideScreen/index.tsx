@@ -101,7 +101,7 @@ export function ChooseRiderScreen() {
               borderColor={linearColorStyle}
             />
           }
-          value={translateData.chooseaRider}
+          value={translateData?.chooseaRider}
         />
       </View>
       <View style={[external.main, { backgroundColor: linearColorStyle }]}>

@@ -100,7 +100,7 @@ export function Payment() {
                 style={[styles.background, { backgroundColor: bgFullStyle }]}
               >
                 <Text style={[styles.title, { color: textColorStyle }]}>
-                  {translateData.modalTitle}
+                  {translateData?.modalTitle}
                 </Text>
                 <View style={styles.userAlign}>
                   <Image
@@ -108,10 +108,10 @@ export function Payment() {
                     style={styles.modalImage}
                   />
                   <Text style={[styles.modalName, { color: textColorStyle }]}>
-                    {translateData.name}
+                    {translateData?.name}
                   </Text>
                   <Text style={[styles.modalMail, { color: textColorStyle }]}>
-                    {translateData.mailID}
+                    {translateData?.mailID}
                   </Text>
                 </View>
                 <Image source={Images.lineBottom} style={styles.lineImage} />
@@ -121,7 +121,7 @@ export function Payment() {
                     { color: textColorStyle, textAlign: textRTLStyle },
                   ]}
                 >
-                  {translateData.driverRating}
+                  {translateData?.driverRating}
                 </Text>
                 <View
                   style={[
@@ -155,7 +155,7 @@ export function Payment() {
                     { color: textColorStyle, textAlign: textRTLStyle },
                   ]}
                 >
-                  {translateData.addComments}
+                  {translateData?.addComments}
                 </Text>
                 <TextInput
                   style={[
@@ -170,7 +170,7 @@ export function Payment() {
                   width={330}
                   backgroundColor={appColors.primary}
                   textColor={appColors.whiteColor}
-                  title={translateData.submit}
+                  title={translateData?.submit}
                   onPress={review}
                 />
               </View>

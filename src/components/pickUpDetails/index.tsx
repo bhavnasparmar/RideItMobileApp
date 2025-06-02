@@ -142,7 +142,7 @@ export function PickUpDetails({ border, setPickupLocation, setStops, setDestinat
               placeholderTextColor={
                 isDark ? appColors.darkText : appColors.regularText
               }
-              placeholder={translateData.pickupLocationTittle}
+              placeholder={translateData?.pickupLocationTittle}
               value={pickupLocationLocal}
               onChangeText={(text) => handleInputChange(text, 1)}
               onFocus={() => handleFocus(1)}
@@ -231,7 +231,7 @@ export function PickUpDetails({ border, setPickupLocation, setStops, setDestinat
                 placeholderTextColor={
                   isDark ? appColors.darkText : appColors.regularText
                 }
-                placeholder={translateData.addStopPlaceHolderText}
+                placeholder={translateData?.addStopPlaceHolderText}
                 value={stop}
                 onChangeText={(text) => handleInputChange(text, index + 3)}
                 onFocus={() => handleFocus(index + 3)}
@@ -298,7 +298,7 @@ export function PickUpDetails({ border, setPickupLocation, setStops, setDestinat
                 placeholderTextColor={
                   isDark ? appColors.darkText : appColors.regularText
                 }
-                placeholder={translateData.enterDestinationPlaceholderText}
+                placeholder={translateData?.enterDestinationPlaceholderText}
                 value={destinationLocal}
                 onChangeText={(text) => handleInputChange(text, 2)}
                 onFocus={() => handleFocus(2)}

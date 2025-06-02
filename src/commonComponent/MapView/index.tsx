@@ -166,7 +166,7 @@ export function Map({ userLocation, driverLocation, onDurationChange }) {
           customMapStyle={mapCustomStyle}
         >
           {userLatLng && (
-            <Marker coordinate={userLatLng} title={translateData.userLocationMapText} >
+            <Marker coordinate={userLatLng} title={translateData?.userLocationMapText} >
               <View style={styles.driverMarker}>
                 <Image
                   source={Images.car}
@@ -177,7 +177,7 @@ export function Map({ userLocation, driverLocation, onDurationChange }) {
           )}
 
           {driverLatLng && (
-            <Marker coordinate={driverLatLng} title={translateData.driverLocationMapText}>
+            <Marker coordinate={driverLatLng} title={translateData?.driverLocationMapText}>
 
             </Marker>
           )}

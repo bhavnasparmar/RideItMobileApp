@@ -22,7 +22,7 @@ export function AddLocation() {
       ]}
     >
       <Header
-        value={translateData.addLocation}
+        value={translateData?.addLocation}
         container={
           <ScrollView
             showsVerticalScrollIndicator={false}
@@ -30,8 +30,8 @@ export function AddLocation() {
             contentContainerStyle={styles.containerStyle}
           >
             <InputText
-              title={translateData.bankName}
-              placeholder={translateData.enterTitleName}
+              title={translateData?.bankName}
+              placeholder={translateData?.enterTitleName}
               showTitle={true}
               backgroundColor={bgFullStyle}
               placeholderTextColor={textColorStyle}
@@ -39,8 +39,8 @@ export function AddLocation() {
               show
             />
             <InputText
-              title={translateData.holderName}
-              placeholder={translateData.enterAddress}
+              title={translateData?.holderName}
+              placeholder={translateData?.enterAddress}
               showTitle={true}
               backgroundColor={bgFullStyle}
               placeholderTextColor={textColorStyle}
@@ -48,8 +48,8 @@ export function AddLocation() {
               show
             />
             <InputText
-              title={translateData.ifscCode}
-              placeholder={translateData.enterPinCode}
+              title={translateData?.ifscCode}
+              placeholder={translateData?.enterPinCode}
               showTitle={true}
               backgroundColor={bgFullStyle}
               placeholderTextColor={textColorStyle}
@@ -57,8 +57,8 @@ export function AddLocation() {
               show
             />
             <InputText
-              title={translateData.accountNo}
-              placeholder={translateData.enterCityName}
+              title={translateData?.accountNo}
+              placeholder={translateData?.enterCityName}
               showTitle={true}
               backgroundColor={bgFullStyle}
               placeholderTextColor={textColorStyle}
@@ -67,8 +67,8 @@ export function AddLocation() {
             />
 
             <InputText
-              title={translateData.swiftCode}
-              placeholder={translateData.enterStateName}
+              title={translateData?.swiftCode}
+              placeholder={translateData?.enterStateName}
               showTitle={true}
               backgroundColor={bgFullStyle}
               placeholderTextColor={textColorStyle}
@@ -76,8 +76,8 @@ export function AddLocation() {
               show
             />
             <InputText
-              title={translateData.swiftCode}
-              placeholder={translateData.enterCountryName}
+              title={translateData?.swiftCode}
+              placeholder={translateData?.enterCountryName ? translateData?.enterCountryName : "Enter Country Name"}
               showTitle={true}
               backgroundColor={bgFullStyle}
               placeholderTextColor={textColorStyle}
@@ -88,7 +88,7 @@ export function AddLocation() {
         }
       />
       <View style={styles.container}>
-        <Button title={translateData.add} onPress={() => goBack()} />
+        <Button title={translateData?.add ?  translateData?.add : "Add"} onPress={() => goBack()} />
       </View>
     </View>
   );

@@ -17,7 +17,7 @@ export function ActiveRideScreen() {
                 <ScrollView
                     showsVerticalScrollIndicator={false}
                     contentContainerStyle={[external.Pb_80]}>
-                    <RideContainer mapShow={true} status={translateData.active} color={appColors.activeColor} />
+                    <RideContainer mapShow={true} status={translateData?.active} color={appColors.activeColor} />
                     <View style={[external.mt_10]}>
                         <PendingDetails />
                     </View>

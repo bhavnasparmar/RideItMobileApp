@@ -57,7 +57,7 @@ export function RentalLocationSearch({
                         <TextInput
                             style={[styles.input,{color:isDark?appColors.whiteColor:appColors.primaryText}]}
                             placeholderTextColor={isDark?appColors.darkText:appColors.regularText}
-                            placeholder={translateData.pickupLocation}
+                            placeholder={translateData?.pickupLocation}
                             value={pickupLocationLocal}
                             onChangeText={(text) => handleInputChange(text, 1)}
                             onFocus={() => handleFocus(1)}
