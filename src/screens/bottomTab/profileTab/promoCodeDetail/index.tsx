@@ -52,7 +52,7 @@ export function PromoCodeDetail({ route }) {
 
   const copyToClipboard = (coupon) => {
     Clipboard.setString(coupon.code);
-    notificationHelper("Coppied", translateData.copyClipboard, "success")
+    notificationHelper("Coppied", translateData?.copyClipboard, "success")
     goBack();
   };
 
@@ -83,7 +83,7 @@ export function PromoCodeDetail({ route }) {
   return (
     <View style={[styles.container, { backgroundColor: linearColorStyle }]}>
       <View style={[styles.headerContainer, { backgroundColor: bgFullStyle }]}>
-        <HeaderContainer value={translateData.promoCodeDetails} />
+        <HeaderContainer value={translateData?.promoCodeDetails} />
       </View>
       <View style={styles.detailsContainer}>
         <View
@@ -133,10 +133,10 @@ export function PromoCodeDetail({ route }) {
                   { textAlign: textRTLStyle },
                 ]}
               >
-                {translateData.validTill}:
+                {translateData?.validTill}:
               </Text>
               <Text style={[styles.date, { textAlign: textRTLStyle }]}>
-                {`\u2022 ${translateData.offerValidUntil} ${formatDate(item.end_date)}`}
+                {`\u2022 ${translateData?.offerValidUntil} ${formatDate(item.end_date)}`}
               </Text>
             </View>
           )}

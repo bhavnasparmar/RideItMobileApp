@@ -181,7 +181,7 @@ export function Onboarding() {
               marginHorizontal: windowWidth(15)
             }} activeOpacity={0.7} onPress={handleNavigation}>
               <Text style={[styles.skipText, { color: appColors.regularText }]}>
-                {translateData.skip}
+                {translateData?.skip}
               </Text>
             </TouchableOpacity>
           </View>

@@ -33,11 +33,11 @@ export function LocationDetails() {
         <View style={[styles.popupContainer, { backgroundColor: bgFullStyle }]}>
           <View style={[styles.popupHeader, { flexDirection: viewRTLStyle }]}>
             <Text style={[styles.popupHeaderText, { color: textColorStyle }]}>
-              {translateData.selectServiceLocation}
+              {translateData?.selectServiceLocation}
             </Text>
             <TouchableOpacity activeOpacity={0.7}
             >
-              <Text style={styles.changeText}>{translateData.ChangeTexttt}</Text>
+              <Text style={styles.changeText}>{translateData?.ChangeTexttt}</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.SolidLineView}>
@@ -49,15 +49,15 @@ export function LocationDetails() {
             </View>
             <View style={styles.locationTextContainer}>
               <Text style={[styles.locationTitle, { color: textColorStyle, textAlign: textRTLStyle }]}>
-                {translateData.mesaStreet}
+                {translateData?.mesaStreet}
               </Text>
-              <Text style={[styles.locationAddress, { textAlign: textRTLStyle }]}>{translateData.addressKentucky}</Text>
+              <Text style={[styles.locationAddress, { textAlign: textRTLStyle }]}>{translateData?.addressKentucky}</Text>
             </View>
           </View>
         </View>
         <View style={styles.confirmButtonContainer}>
           <Button
-            title={translateData.confirmLocationText}
+            title={translateData?.confirmLocationText}
             onPress={() => navigate('AddNewLocation')}
           />
         </View>

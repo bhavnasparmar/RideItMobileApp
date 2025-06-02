@@ -28,7 +28,7 @@ export function LocationTime({ pickupLocation }) {
       <TouchableOpacity style={[styles.locationContainer, { backgroundColor: bgContainer }, { borderColor: isDark ? appColors.darkBorder : appColors.border }]} activeOpacity={0.7}
       >
         <Alarm />
-        <Text style={[commonStyles.mediumTextBlack12, external.ph_5, { color: textColorStyle }]}>{translateData.now}</Text>
+        <Text style={[commonStyles.mediumTextBlack12, external.ph_5, { color: textColorStyle }]}>{translateData?.now}</Text>
       </TouchableOpacity>
     </View>
   );

@@ -46,7 +46,7 @@ export function RideScreen() {
   return (
     <SafeAreaView style={[styles.safeAreaContainer, { backgroundColor: bgFullStyle }]}>
       <View style={[styles.container, commonStyles.heightHeader, { backgroundColor: bgFullStyle }]}>
-        <HeaderTab tabName={translateData.rideTitle} />
+        <HeaderTab tabName={translateData?.rideTitle} />
       </View>
       <View style={[commonStyles.flexContainer, { backgroundColor: linearColorStyle }]}>
         {loading ? null : token ? (
@@ -54,12 +54,12 @@ export function RideScreen() {
         ) : (
           <View style={styles.mainView}>
             <Image source={Images.noSignin} style={styles.imag} />
-            <Text style={styles.signInText}>{translateData.signIn}</Text>
-            <Text style={styles.accountText}>{translateData.signInNote}</Text>
+            <Text style={styles.signInText}>{translateData?.signIn}</Text>
+            <Text style={styles.accountText}>{translateData?.signInNote}</Text>
             <View style={styles.buttonMainView}>
               <View style={styles.buttonView}>
                 <Button
-                  title={translateData.signIn}
+                  title={translateData?.signIn}
                   textColor={appColors.whiteColor}
                   backgroundColor={appColors.primary}
                   onPress={gotoSignIn}

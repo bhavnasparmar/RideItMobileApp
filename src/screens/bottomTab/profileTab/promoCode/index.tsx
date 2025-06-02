@@ -18,7 +18,7 @@ export function PromoCodeScreen({ route }) {
   return (
     <View style={[styles.container, { backgroundColor: linearColorStyle }]}>
       <View style={[styles.headerContainer, { backgroundColor: bgFullStyle }]}>
-        <HeaderContainer value={translateData.promoCodes} />
+        <HeaderContainer value={translateData?.promoCodes} />
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={[external.mh_10, external.mt_10]}>
@@ -38,11 +38,11 @@ export function PromoCodeScreen({ route }) {
         <View style={{ height: "90%" }}>
           <NoInternet
             btnHide={true}
-            title={translateData.noCoupons}
-            details={translateData.noCouponDes}
+            title={translateData?.noCoupons}
+            details={translateData?.noCouponDes}
             infoIcon
             image={isDark ? Images.noOfferDark : Images.noOffer}
-            status={`${translateData.statusCode}: ${statusCode}`}
+            status={`${translateData?.statusCode}: ${statusCode}`}
           />
         </View>
       )}

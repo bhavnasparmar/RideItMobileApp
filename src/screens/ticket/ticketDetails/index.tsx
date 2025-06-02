@@ -258,7 +258,7 @@ export function TicketDetails({ route }) {
 
   return (
     <View style={external.main}>
-      <Header value={translateData.ticketDetails} />
+      <Header value={translateData?.ticketDetails} />
       <View style={styles.listView}>
         <FlatList
           data={messageData?.messages}
@@ -276,7 +276,7 @@ export function TicketDetails({ route }) {
             <View style={styles.textView}>
               <TextInput
                 style={styles.inputView}
-                placeholder={translateData.type}
+                placeholder={translateData?.type}
                 placeholderTextColor={appColors.regularText}
                 value={inputText}
                 onChangeText={(text) => setInputText(text)}
@@ -353,7 +353,7 @@ export function TicketDetails({ route }) {
             <View style={styles.btnContainer}>
               <TouchableOpacity style={styles.sendBtn} onPress={TicketReplay} activeOpacity={0.7}
               >
-                <Text style={styles.btnTitle}>{translateData.send}</Text>
+                <Text style={styles.btnTitle}>{translateData?.send}</Text>
               </TouchableOpacity>
             </View>
           </View>

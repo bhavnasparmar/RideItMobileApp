@@ -3,4 +3,5 @@ export interface HomeScreenInterface {
     homeScreenDataPrimary?: HomeScreenDataPrimaryInterface;
     success?: boolean;
     loading?: boolean;
+    statusCode ?: any;
 }

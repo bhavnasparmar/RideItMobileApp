@@ -31,7 +31,7 @@ export function CategoryItem({ item, onPress }) {
             <ArrowService />
           </View>
         </View>
-        <Text style={[styles.text, { textAlign: textRTLStyle }]}>{translateData.quickAndReliableRideService}</Text>
+        <Text style={[styles.text, { textAlign: textRTLStyle }]}>{translateData?.quickAndReliableRideService}</Text>
       </TouchableOpacity>
     </View>
   );

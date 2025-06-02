@@ -12,6 +12,7 @@ import { PanGestureHandler, State } from "react-native-gesture-handler";
 const { width } = Dimensions.get("window");
 
 export function HomeSlider({ onSwipeStart, onSwipeEnd, bannerData }) {
+  console.log("bannerData--",bannerData)
   const { isRTL } = useValues();
   const scrollOffsetValue = useSharedValue<number>(0);
   const [currentIndex, setCurrentIndex] = useState(0);

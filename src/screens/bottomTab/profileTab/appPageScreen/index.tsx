@@ -57,11 +57,11 @@ export function AppPageScreen() {
   const [toggles, setToggles] = useState([
     {
       id: "toggle4",
-      title: translateData.darkTheme,
+      title: translateData?.darkTheme ? translateData?.darkTheme : "Dark Mode",
       value: isDark,
       icon: <DarkTheme />,
     },
-    { id: "toggle5", title: translateData.rtl, value: isRTL, icon: <RTL /> },
+    { id: "toggle5", title: translateData?.rtl, value: isRTL, icon: <RTL /> },
   ]);
   const [lngValue, setLngValue] = useState();
   const dispatch = useDispatch();
@@ -213,7 +213,7 @@ export function AppPageScreen() {
   return (
     <View style={[styles.container, { backgroundColor: linearColorStyle }]}>
       <View style={[styles.headerContainer, { backgroundColor: bgFullStyle }]}>
-        <HeaderContainer value={translateData.appPages} />
+        <HeaderContainer value={translateData?.appPages ? translateData?.appPages : "App Pages"} />
       </View>
       <View
         style={[styles.appPagesContainer, { backgroundColor: bgFullStyle }]}
@@ -285,7 +285,7 @@ export function AppPageScreen() {
                   { color: textColorStyle, textAlign: textRTLStyle },
                 ]}
               >
-                {translateData.changeCurrency}
+                {translateData?.changeCurrency}
               </Text>
               <Text
                 style={[
@@ -333,7 +333,7 @@ export function AppPageScreen() {
                   { color: textColorStyle, textAlign: textRTLStyle },
                 ]}
               >
-                {translateData.changeLanguage}
+                {translateData?.changeLanguage ?  translateData?.changeLanguage : "Change Language"}
               </Text>
               <Text
                 style={[
@@ -378,7 +378,7 @@ export function AppPageScreen() {
                     external.mv_10,
                   ]}
                 >
-                  {translateData.changeCurrency}
+                  {translateData?.changeCurrency ? translateData?.changeCurrency : "Change Currency"}
                 </Text>
 
                 {currencyData?.data?.map((item, index) => {
@@ -428,7 +428,7 @@ export function AppPageScreen() {
                   );
                 })}
                 <View style={styles.updateButton2}>
-                  <Button title={translateData.update} onPress={closeCurrency} />
+                  <Button title={translateData?.update ? translateData?.update : "Update"} onPress={closeCurrency} />
                 </View>
               </View>
             }
@@ -459,7 +459,7 @@ export function AppPageScreen() {
                   external.mv_10,
                 ]}
               >
-                {translateData.changeLanguage}
+                {translateData?.changeLanguage ? translateData?.changeLanguage : "Change Language"}
               </Text>
 
               {languageData?.data?.length > 0 &&
@@ -521,7 +521,7 @@ export function AppPageScreen() {
                   );
                 })}
               <View style={styles.updateButton1}>
-                <Button title={translateData.update} onPress={closeLanguage} />
+                <Button title={translateData?.update ? translateData?.update : "Update"} onPress={closeLanguage} />
               </View>
             </View>
           }

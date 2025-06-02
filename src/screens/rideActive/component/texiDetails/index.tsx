@@ -54,7 +54,7 @@ export function TexiDetail({ otp, vehicleData } : {otp : number , vehicleData : 
                 { color: textColorStyle, textAlign: textRTLStyle },
               ]}
             >
-              {translateData.pin}
+              {translateData?.pin}
             </Text>
           </View>
         </View>

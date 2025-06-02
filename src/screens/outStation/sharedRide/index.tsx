@@ -19,7 +19,7 @@ export function SharedRide() {
             external.ph_30,
             commonStyles.mediumTextBlack12,
           ]}>
-          {translateData.minPrice}
+          {translateData?.minPrice}
         </Text>
       </View>
       <OutStationDetails />

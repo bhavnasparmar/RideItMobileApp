@@ -160,7 +160,7 @@ export const ProfileContainer = forwardRef((props, ref) => {
                       { backgroundColor: linearColorStyle },
                     ]}
                   >
-                    {item.icon}
+                    {item?.icon}
                   </View>
                   <Text
                     style={[
@@ -168,7 +168,7 @@ export const ProfileContainer = forwardRef((props, ref) => {
                       { color: textColorStyle, textAlign: textRTLStyle },
                     ]}
                   >
-                    {item.title}
+                    {item?.title}
                   </Text>
                   <View style={{ transform: [{ scale: imageRTLStyle }] }}>
                     <BackArrow />
@@ -204,7 +204,7 @@ export const ProfileContainer = forwardRef((props, ref) => {
               { color: appColors.alertRed },
             ]}
           >
-            {translateData.alertZone}
+            {translateData?.alertZone ? translateData?.alertZone : "Alert Zone"}
           </Text>
 
           <TouchableOpacity
@@ -221,7 +221,7 @@ export const ProfileContainer = forwardRef((props, ref) => {
               <Delete iconColor={appColors.alertRed} />
             </View>
             <Text style={[styles.listTitle, { color: appColors.alertRed }]}>
-              {translateData.deleteAccount}
+              {translateData?.deleteAccount ? translateData?.deleteAccount : "Delete Account"}
             </Text>
           </TouchableOpacity>
 
@@ -246,7 +246,7 @@ export const ProfileContainer = forwardRef((props, ref) => {
               <Logout iconColor={appColors.alertRed} />
             </View>
             <Text style={[styles.listTitle, { color: appColors.alertRed }]}>
-              {translateData.logout}
+              {translateData?.logout ? translateData?.logout : "Logout"}
             </Text>
           </TouchableOpacity>
         </View>
@@ -267,7 +267,7 @@ export const ProfileContainer = forwardRef((props, ref) => {
                   },
                 ]}
               >
-                {translateData.deleteConfirm}
+                {translateData?.deleteConfirm}
               </Text>
             </View>
             <View style={[styles.modelButton, { flexDirection: viewRTLStyle }]}>
@@ -275,14 +275,14 @@ export const ProfileContainer = forwardRef((props, ref) => {
                 backgroundColor={
                   isDark ? appColors.darkHeader : appColors.lightGray
                 }
-                title={translateData.cancel}
+                title={translateData?.cancel}
                 width={"48%"}
                 textColor={textColorStyle}
                 onPress={closeModalDelete}
               />
               <Button
                 backgroundColor={appColors.textRed}
-                title={translateData.deleteBtn}
+                title={translateData?.deleteBtn}
                 width={"48%"}
                 textColor={appColors.whiteColor}
                 onPress={deleteAccounts}
@@ -307,7 +307,7 @@ export const ProfileContainer = forwardRef((props, ref) => {
                   },
                 ]}
               >
-                {translateData.logoutConfirm}
+                {translateData?.logoutConfirm}
               </Text>
             </View>
             <View style={[styles.modelButton, { flexDirection: viewRTLStyle }]}>
@@ -315,14 +315,14 @@ export const ProfileContainer = forwardRef((props, ref) => {
                 backgroundColor={
                   isDark ? appColors.darkHeader : appColors.lightGray
                 }
-                title={translateData.cancel}
+                title={translateData?.cancel}
                 width={"48%"}
                 textColor={textColorStyle}
                 onPress={closeModal}
               />
               <Button
                 backgroundColor={appColors.textRed}
-                title={translateData.logout}
+                title={translateData?.logout}
                 width={"48%"}
                 textColor={appColors.whiteColor}
                 onPress={gotoLogout}
@@ -339,7 +339,7 @@ export const ProfileContainer = forwardRef((props, ref) => {
           <View>
             <View style={styles.modelView}>
               <Text style={[styles.modelTitle, { color: textColorStyle }]}>
-                {translateData.logoutConfirm}
+                {translateData?.logoutConfirm}
               </Text>
             </View>
             <View style={[styles.modelButton, { flexDirection: viewRTLStyle }]}>
@@ -347,14 +347,14 @@ export const ProfileContainer = forwardRef((props, ref) => {
                 backgroundColor={
                   isDark ? appColors.darkHeader : appColors.lightGray
                 }
-                title={translateData.cancel}
+                title={translateData?.cancel}
                 width="48%"
                 textColor={textColorStyle}
                 onPress={closeModal}
               />
               <Button
                 backgroundColor={appColors.textRed}
-                title={translateData.logout}
+                title={translateData?.logout}
                 width="48%"
                 textColor={appColors.whiteColor}
                 onPress={gotoLogout}

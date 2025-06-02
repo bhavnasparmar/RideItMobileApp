@@ -18,27 +18,27 @@ export const useProfileData = () => {
       data: [
         {
           icon: <ProfileSetting />,
-          title: translateData?.profileSettings ? translateData?.profileSettings : "",
+          title: translateData?.profileSettings ? translateData?.profileSettings : "Profile Setting",
           screenName: "EditProfile",
         },
         {
           icon: <Location />,
-          title: translateData?.savedLocation ?  translateData?.savedLocation : "",
+          title: translateData?.savedLocation ?  translateData?.savedLocation : "Save Location",
           screenName: "SavedLocation",
         },
-        {
-          icon: <PromoCode />,
-          title: translateData?.promoCodeList ? translateData?.promoCodeList : "",
-          screenName: "PromoCodeScreen",
-        },
+        // {
+        //   icon: <PromoCode />,
+        //   title: translateData?.promoCodeList ? translateData?.promoCodeList : "",
+        //   screenName: "PromoCodeScreen",
+        // },
       ],
     },
     {
-      title: translateData?.appDetails,
+      title: translateData?.appDetails ? translateData?.appDetails : "AppDetails",
       data: [
         {
           icon: <AppPages />,
-          title: translateData?.appPages ?  translateData?.appPages : "", 
+          title: translateData?.appPages ?  translateData?.appPages : "App Pages", 
           screenName: "AppPageScreen",
         },
         {

@@ -19,11 +19,11 @@ export function Recentbooking({ recentRideData }) {
     }
     const { translateData } = useSelector((state) => state.setting);
     const { navigate } = useAppNavigation();
-    const gotoBook = (item) => {
+    const gotoBook = (item: { id: any; locations: string | any[]; service_id: any; service_category_id: any }) => {
 
         const ride_number = item?.id;
         const destination = item?.locations?.[item.locations.length - 1];
-        const stops = [];
+        const stops: never[] = [];
         const pickupLocation = item?.locations?.[0];
         const categoryId = item?.service_id
         const scheduleDate = null
@@ -49,8 +49,8 @@ export function Recentbooking({ recentRideData }) {
             });
     };
 
-    const renderItem = ({ item }) => {
-        const { date, time } = formatDateTime(item.created_at);
+    const renderItem = ({ item }:any) => {
+        const { date, time } = formatDateTime(item?.created_at);
 
         return (
             <View
@@ -62,14 +62,18 @@ export function Recentbooking({ recentRideData }) {
                     <View style={styles.viewWidth}>
                         <View style={{ flexDirection: viewRTLStyle }}>
                             <View style={styles.imageView}>
-                                <Image source={{
+                                {/* <Image source={{
                                     uri: item.vehicle_type.vehicle_image_url
-                                }} style={styles.img} />
+                                }} style={styles.img} /> */}
+                                <Image source={require('../../assets/images/homeScreenImage/rideLogo.png')} style={styles.img} />
                             </View>
                             <View style={styles.textView}>
-                                <Text style={[styles.textId, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>#{item.ride_number}</Text>
-                                <Text style={styles.price}>{zoneValue.currency_symbol}{item.total}</Text>
-                                <Text style={[styles.textId, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{Number(item.distance).toFixed(1)} {item.distance_unit}</Text>
+                                {/* <Text style={[styles.textId, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>#{item.ride_number}</Text> */}
+                                                                <Text style={[styles.textId, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>#{'123456'}</Text>
+
+                                {/* <Text style={styles.price}>{zoneValue?.currency_symbol}{item.total}</Text> */}
+                                <Text style={styles.price}>{zoneValue?.currency_symbol}{'2'}</Text>
+                                <Text style={[styles.textId, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{Number('12').toFixed(1)} {'km'}</Text>
                             </View>
                         </View>
                     </View>
@@ -78,7 +82,7 @@ export function Recentbooking({ recentRideData }) {
                             <View style={styles.clockSmall}>
                                 <CalenderSmall />
                             </View>
-                            <Text style={styles.date}>{date}</Text>
+                            {/* <Text style={styles.date}>{date}</Text> */}
                         </View>
                         <View style={[styles.clockSmallView, { flexDirection: viewRTLStyle }]}>
                             <View style={styles.clockSmall}>
@@ -97,16 +101,17 @@ export function Recentbooking({ recentRideData }) {
                     </View>
                     <View style={[external.pv_10]}>
                         <Text style={[styles.itemStyle, { color: textColorStyle, width: '100%' }]}>
-                            {item?.locations[0]?.length > 42
+                            10
+                            {/* {item?.locations[0]?.length > 42
                                 ? `${item.locations[0].slice(0, 42)}...`
-                                : item?.locations[0]}
+                                : item?.locations[0]} */}
                         </Text>
                         <View style={styles.dashedLine} />
-                        <Text style={[styles.pickUpLocationStyles, { color: textColorStyle }]}>{item?.locations[item.locations.length - 1]}</Text>
+                        <Text style={[styles.pickUpLocationStyles, { color: textColorStyle }]}>{10000}</Text>
                     </View>
                 </View>
                 <View style={styles.buttonContainer}>
-                    <Button textColor={appColors.whiteColor} title={translateData.BookAgainTextttt} onPress={() => gotoBook(item)} />
+                    <Button textColor={appColors.whiteColor} title={'book'} onPress={() => gotoBook(item)} />
                 </View>
             </View>
         )
@@ -114,7 +119,7 @@ export function Recentbooking({ recentRideData }) {
 
     return (
         <View style={[styles.mainContainer, { backgroundColor: isDark ? appColors.bgDark : appColors.lightGray }]}>
-            <Text style={[styles.recentRides, { color: isDark ? appColors.whiteColor : appColors.primaryText, textAlign: textRTLStyle }]}>{translateData.homeRecentRides}</Text>
+            <Text style={[styles.recentRides, { color: isDark ? appColors.whiteColor : appColors.primaryText, textAlign: textRTLStyle }]}>{translateData?.homeRecentRides ? translateData?.homeRecentRides : 'Baroda to dahod'}</Text>
             <FlatList
                 data={recentRideData}
                 keyExtractor={(item) => item.id}

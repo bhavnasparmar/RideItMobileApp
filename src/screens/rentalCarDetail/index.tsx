@@ -93,7 +93,7 @@ export function RentalCarDetails() {
 
         if (res.id) {
           setIsModalVisible(true);
-          notificationHelper("Ride Book", translateData.bookSuccessfully, "success")
+          notificationHelper("Ride Book", translateData?.bookSuccessfully, "success")
         } else {
           notificationHelper("Book Error", res.message, "error")
         }
@@ -141,17 +141,17 @@ export function RentalCarDetails() {
               <View style={external.fd_row}>
                 <Text style={styles.price}>
                   ${rentalVehicleListsDetails.vehicle_per_day_price}
-                  <Text style={styles.day}>/{translateData.day}</Text>
+                  <Text style={styles.day}>/{translateData?.day}</Text>
                 </Text>
               </View>
             </View>
             <View style={[styles.border, { borderBottomColor: isDark ? appColors.darkBorder : appColors.border }]} />
             <View style={[styles.driverContainer, { flexDirection: viewRTLStyle }]}>
-              <Text style={[styles.title, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData.driverPriceText}</Text>
+              <Text style={[styles.title, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData?.driverPriceText}</Text>
               <View style={external.fd_row}>
                 <Text style={styles.price}>
                   ${rentalVehicleListsDetails.driver_per_day_charge}
-                  <Text style={styles.day}>/{translateData.day}</Text>
+                  <Text style={styles.day}>/{translateData?.day}</Text>
                 </Text>
               </View>
             </View>
@@ -164,7 +164,7 @@ export function RentalCarDetails() {
                 </View>
               ))}
             </View>
-            <Text style={[styles.title, external.mt_5, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData.moreInfoText}</Text>
+            <Text style={[styles.title, external.mt_5, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData?.moreInfoText}</Text>
             {rentalVehicleListsDetails?.interior?.map((detail: any, index: number) => (
               <Text key={index} style={styles.description}>
                 <Right /> {` ${detail}`}
@@ -176,7 +176,7 @@ export function RentalCarDetails() {
             onPress={bookRental}
             activeOpacity={0.7}
           >
-            <Button title={translateData.bookNow} onPress={bookRental} loading={bookLoading} />
+            <Button title={translateData?.bookNow} onPress={bookRental} loading={bookLoading} />
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -201,17 +201,17 @@ export function RentalCarDetails() {
                 color: isDark ? appColors.whiteColor : appColors.primaryText,
               }]}
             >
-              {translateData.requestSuccessfullySent}
+              {translateData?.requestSuccessfullySent}
             </Text>
             <Text
               style={styles.modelSuccess}
             >
-              {translateData.requestSentSuccess}
+              {translateData?.requestSentSuccess}
             </Text>
             <View
               style={styles.modelButtonView}
             >
-              <Button title={translateData.btnOkay} onPress={modelClose} />
+              <Button title={translateData?.btnOkay} onPress={modelClose} />
             </View>
           </View>
         }

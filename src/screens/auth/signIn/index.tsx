@@ -60,8 +60,8 @@ export function SignIn() {
       email_or_phone: phoneNumber,
       country_code: formatCountryCode(countryCode),
     };
-     navigate("OtpVerification", { countryCode, phoneNumber, demouser });
-          notificationHelper("OTP", "Otp Sent Successfully", "success");
+    navigate("OtpVerification", { countryCode, phoneNumber, demouser });
+    notificationHelper("OTP", "Otp Sent Successfully", "success");
 
     // dispatch(userLogin(payload))
     //   .unwrap()
@@ -125,22 +125,54 @@ export function SignIn() {
                 loading={loading}
               />
             </View>
-            <View style={{justifyContent : 'center' , flexDirection : 'row',marginTop : 10}}>
-              <Text style={{ textAlign: "center",color : 'gray' }}>
+
+               <View style={styles.imgContainer}>
+              <Image source={Images.or} style={styles.orImg} />
+            </View>
+
+            <View style={[{flexDirection : 'row', justifyContent : 'center',alignItems : 'center'}]}>
+               <View style={styles.socialLogin}>
+                <Image
+                  style={styles.socialImg}
+                  source={require("../../../assets/images/authImage/google.png")}
+                />
+                  <Text style={styles.socialText}>
+                  {'Google'}
+                </Text>
+              </View>
+              <View style={styles.socialLogin} >
+                <Image
+                  style={styles.socialImg}
+                  source={require("../../../assets/images/authImage/facebook.png")}
+                />
+                <Text style={styles.socialText}>
+                  {'Facebook'}
+                </Text>
+              </View>
+             
+            </View>
+            <View
+              style={{
+                justifyContent: "center",
+                flexDirection: "row",
+                marginTop: 50,
+              }}
+            >
+              <Text style={{ textAlign: "center", color: "gray" }}>
                 {translateData?.mobileNumber
                   ? translateData?.mobileNumber
                   : "New User ?"}
               </Text>
-               <Text style={{ textAlign: "center" ,fontWeight : 'bold' }}>
+              <TouchableOpacity onPress={()=>{ navigate("SignUp")}} >
+              <Text style={{ textAlign: "center", fontWeight: "bold" }}>
                 {translateData?.mobileNumber
                   ? translateData?.mobileNumber
                   : " Sign Up"}
               </Text>
+              </TouchableOpacity>
             </View>
 
-            {/* <View style={styles.imgContainer}>
-              <Image source={Images.or} style={styles.orImg} />
-            </View> */}
+         
 
             {/* <TouchableOpacity
               activeOpacity={0.7}

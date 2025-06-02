@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     width: windowWidth(120),
     height: windowHeight(20),
     resizeMode: 'contain',
-    tintColor: appColors.whiteColor
+    //tintColor: appColors.whiteColor
   }
 });
 export { styles };

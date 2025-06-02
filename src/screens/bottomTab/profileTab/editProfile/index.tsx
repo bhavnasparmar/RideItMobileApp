@@ -71,10 +71,10 @@ export function EditProfile() {
       if (!response.ok) {
         const responseData = await response.json();
         console.error('Error updating profile:', responseData);
-        notificationHelper("Error",translateData.profileFail,"error")
+        notificationHelper("Error",translateData?.profileFail,"error")
       } else {
         dispatch(selfData());
-        notificationHelper("Successfull",translateData.profileSuccessfully,"success")
+        notificationHelper("Successfull",translateData?.profileSuccessfully,"success")
         goBack();
   
         if (profileImg) {
@@ -83,7 +83,7 @@ export function EditProfile() {
       }
     } catch (error) {
       console.error('Error:', error);
-      notificationHelper("Error",translateData.profileFail,"error")
+      notificationHelper("Error",translateData?.profileFail,"error")
     } finally {
       setIsUpdating(false); 
     }
@@ -96,7 +96,7 @@ export function EditProfile() {
 
   return (
     <Header
-      value={translateData.profileSettings}
+      value={translateData?.profileSettings ? translateData?.profileSettings : 'Profile Settings'}
       container={
         <View style={{ backgroundColor: isDark ? bgFullStyle : appColors.lightGray, height: '100%' }}>
           <ImageContainer data={self} storeProfile={getData} />

@@ -135,32 +135,32 @@ export function RentalBooking() {
     let hasError = false;
 
     if (!pickupLocation) {
-      newErrors.pickupLocation = translateData.pleaseEnterAValidPickupLocation;
+      newErrors.pickupLocation = translateData?.pleaseEnterAValidPickupLocation;
       hasError = true;
     }
 
     if (!dropLocation) {
-      newErrors.dropLocation = translateData.pleaseEnterADropoffLocation;
+      newErrors.dropLocation = translateData?.pleaseEnterADropoffLocation;
       hasError = true;
     }
 
     if (!startDate) {
-      newErrors.startDate = translateData.selectAStartDate;
+      newErrors.startDate = translateData?.selectAStartDate;
       hasError = true;
     }
 
     if (!startTime) {
-      newErrors.startTime = translateData.selectAStartTime;
+      newErrors.startTime = translateData?.selectAStartTime;
       hasError = true;
     }
 
     if (!endDate) {
-      newErrors.endDate = translateData.selectAnEndDate;
+      newErrors.endDate = translateData?.selectAnEndDate;
       hasError = true;
     }
 
     if (!endTime) {
-      newErrors.endTime = translateData.selectAnEndTime;
+      newErrors.endTime = translateData?.selectAnEndTime;
       hasError = true;
     }
 
@@ -223,12 +223,12 @@ export function RentalBooking() {
   return (
     <View style={external.main}>
       <View style={[{ flex: 1 }, { backgroundColor: linearColorStyle }]}>
-        <Header value={translateData.rentalRide} />
+        <Header value={translateData?.rentalRide} />
         <View style={styles.inputMainView}>
           <InputText
             borderColor={isDark ? appColors.darkBorder : appColors.border}
-            placeholder={translateData.enterPickupLocation}
-            title={translateData.pickupLocation}
+            placeholder={translateData?.enterPickupLocation}
+            title={translateData?.pickupLocation}
             showTitle={true}
             placeholderText={isDark ? appColors.darkText : appColors.regularText}
             value={pickupLocation}
@@ -236,7 +236,7 @@ export function RentalBooking() {
               setPickUpLocation(text);
               if (text.trim() === "") {
                 setPickUpLocationError(true);
-                setErrors((prev) => ({ ...prev, pickupLocation: translateData.pleaseEnterAPickupLocation }));
+                setErrors((prev) => ({ ...prev, pickupLocation: translateData?.pleaseEnterAPickupLocation }));
               } else {
                 setPickUpLocationError(false);
                 setErrors((prev) => ({ ...prev, pickupLocation: "" }));
@@ -248,8 +248,8 @@ export function RentalBooking() {
           {toggle && (
             <InputText
               borderColor={isDark ? appColors.darkBorder : appColors.border}
-              placeholder={translateData.dropLocation}
-              title={translateData.dropoffLocation}
+              placeholder={translateData?.dropLocation}
+              title={translateData?.dropoffLocation}
               showTitle={true}
               placeholderText={isDark ? appColors.darkText : appColors.regularText}
               value={dropLocation}
@@ -257,7 +257,7 @@ export function RentalBooking() {
                 setDropLocation(text);
                 if (text.trim() === "") {
                   setDropLocationError(true);
-                  setErrors((prev) => ({ ...prev, dropLocation: translateData.pleaseEnterAPickupLocation }));
+                  setErrors((prev) => ({ ...prev, dropLocation: translateData?.pleaseEnterAPickupLocation }));
                 } else {
                   setDropLocationError(false);
                   setErrors((prev) => ({ ...prev, dropLocation: "" }));
@@ -275,7 +275,7 @@ export function RentalBooking() {
                 fontFamily: appFonts.medium,
               }}
             >
-              {translateData.dropLocations}
+              {translateData?.dropLocations}
             </Text>
             <SwitchComponent
               Enable={toggle}
@@ -289,7 +289,7 @@ export function RentalBooking() {
             <Text
               style={[styles.datetimeText, { textAlign: textRTLStyle }, { color: textColorStyle }]}
             >
-              {translateData.startTimedate}
+              {translateData?.startTimedate}
             </Text>
 
             <View
@@ -305,7 +305,7 @@ export function RentalBooking() {
                   <Clock color={appColors.regularText} />
                 </View>
                 <TextInput
-                  placeholder={translateData.selectTime}
+                  placeholder={translateData?.selectTime}
                   placeholderTextColor={isDark ? appColors.darkText : appColors.regularText}
                   style={[styles.timeText, { color: isDark ? appColors.whiteColor : appColors.blackColor }]}
                   editable={false}
@@ -323,7 +323,7 @@ export function RentalBooking() {
                   <Calender1 />
                 </View>
                 <TextInput
-                  placeholder={translateData.selectDate}
+                  placeholder={translateData?.selectDate}
                   placeholderTextColor={isDark ? appColors.darkText : appColors.regularText}
                   style={[styles.timeText, { color: isDark ? appColors.whiteColor : appColors.blackColor }]}
                   editable={false}
@@ -339,7 +339,7 @@ export function RentalBooking() {
             <Text
               style={[styles.datetimeText, { textAlign: textRTLStyle }, { color: textColorStyle }, { marginTop: windowHeight(18) }]}
             >
-              {translateData.endTimedate}
+              {translateData?.endTimedate}
             </Text>
             <View
               style={{ flexDirection: viewRTLStyle, justifyContent: "space-between" }}
@@ -354,7 +354,7 @@ export function RentalBooking() {
                   <Clock color={appColors.regularText} />
                 </View>
                 <TextInput
-                  placeholder={translateData.selectTime}
+                  placeholder={translateData?.selectTime}
                   placeholderTextColor={isDark ? appColors.darkText : appColors.regularText}
                   style={[styles.timeText, { color: isDark ? appColors.whiteColor : appColors.blackColor }]}
                   editable={false}
@@ -370,7 +370,7 @@ export function RentalBooking() {
                   <Calender1 />
                 </View>
                 <TextInput
-                  placeholder={translateData.selectDate}
+                  placeholder={translateData?.selectDate}
                   placeholderTextColor={isDark ? appColors.darkText : appColors.regularText}
                   style={[styles.timeText, { color: isDark ? appColors.whiteColor : appColors.blackColor }]}
                   editable={false}
@@ -395,12 +395,12 @@ export function RentalBooking() {
               <Text
                 style={[styles.tripText, { textAlign: textRTLStyle }]}
               >
-                {translateData.getDriver}
+                {translateData?.getDriver}
               </Text>
               <Text
                 style={[styles.noDriverText, { textAlign: textRTLStyle }]}
               >
-                {translateData.getDriverCar}
+                {translateData?.getDriverCar}
               </Text>
             </View>
             <View style={styles.switchView}>
@@ -413,7 +413,7 @@ export function RentalBooking() {
         </View>
         <View
           style={styles.FindView}>
-          <Button width={'91%'} title={translateData.findNow} onPress={findCar} loading={findLoading} />
+          <Button width={'91%'} title={translateData?.findNow} onPress={findCar} loading={findLoading} />
         </View>
       </View>
     </View>

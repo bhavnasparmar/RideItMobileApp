@@ -46,10 +46,10 @@ export function Wallet() {
         },
       ]}
     >
-      <Header value={translateData.myWallet} />
+      <Header value={translateData?.myWallet} />
       <BalanceTopup balance={walletTypedata?.balance || 0} />
       <Text style={[styles.title, { color: textColorStyle }]}>
-        {translateData.history}
+        {translateData?.history}
       </Text>
 
       {loading ? (
@@ -69,11 +69,11 @@ export function Wallet() {
         <View style={styles.noInternet}>
           <NoInternet
             btnHide
-            title={translateData.noBalance}
-            details={translateData.noBalanceDes}
+            title={translateData?.noBalance}
+            details={translateData?.noBalanceDes}
             image={isDark ? Images.noBalanceDark : Images.noBalance}
             infoIcon
-            status={`${translateData.statusCode} ${statusCode}`}
+            status={`${translateData?.statusCode} ${statusCode}`}
             onRefresh={refresh}
           />
         </View>

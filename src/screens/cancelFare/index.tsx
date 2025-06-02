@@ -35,7 +35,7 @@ export function CancelFare() {
           onPressIcon={() => setSelected(true)}
           icon={
             <Text style={[commonStyles.mediumText23, { color: appColors.primary }]}>
-              {translateData.cancelFare}
+              {translateData?.cancelFare}
             </Text>
           }
         />
@@ -50,7 +50,7 @@ export function CancelFare() {
           <View >
             <View style={styles.modelView}>
               <Text style={[commonStyles.mediumText23, external.ti_center, { color: textColorStyle }]}>
-                {translateData.modelContent}
+                {translateData?.modelContent}
               </Text>
             </View>
             <View
@@ -63,13 +63,13 @@ export function CancelFare() {
               <Button
                 width={'47%'}
                 backgroundColor={appColors.lightGray}
-                title={translateData.modelYesCancel}
+                title={translateData?.modelYesCancel}
                 textColor={appColors.primaryText}
                 onPress={() => setSelected(false)}
               />
               <Button
                 width={'47%'}
-                title={translateData.modelNo}
+                title={translateData?.modelNo}
                 onPress={() => setSelected(false)}
               />
             </View>

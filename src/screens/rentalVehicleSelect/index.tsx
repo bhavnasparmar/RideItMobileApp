@@ -189,16 +189,16 @@ export function RentalVehicleSelect() {
         <View style={[styles.descContainer, { flexDirection: viewRTLStyle }]}>
           <Text style={styles.engineInfo}>{item?.description}</Text>
           <Text style={styles.rentPrice}>
-            {zoneValue.currency_symbol}{item?.vehicle_per_day_price * zoneValue?.exchange_rate}
-            <Text style={styles.perDay}>/{translateData.day}</Text>
+            {zoneValue?.currency_symbol}{item?.vehicle_per_day_price * zoneValue?.exchange_rate}
+            <Text style={styles.perDay}>/{translateData?.day}</Text>
           </Text>
         </View>
         <View style={[styles.dashLine, { borderBottomColor: isDark ? appColors.darkBorder : appColors.border }]} />
         <View style={[styles.descContainer, { flexDirection: viewRTLStyle }]}>
-          <Text style={[styles.driverTitle, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData.driverPrice}</Text>
+          <Text style={[styles.driverTitle, { color: isDark ? appColors.whiteColor : appColors.primaryText }]}>{translateData?.driverPrice}</Text>
           <Text style={styles.rentPrice}>
-            {zoneValue.currency_symbol}{item?.driver_per_day_charge * zoneValue?.exchange_rate}
-            <Text style={styles.perDay}>/{translateData.day}</Text>
+            {zoneValue?.currency_symbol}{item?.driver_per_day_charge * zoneValue?.exchange_rate}
+            <Text style={styles.perDay}>/{translateData?.day}</Text>
           </Text>
         </View>
         <View style={[styles.tagContainer, { flexDirection: viewRTLStyle }]}>
@@ -220,7 +220,7 @@ export function RentalVehicleSelect() {
           </View>
           <View style={[styles.iconBox, { flexDirection: viewRTLStyle }, { backgroundColor: isDark ? appColors.bgDark : appColors.lightGray }]}>
             <Seat />
-            <Text style={styles.iconTitle}>{item?.seatingCapacity} {translateData.seat}</Text>
+            <Text style={styles.iconTitle}>{item?.seatingCapacity} {translateData?.seat}</Text>
           </View>
           <View style={[styles.iconBox, { flexDirection: viewRTLStyle }, { backgroundColor: isDark ? appColors.bgDark : appColors.lightGray }]}>
             <Speed />
@@ -241,8 +241,8 @@ export function RentalVehicleSelect() {
 
   return (
     <View style={[styles.container, { backgroundColor: linearColorStyle }]}>
-      <Header value={translateData.selectRide} />
-      <Text style={[styles.title, { color: textColorStyle }]}>{translateData.vehicletype}</Text>
+      <Header value={translateData?.selectRide} />
+      <Text style={[styles.title, { color: textColorStyle }]}>{translateData?.vehicletype}</Text>
       <View style={styles.vehicleContainer}>
         <FlatList
           data={rentalVehicleData}
@@ -268,13 +268,13 @@ export function RentalVehicleSelect() {
         <View style={styles.noDateContainer}>
           <Image source={isDark ? Images.noVehicleDark : Images.noVehicle} style={styles.noData} />
           <View style={[styles.direction, { flexDirection: viewRTLStyle }]}>
-            <Text style={[styles.titles, { color: textColorStyle }]}>{translateData.emptyVehicle}</Text>
+            <Text style={[styles.titles, { color: textColorStyle }]}>{translateData?.emptyVehicle}</Text>
             <View style={styles.icon}>
               <Info />
             </View>
           </View>
           <Text style={styles.subTitle}>
-            {translateData.noVehicle}
+            {translateData?.noVehicle}
           </Text>
         </View>
       )}

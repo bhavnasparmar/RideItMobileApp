@@ -24,7 +24,7 @@ export function PaymentMethod() {
     zoneValue?.currency_symbol + 5,
     zoneValue?.currency_symbol + 10,
     zoneValue?.currency_symbol + 15,
-    translateData.custom,
+    translateData?.custom,
   ];
   const [selectedValue, setSelectedValue] = useState(null);
   const [customTip, setCustomTip] = useState();
@@ -47,7 +47,7 @@ export function PaymentMethod() {
   const handlePressTips = (value: any) => {
     setSelectedValue((prevValue) => (prevValue === value ? null : value));
 
-    if (value !== (translateData.custom)) {
+    if (value !== (translateData?.custom)) {
       setCustomTip("");
     }
   };
@@ -90,10 +90,10 @@ export function PaymentMethod() {
         Math.round(rideData?.platform_fees);
       if (totalBill < coupon?.min_spend) {
         setSuccessMessage(
-          `${translateData.minimumSpend} ${coupon?.min_spend} ${translateData.requiredCoupons}`
+          `${translateData?.minimumSpend} ${coupon?.min_spend} ${translateData?.requiredCoupons}`
         );
       } else {
-        setSuccessMessage(`${translateData.couponsApply}`);
+        setSuccessMessage(`${translateData?.couponsApply}`);
       }
     } else {
       setSuccessMessage("");
@@ -180,7 +180,7 @@ export function PaymentMethod() {
   return (
     <ScrollView style={[external.main, { backgroundColor: linearColorStyle }]}>
       <View style={styles.headerView}>
-        <Header value={translateData.payment} />
+        <Header value={translateData?.payment} />
       </View>
       <View style={styles.sideSpace}>
         <Text
@@ -189,7 +189,7 @@ export function PaymentMethod() {
             { color: textColorStyle, textAlign: textRTLStyle },
           ]}
         >
-          {translateData.tip}
+          {translateData?.tip}
         </Text>
 
         <View style={[styles.buttonContainer, { flexDirection: viewRTLStyle }]}>
@@ -237,7 +237,7 @@ export function PaymentMethod() {
                 borderColor: isDark ? appColors.darkBorder : appColors.border,
               },
             ]}
-            placeholder={translateData.tipAmount}
+            placeholder={translateData?.tipAmount}
             placeholderTextColor={appColors.regularText}
             keyboardType="number-pad"
             value={customTip}
@@ -258,19 +258,19 @@ export function PaymentMethod() {
             style={[styles.input, { color: textColorStyle }]}
             value={inputValue}
             onChangeText={setInputValue}
-            placeholder={translateData.applyPromoCode}
+            placeholder={translateData?.applyPromoCode}
             placeholderTextColor={appColors.regularText}
           />
           <TouchableOpacity style={styles.buttonAdd} onPress={handlePress} activeOpacity={0.7}
           >
-            <Text style={styles.buttonAddText}>{translateData.apply}</Text>
+            <Text style={styles.buttonAddText}>{translateData?.apply}</Text>
           </TouchableOpacity>
         </View>
 
         <View>
           {!isValid && (
             <Text style={styles.invalidPromoText}>
-              {translateData.invalidPromo}
+              {translateData?.invalidPromo}
             </Text>
           )}
           {successMessage && (
@@ -278,11 +278,11 @@ export function PaymentMethod() {
           )}
           <TouchableOpacity onPress={gotoCoupon} activeOpacity={0.7}
           >
-            <Text style={styles.viewCoupon}>{translateData.allCoupon}</Text>
+            <Text style={styles.viewCoupon}>{translateData?.allCoupon}</Text>
           </TouchableOpacity>
         </View>
         <Text style={[styles.bill, { color: textColorStyle }]}>
-          {translateData.billSummary}
+          {translateData?.billSummary}
         </Text>
         <View
           style={[
@@ -294,26 +294,26 @@ export function PaymentMethod() {
           ]}
         >
           <PaymentDetails
-            title={translateData.rideFare}
+            title={translateData?.rideFare}
             rideAmount={rideData?.ride_fare}
           />
           <PaymentDetails
-            title={translateData.tax}
+            title={translateData?.tax}
             rideAmount={rideData?.tax}
           />
           {calculateTipAmount() > 0 && (
             <View style={[styles.rideContainer, { flexDirection: viewRTLStyle }]}>
-              <Text style={[styles.billTitle, { color: textColorStyle }]}>{translateData.driverTips}</Text>
+              <Text style={[styles.billTitle, { color: textColorStyle }]}>{translateData?.driverTips}</Text>
               <Text style={{ color: textColorStyle }}>{selectedValue}</Text>
             </View>
           )}
           <PaymentDetails
-            title={translateData.platformFees}
+            title={translateData?.platformFees}
             rideAmount={Math.round(rideData?.platform_fees)}
           />
           {coupon && isValid && couponDiscount > 0 && (
             <PaymentDetails
-              title={translateData.couponSavings}
+              title={translateData?.couponSavings}
               rideAmount={`${couponDiscount.toFixed(2)}`}
             />
           )}
@@ -325,9 +325,9 @@ export function PaymentMethod() {
           />
           <View style={[styles.totalBillView, { flexDirection: viewRTLStyle }]}>
             <Text style={[styles.billTitle, { color: textColorStyle }]}>
-              {translateData.totalBill}
+              {translateData?.totalBill}
             </Text>
-            <Text style={styles.totalAmount}>{zoneValue.currency_symbol}{(zoneValue?.exchange_rate * Number(finalBill)).toFixed(2)}</Text>
+            <Text style={styles.totalAmount}>{zoneValue?.currency_symbol}{(zoneValue?.exchange_rate * Number(finalBill)).toFixed(2)}</Text>
           </View>
         </View>
 
@@ -337,7 +337,7 @@ export function PaymentMethod() {
             { color: textColorStyle, textAlign: textRTLStyle },
           ]}
         >
-          {translateData.paymentMethod}
+          {translateData?.paymentMethod}
         </Text>
         <View
           style={[
@@ -356,7 +356,7 @@ export function PaymentMethod() {
           <Button
             backgroundColor={appColors.primary}
             textColor={appColors.whiteColor}
-            title={translateData.proceedtoPay}
+            title={translateData?.proceedtoPay}
             onPress={gotoPay}
           />
         </View>

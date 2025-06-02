@@ -140,8 +140,8 @@ export function Splash() {
     return (
       <NoInternet
         onRefresh={handleRefresh}
-        title={translateData.appUnderMaintenance}
-        details={translateData.onlineShortly}
+        title={translateData?.appUnderMaintenance}
+        details={translateData?.onlineShortly}
         image={isDark ? Images.maintenanceDark : Images.maintenance}
         infoIcon={false}
       />

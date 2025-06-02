@@ -48,7 +48,7 @@ export function PendingDetails({ rideDetails, vehicleData }: pendingdetailsProps
               }]
             ]}
           >
-            {translateData.pendingRideOTP}
+            {translateData?.pendingRideOTP}
           </Text>
           <View style={{ flexDirection: viewRTLStyle }}>
             {rideDetails.otp
@@ -87,7 +87,7 @@ export function PendingDetails({ rideDetails, vehicleData }: pendingdetailsProps
               <Text
                 style={styles.paragraphText}
               >
-                {translateData.pendingDetailsCargo}
+                {translateData?.pendingDetailsCargo}
               </Text>
               {rideDetails?.service?.slug == "parcel" && (
                 <>
@@ -97,12 +97,12 @@ export function PendingDetails({ rideDetails, vehicleData }: pendingdetailsProps
                     <Text
                       style={styles.textStyle}
                     >
-                      {translateData.pendingReceiverName}
+                      {translateData?.pendingReceiverName}
                     </Text>
                     <Text
                       style={styles.textStyle}
                     >
-                      {translateData.kamleshChaiwala}
+                      {translateData?.kamleshChaiwala}
                     </Text>
                   </View>
 
@@ -112,7 +112,7 @@ export function PendingDetails({ rideDetails, vehicleData }: pendingdetailsProps
                     <Text
                       style={styles.textStyle}
                     >
-                      {translateData.pendingReceiverNo}
+                      {translateData?.pendingReceiverNo}
                     </Text>
                     <Text
                       style={{
@@ -129,7 +129,7 @@ export function PendingDetails({ rideDetails, vehicleData }: pendingdetailsProps
                     <Text
                       style={styles.textStyle}
                     >
-                      {translateData.pendingParcelWeight}
+                      {translateData?.pendingParcelWeight}
                     </Text>
                     <Text
                       style={styles.textStyle}

@@ -309,7 +309,7 @@ export default function RideContainer({ status }) {
                   #{item?.ride_number}
                 </Text>
                 <Text style={[styles.tripCostText, { textAlign: textRTLStyle }]}>
-                  {zoneValue.currency_symbol}{item.total}
+                  {zoneValue?.currency_symbol}{item.total}
                 </Text>
               </View>
               <View style={styles.iconMainView}>
@@ -375,7 +375,7 @@ export default function RideContainer({ status }) {
             <Text style={[styles.noRIde, {
               color: isDark ? appColors.whiteColor : appColors.primaryText, fontFamily: appFonts.bold,
 
-            }]}>{translateData.noRIde}</Text>
+            }]}>{translateData?.noRIde}</Text>
             <View style={styles.Info}>
               <Info />
             </View>
@@ -384,7 +384,7 @@ export default function RideContainer({ status }) {
           <Text style={[styles.noRideDes, {
             color: isDark ? appColors.whiteColor : appColors.regularText, fontFamily: appFonts.regular
           }]}>
-            {translateData.noRideDes}
+            {translateData?.noRideDes}
           </Text>
         </View>
       ) : (

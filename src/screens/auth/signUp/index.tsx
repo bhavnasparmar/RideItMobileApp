@@ -22,6 +22,7 @@ import { useAppNavigation, useAppRoute } from "@src/utils/navigation";
 import { commonStyles } from "@src/styles/commonStyle";
 import { useTheme } from "@react-navigation/native";
 import { CountryPicker } from "react-native-country-codes-picker";
+import { CountryCodeContainer } from "../signIn/signInComponents";
 
 export function SignUp() {
   const {
@@ -37,7 +38,7 @@ export function SignUp() {
   const usercredentialCode = route.params?.countryCode ?? "91";
   const usercredential = route.params?.phoneNumber ?? "1234567890";
   const [isEmailUser, setIsEmailUser] = useState(false);
-
+  const [warning, setWarning] = useState(false);
   const [userName, setUserName] = useState("");
   const [countryCode, setCountryCode] = useState(usercredentialCode);
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -84,7 +85,6 @@ export function SignUp() {
   }, [dispatch]);
 
   const handleRegister = () => {
- 
     let isValid = true;
 
     // if (!userName.trim()) {
@@ -98,7 +98,7 @@ export function SignUp() {
     // } else if (emailError) {
     //   setEmailError(false);
     // }
-  
+
     if (!phoneNumber.trim()) {
       setNumberError(translateData?.validNo);
       isValid = false;
@@ -129,10 +129,10 @@ export function SignUp() {
     //   setConfirmPasswordError("");
     // }
 
-    if (!isValid) {
-      return;
-    }
- console.log("hiii")
+    // if (!isValid) {
+    //   return;
+    // }
+    console.log("hiii");
     setLoading(true);
     const payload = {
       //username: userName,
@@ -147,7 +147,7 @@ export function SignUp() {
     setValue("token", "dummytoken");
     setToken("dummytoken");
     replace("MyTabs");
- //   dispatch(selfData());
+    //   dispatch(selfData());
     // dispatch(userRegistration(payload))
     //   .unwrap()
     //   .then((res) => {
@@ -192,6 +192,55 @@ export function SignUp() {
                     : "Explore your life by joining with"
                 }
               />
+               {/* <View style={[external.mt_10]}>
+                          <CountryCodeContainer
+                            countryCode={"+91"}
+                            setCountryCode={setCountryCode}
+                            phoneNumber={phoneNumber}
+                            setPhoneNumber={setPhoneNumber}
+                            backGroundColor={isDark ? appColors.bgDark : appColors.lightGray}
+                            textBgColor={appColors.lightGray}
+                            borderColor={isDark ? appColors.bgDark : appColors.lightGray}
+                            borderColor1={isDark ? appColors.bgDark : appColors.lightGray}
+                            warning={warning}
+                          />
+                          </View> */}
+              <View style={styles.passwordView}>
+                  <InputText
+                    showTitle={true}
+                    title={
+                      translateData?.userName
+                        ? translateData?.userName
+                        : "User Name"
+                    }
+                    borderColor={
+                      isDark ? appColors.bgDark : appColors.lightGray
+                    }
+                    placeholder={
+                      translateData?.enterUserName
+                        ? translateData?.enterUserName
+                        : "Enter User Name"
+                    }
+                    placeholderTextColor={
+                      isDark ? appColors.darkText : appColors.regularText
+                    }
+                    customColor={
+                      isDark ? appColors.whiteColor : appColors.blackColor
+                    }
+                    backgroundColor={
+                      isDark ? appColors.bgDark : appColors.lightGray
+                    }
+                    show
+                    value={userName}
+                    onChangeText={(text) => {
+                      setUserName(text);
+                      setUserNameError(!text.trim());
+                    }}
+                    warningText={
+                      userNameError ? `${translateData?.enterUserName}` : ""
+                    }
+                  />
+                </View>
               <View>
                 {/* <InputText
                   showTitle={true}
@@ -368,7 +417,7 @@ export function SignUp() {
                     )}
                   </View>
                 </View>
-                {/* <View style={styles.emailView}>
+                 <View style={styles.emailView}>
                   <InputText
                     showTitle={true}
                     title={translateData?.email ?translateData?.email : "Email"}
@@ -386,7 +435,7 @@ export function SignUp() {
                       isDark ? appColors.bgDark : appColors.lightGray
                     }
                     keyboard={"email-address"}
-                    editable={!isEmailUser}
+                  //  editable={!isEmailUser}
                     show
                     value={email}
                     onChangeText={(text) => {
@@ -398,7 +447,7 @@ export function SignUp() {
                       emailError ? `${translateData?.enterEmailId}` : ""
                     }
                   />
-                </View> */}
+                </View>
                 {/* <View style={styles.referralIdView}>
                   <InputText
                     showTitle={true}
@@ -421,54 +470,8 @@ export function SignUp() {
                     onChangeText={setReferralID}
                   />
                 </View> */}
-                <View style={styles.passwordView}>
-                  <InputText
-                    showTitle={true}
-                    title={
-                      translateData?.password
-                        ? translateData?.password
-                        : "Password"
-                    }
-                    placeholder={
-                      translateData?.enterPassword
-                        ? translateData?.enterPassword
-                        : "Enter Password"
-                    }
-                    borderColor={
-                      isDark ? appColors.bgDark : appColors.lightGray
-                    }
-                    customColor={
-                      isDark ? appColors.darkText : appColors.regularText
-                    }
-                    placeholderTextColor={
-                      isDark ? appColors.darkText : appColors.regularText
-                    }
-                    backgroundColor={
-                      isDark ? appColors.bgDark : appColors.lightGray
-                    }
-                    show
-                    value={password}
-                    onChangeText={(text) => {
-                      setPassword(text);
-                      setPasswordError(
-                        text && text.length < 8
-                          ? translateData?.passwordDigit
-                          : ""
-                      );
-                    }}
-                    rightIcon={
-                      <TouchableOpacity
-                        activeOpacity={0.7}
-                        onPress={() => setIsPasswordVisible(!isPasswordVisible)}
-                        style={{ paddingHorizontal: windowHeight(0) }}
-                      >
-                        {isPasswordVisible ? <EyeOpen /> : <EyeClose />}
-                      </TouchableOpacity>
-                    }
-                    secureText={!isPasswordVisible}
-                    warningText={passwordError}
-                  />
-                </View>
+                 
+             
                 {/* <View style={styles.confirmPasswordView}>
                   <InputText
                     showTitle={true}

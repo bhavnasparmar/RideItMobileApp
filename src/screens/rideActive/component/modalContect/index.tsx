@@ -16,22 +16,22 @@ export function ModalContect({ onpress }: { onpress: () => void }) {
                 >
                     <Close />
                 </TouchableOpacity>
-                <Text style={[styles.title, { color: textColorStyle }]}>{translateData.keepYourselfSafe}</Text>
+                <Text style={[styles.title, { color: textColorStyle }]}>{translateData?.keepYourselfSafe}</Text>
                 <View style={{ flexDirection: viewRTLStyle }}>
                     <TouchableOpacity style={[styles.box, { backgroundColor: bgContainer }]} activeOpacity={0.7}
                     >
                         <Police />
-                        <Text style={[styles.callReason, { color: textColorStyle }]}>{translateData.callThePolice}</Text>
+                        <Text style={[styles.callReason, { color: textColorStyle }]}>{translateData?.callThePolice}</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={[styles.box, { backgroundColor: bgContainer }]} activeOpacity={0.7}
                     >
                         <SafetyCall />
-                        <Text style={[styles.callReason, { color: textColorStyle }]}>{translateData.callSafetySupport}</Text>
+                        <Text style={[styles.callReason, { color: textColorStyle }]}>{translateData?.callSafetySupport}</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={[styles.box, { backgroundColor: bgContainer }]} activeOpacity={0.7}
                     >
                         <LocationGreen />
-                        <Text style={[styles.callReason, { color: textColorStyle }]}>{translateData.callSafetySupport}</Text>
+                        <Text style={[styles.callReason, { color: textColorStyle }]}>{translateData?.callSafetySupport}</Text>
                     </TouchableOpacity>
                 </View>
             </View>

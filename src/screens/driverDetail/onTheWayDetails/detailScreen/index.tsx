@@ -21,7 +21,7 @@ export function DetailScreen() {
                 source={Images.profileUser}></Image>
               <Text
                 style={[commonStyles.regularText, { color: appColors.primaryText }]}>
-                {translateData.userJonathanHiggins}
+                {translateData?.userJonathanHiggins}
               </Text>
               <Text></Text>
             </View>

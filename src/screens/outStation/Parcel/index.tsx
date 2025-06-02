@@ -38,35 +38,35 @@ export function Parcel() {
       <PickUpDetails bgColor={bgContainer} />
       <InputText
         showTitle={true}
-        title={translateData.dateAndTime}
+        title={translateData?.dateAndTime}
         backgroundColor={bgContainer}
-        placeholder={translateData.selectDateTime}
+        placeholder={translateData?.selectDateTime}
         rightIcon={<Calender />}
         onPress={() => setSelected(true)}
       />
       <InputText
         showTitle={true}
-        title={translateData.weight}
+        title={translateData?.weight}
         backgroundColor={bgContainer}
-        placeholder={translateData.enterTotalWeight}
+        placeholder={translateData?.enterTotalWeight}
       />
 
       <InputText
         showTitle={true}
-        title={translateData.comments}
+        title={translateData?.comments}
         backgroundColor={bgContainer}
-        placeholder={translateData.enterComments}
+        placeholder={translateData?.enterComments}
       />
       <InputText
         showTitle={true}
-        title={translateData.enterRate}
+        title={translateData?.enterRate}
         backgroundColor={bgContainer}
-        placeholder={translateData.enterAmount}
+        placeholder={translateData?.enterAmount}
       />
       <ToggleMenu
         titleShow={true}
-        title={translateData.paymentMethod}
-        initialPlaceholder={translateData.cash}
+        title={translateData?.paymentMethod}
+        initialPlaceholder={translateData?.cash}
         options={['Cash', 'UPI', 'QR-Code']}
         onSelect={handleSelectGender}
         onCloseMenu={handleCloseMenu}
@@ -74,7 +74,7 @@ export function Parcel() {
         iconShow={true}
       />
       <View style={[external.mv_15]}>
-        <Button title={translateData.bookRide} onPress={() => navigate('FindingDriver')} />
+        <Button title={translateData?.bookRide} onPress={() => navigate('FindingDriver')} />
       </View>
       <CommonModal
         isVisible={selected}
@@ -83,7 +83,7 @@ export function Parcel() {
           <View>
             <Calander onPress={closeModal} />
             <View style={{ marginVertical: 20, }}>
-              <Button title={translateData.continue} onPress={() => setSelected(false)} />
+              <Button title={translateData?.continue} onPress={() => setSelected(false)} />
             </View>
           </View>
         }

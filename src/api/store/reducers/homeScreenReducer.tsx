@@ -4,7 +4,16 @@ import { HomeScreenInterface } from '../../interface/homeScreenInterface';
 
 const initialState: HomeScreenInterface = {
     homeScreenData: [],
-    homeScreenDataPrimary: [],
+    homeScreenDataPrimary: {
+        banners :[{banner_image_url : require('../../../assets/images/banner.jpg')},{banner_image_url : require('../../../assets/images/banner2.png')},{banner_image_url : require('../../../assets/images/banner3.jpg')}]
+    ,service_categories:[{service_category_image_url : require('../../../assets/images/rides.png'),name : 'Ride'},
+        {service_category_image_url : require('../../../assets/images/carLuggage.png'),name : 'Intercity'},
+        {service_category_image_url : require('../../../assets/images/rentalCar.png'),name : 'Rental'},
+         {service_category_image_url : require('../../../assets/images/calenderCar.png'),name : 'Scheduled'}
+    ],
+    recent_rides : [{}],
+     coupons : []
+    },
     success: false,
     loading: false,
     statusCode: null,

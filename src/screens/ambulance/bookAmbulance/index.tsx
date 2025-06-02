@@ -57,7 +57,7 @@ export function BookAmbulance() {
 
     return (
         <View style={styles.mainView}>
-            <Header value={translateData.bookAmbulance} />
+            <Header value={translateData?.bookAmbulance} />
             <ScrollView style={{ backgroundColor: isDark ? '#1F1F1F' : '#F5F5F5' }}>
                 <View
                     style={[styles.mainContainer, { flexDirection: viewRTLStyle, backgroundColor: isDark ? appColors.darkPrimary : appColors.whiteColor, borderColor: isDark ? appColors.darkBorder : appColors.border }]}
@@ -69,7 +69,7 @@ export function BookAmbulance() {
                         <Text
                             style={[styles.pickUp, { textAlign: textRTLStyle, color: isDark ? appColors.whiteColor : appColors.primaryText }]}
                         >
-                            {translateData.pickupLocation}
+                            {translateData?.pickupLocation}
                         </Text>
                         <Text
                             style={[styles.locationText, { textAlign: textRTLStyle }]}
@@ -82,7 +82,7 @@ export function BookAmbulance() {
                 <Text
                     style={[styles.description, { textAlign: textRTLStyle, color: isDark ? appColors.whiteColor : appColors.primaryText }]}
                 >
-                    {translateData.additionalDescription}
+                    {translateData?.additionalDescription}
                 </Text>
                 <View
                     style={[styles.ambulanceView, { flexDirection: viewRTLStyle, backgroundColor: isDark ? appColors.darkPrimary : appColors.whiteColor, borderColor: isDark ? appColors.darkBorder : appColors.border }]}
@@ -95,7 +95,7 @@ export function BookAmbulance() {
                             style={[styles.textInput, { backgroundColor: isDark ? appColors.darkPrimary : appColors.whiteColor, borderColor: isDark ? appColors.darkBorder : appColors.border, textAlign: textRTLStyle, color: isDark ? appColors.whiteColor : appColors.primaryText }]}
                             multiline
                             numberOfLines={5}
-                            placeholder={translateData.writePlaceholder}
+                            placeholder={translateData?.writePlaceholder}
                             placeholderTextColor={appColors.gray}
                         />
                     </View>
@@ -103,7 +103,7 @@ export function BookAmbulance() {
                 <Text
                     style={[styles.ambulanceText, { textAlign: textRTLStyle, color: isDark ? appColors.whiteColor : appColors.primaryText }]}
                 >
-                    {translateData.selectAmbulance}
+                    {translateData?.selectAmbulance}
                 </Text>
 
 
@@ -139,7 +139,7 @@ export function BookAmbulance() {
                                     </Text>
                                     <Text
                                         style={[styles.text, { textAlign: textRTLStyle }]}>
-                                        {translateData.emergencySupport}
+                                        {translateData?.emergencySupport}
                                     </Text>
                                 </View>
                             </TouchableOpacity>
@@ -156,14 +156,14 @@ export function BookAmbulance() {
                                 <CloseCircle />
                             </TouchableOpacity>
                             <FastImage source={Images.waiting} style={styles.waitingImg} resizeMode="contain" />
-                            <Text style={styles.ambulanceApprovalText}>{translateData.ambulanceApproval}</Text>
+                            <Text style={styles.ambulanceApprovalText}>{translateData?.ambulanceApproval}</Text>
                         </View>
                     }
 
                 />
             </ScrollView>
             <View style={styles.btn}>
-                <Button title={translateData.bookAmbulance} onPress={bookAmbulance} />
+                <Button title={translateData?.bookAmbulance} onPress={bookAmbulance} />
             </View>
         </View>
     );

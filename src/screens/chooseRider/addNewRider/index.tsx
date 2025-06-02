@@ -34,7 +34,7 @@ export function AddNewRider() {
   return (
     <View style={[styles.mainContainer, { backgroundColor: linearColorStyle }]}>
       <Header
-        value={translateData.ridertitle}
+        value={translateData?.ridertitle}
         container={
           <View>
             <Text
@@ -43,15 +43,15 @@ export function AddNewRider() {
                 { color: textColorStyle, textAlign: textRTLStyle },
               ]}
             >
-              {translateData.riderSubTitle}
+              {translateData?.riderSubTitle}
             </Text>
             <View
               style={[styles.inputContainer, { backgroundColor: bgFullStyle }]}
             >
               <View style={styles.firstName}>
                 <InputText
-                  placeholder={translateData.enterYourName}
-                  title={translateData.firstName}
+                  placeholder={translateData?.enterYourName}
+                  title={translateData?.firstName}
                   showTitle={true}
                   backgroundColor={
                     isDark ? appColors.bgDark : appColors.lightGray
@@ -63,8 +63,8 @@ export function AddNewRider() {
               </View>
               <View style={styles.lastName}>
                 <InputText
-                  placeholder={translateData.enterLastName}
-                  title={translateData.lastName}
+                  placeholder={translateData?.enterLastName}
+                  title={translateData?.lastName}
                   showTitle={true}
                   backgroundColor={
                     isDark ? appColors.bgDark : appColors.lightGray
@@ -83,7 +83,7 @@ export function AddNewRider() {
                   textAlign: textRTLStyle,
                 }}
               >
-                {translateData.addNewRiderPhoneNumber}
+                {translateData?.addNewRiderPhoneNumber}
               </Text>
 
               <View style={[styles.codeContainer, { flexDirection: viewRTLStyle }]}>
@@ -179,7 +179,7 @@ export function AddNewRider() {
                         ? appColors.darkText
                         : appColors.regularText
                     }
-                    placeholder={translateData.enterNumberandEmailBoth}
+                    placeholder={translateData?.enterNumberandEmailBoth}
                     keyboardType="number-pad"
                     value={phoneNumber}
                     onChangeText={(text) => {
@@ -201,7 +201,7 @@ export function AddNewRider() {
 
       <View style={styles.viewContainer}>
         <Button
-          title={translateData.addRider}
+          title={translateData?.addRider}
           // onPress={() => navigate("BookRide")}
           onPress={() => replace("BookRide", {
             destination,

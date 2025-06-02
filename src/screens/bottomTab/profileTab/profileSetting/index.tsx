@@ -55,7 +55,7 @@ export function ProfileSetting() {
     <View style={styles.main}>
       <SafeAreaView style={[styles.container, { backgroundColor: bgFullStyle }]}>
         <View style={[commonStyles.heightHeader]}>
-          <HeaderTab tabName={`${translateData?.settingTitle ? translateData.settingTitle : "title"}`} />
+          <HeaderTab tabName={`${translateData?.settingTitle ? translateData?.settingTitle : "Settings"}`} />
         </View>
 
         <ScrollView
