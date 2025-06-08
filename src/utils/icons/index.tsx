@@ -144,3 +144,5 @@ export * from "@assets/icons/shareRide";
 export * from "@assets/icons/report";
 export * from "@assets/icons/historyFill";
 export * from "@assets/icons/historyEmpty";
+export * from "@assets/iconsDriver/documentSetting";
+export * from "@assets/iconsDriver/vehicleSetting";

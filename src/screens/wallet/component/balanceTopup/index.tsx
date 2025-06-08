@@ -27,12 +27,12 @@ export function BalanceTopup({ balance }: BalanceTopupProps) {
                 <Image source={Images.walletBg} style={styles.walletImage} />
                 <View style={[styles.subBalance, { flexDirection: viewRTLStyle }]}>
                     <View style={styles.balanceView}>
-                        <Text style={styles.balanceTitle}>{translateData?.totalBalance}</Text>
+                        <Text style={styles.balanceTitle}>{translateData?.totalBalance || "total Balance"}</Text>
                         <Text style={styles.totalBalance}>{zoneValue?.currency_symbol}{(zoneValue?.exchange_rate ?? 0) * (balance ?? 0)}
                         </Text>
                     </View>
                     <TouchableOpacity activeOpacity={0.7} onPress={gotoTopUp} style={styles.topupBtn}>
-                        <Text style={styles.topupTitle}>{translateData?.topupWallet}</Text>
+                        <Text style={styles.topupTitle}>{translateData?.topupWallet || "Topup Wallet"}</Text>
                     </TouchableOpacity>
                 </View>
             </View>

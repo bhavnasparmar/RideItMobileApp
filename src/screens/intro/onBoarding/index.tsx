@@ -1,11 +1,21 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
-import { Image, ImageBackground, Text, TouchableOpacity, View } from "react-native";
+import {
+  Image,
+  ImageBackground,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import Swiper from "react-native-swiper";
 import DropDownPicker from "react-native-dropdown-picker";
 import { useDispatch, useSelector } from "react-redux";
 import { useFocusEffect, useTheme } from "@react-navigation/native";
 import { getValue, setValue } from "@src/utils/localstorage";
-import { languageDataGet, settingDataGet, translateDataGet } from "@src/api/store/actions";
+import {
+  languageDataGet,
+  settingDataGet,
+  translateDataGet,
+} from "@src/api/store/actions";
 import { useAppNavigation } from "@src/utils/navigation";
 import { useValues } from "../../../../App";
 import { BackArrow } from "@utils/icons";
@@ -15,24 +25,44 @@ import { external } from "../../../styles/externalStyle";
 import { appColors, windowHeight, windowWidth } from "@src/themes";
 
 export function Onboarding() {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
   const dispatch = useDispatch();
   const { navigate } = useAppNavigation();
   const swiperRef = useRef<Swiper | null>(null);
-  const { settingData, languageData, translateData, taxidoSettingData } = useSelector((state: any) => state.setting);
+  const { settingData, languageData, translateData, taxidoSettingData } =
+    useSelector((state: any) => state.setting);
   const { isDark, bgFullStyle, textColorStyle, viewRTLStyle } = useValues();
-  const imageDarkBottom = isDark ? Images.bgDarkOnboard : Images.bgOnboarding;
+  const imageDarkBottom = isDark ? Images?.bgDarkOnboard : Images?.bgOnboarding;
   const [open, setOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
-  const [items, setItems] = useState<{ label: string; value: string; icon: () => JSX.Element }[]>([]);
+  const [items, setItems] = useState<
+    { label: string; value: string; icon: () => JSX.Element }[]
+  >([]);
+  const [onboarding, setOnboarding] = useState<any[]>([
+    {
+      title: "Choose Your Destination",
+      onboarding_image_url : require("../../../assets/images/onBoarding/img1.jpeg"),
+      description:"Select your preferred route or destination before starting your ride. Plan your trips for a smooth and hassle-free journey."
+    },
+    {
+      title: "Check Fare & Book Ride",
+      onboarding_image_url : require("../../../assets/images/onBoarding/img2.jpeg"),
+      description:"Get an estimated fare before confirming your ride. Compare options and book your trip with confidence."
+    },
+    {
+      title: "Enjoy Your Trip",
+      onboarding_image_url : require("../../../assets/images/onBoarding/img3.jpeg"),
+      description:"Sit back and enjoy a comfortable ride with our seamless service. Travel with ease and reach your destination worry-free."
+    },
+  ]);
 
-  useFocusEffect(
-    useCallback(() => {
-      // dispatch(languageDataGet());
-      // dispatch(settingDataGet());
-      // dispatch(translateDataGet())
-    }, [dispatch])
-  );
+  // useFocusEffect(
+  //   useCallback(() => {
+  //     // return dispatch(languageDataGet());
+  //     // dispatch(settingDataGet());
+  //     // dispatch(translateDataGet())
+  //   }, [dispatch])
+  // );
 
   // useEffect(() => {
   //   const setDefaultLanguage = async () => {
@@ -81,25 +111,25 @@ export function Onboarding() {
   //   loadLanguage();
   // }, [settingData, languageData]);
 
-  useEffect(() => {
-    if (languageData?.data) {
-      const formattedItems = languageData.data.map((lang: { name: any; locale: any; flag: any; }) => ({
-        label: lang.name,
-        value: lang.locale,
-        icon: () => (
-          <Image source={{ uri: lang.flag }} style={styles.flagImage} />
-        ),
-      }));
-      setItems(formattedItems);
-    }
-  }, [languageData]);
+  // useEffect(() => {
+  //   if (languageData?.data) {
+  //     const formattedItems = languageData?.data.map((lang: { name: any; locale: any; flag: any; }) => ({
+  //       label: lang?.name,
+  //       value: lang?.locale,
+  //       icon: () => (
+  //         <Image source={{ uri: lang?.flag }} style={styles.flagImage} />
+  //       ),
+  //     }));
+  //     setItems(formattedItems);
+  //   }
+  // }, [languageData]);
 
   const handleLanguageChange = async (selectedValue: string | null) => {
     if (!selectedValue) return;
     setSelectedLanguage(selectedValue);
     try {
       await setValue("selectedLanguage", selectedValue);
-    } catch (error) { }
+    } catch (error) {}
   };
 
   const handleNavigation = () => {
@@ -107,7 +137,7 @@ export function Onboarding() {
   };
 
   const handleNext = (index: number) => {
-    if (index < taxidoSettingData?.taxido_values?.onboarding?.length - 1) {
+    if (index < onboarding?.length - 1) {
       swiperRef?.current?.scrollBy(1);
     } else {
       handleNavigation();
@@ -124,10 +154,15 @@ export function Onboarding() {
       dotStyle={styles.dotStyles}
       paginationStyle={styles.paginationStyle}
     >
-      {taxidoSettingData?.taxido_values?.onboarding.map((slide, index) => (
+      {onboarding.map((slide: any, index: any) => (
         <View
           key={index}
-          style={[styles.slideContainer, { backgroundColor: isDark ? appColors.bgDark : appColors.lightGray }]}
+          style={[
+            styles.slideContainer,
+            {
+              backgroundColor: isDark ? appColors.bgDark : appColors.lightGray,
+            },
+          ]}
         >
           <View
             style={[styles.languageContainer, { flexDirection: viewRTLStyle }]}
@@ -170,28 +205,41 @@ export function Onboarding() {
               theme={isDark ? "DARK" : "LIGHT"}
 
             />
-            <TouchableOpacity style={{
-              borderWidth: windowHeight(1),
-              borderColor: colors.border,
-              alignContent: 'center',
-              justifyContent: 'center',
-              paddingHorizontal: windowWidth(12),
-              paddingVertical: windowHeight(8),
-              borderRadius: windowHeight(4),
-              marginHorizontal: windowWidth(15)
-            }} activeOpacity={0.7} onPress={handleNavigation}>
+            <TouchableOpacity
+              style={{
+                borderWidth: windowHeight(1),
+                borderColor: colors.border,
+                alignContent: "center",
+                justifyContent: "center",
+                paddingHorizontal: windowWidth(12),
+                paddingVertical: windowHeight(8),
+                borderRadius: windowHeight(4),
+                marginHorizontal: windowWidth(15),
+              }}
+              activeOpacity={0.7}
+              onPress={handleNavigation}
+            >
               <Text style={[styles.skipText, { color: appColors.regularText }]}>
-                {translateData?.skip}
+                {translateData?.skip || "Skip"}
               </Text>
             </TouchableOpacity>
           </View>
-          <View style={{ height: windowHeight(420) }}>
+          <View style={{ height: windowHeight(500) }}>
             <Image
               style={styles.imageBackground}
-              source={{ uri: slide?.onboarding_image_url }}
+              source={slide?.onboarding_image_url}
             />
           </View>
-          <View style={[styles.imageBgView, { backgroundColor: isDark ? appColors.bgDark : appColors.lightGray }]}>
+          <View
+            style={[
+              styles.imageBgView,
+              {
+                backgroundColor: isDark
+                  ? appColors.bgDark
+                  : appColors.lightGray,
+              },
+            ]}
+          >
             <ImageBackground
               resizeMode="stretch"
               style={styles.img}

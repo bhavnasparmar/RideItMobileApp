@@ -19,12 +19,12 @@ export function Splash() {
  
   const { isDark } = useValues();
   const dispatch = useDispatch();
-  const { settingData, taxidoSettingData } = useSelector((state) => state.setting);
+  const { settingData, taxidoSettingData } = useSelector((state) => state?.setting);
   const [splashImage, setSplashImage] = useState(null);
   const [showNoInternet, setShowNoInternet] = useState(false);
-  const { translateData } = useSelector((state) => state.setting);
+  const { translateData } = useSelector((state) => state?.setting);
   const { currentLatitude, currentLongitude, locationStatus } = useSmartLocation();
-  const { zoneValue } = useSelector((state) => state.zone);
+  const { zoneValue } = useSelector((state) => state?.zone);
 
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export function Splash() {
   useEffect(() => {
     const fetchData = async () => {
       setTimeout(() => {
-           navigate('SignIn')
+           navigate('Onboarding')
       }, 1000);
 
       // dispatch(homeScreenPrimary())
@@ -79,7 +79,7 @@ export function Splash() {
   const proceedToNextScreen = useCallback(async () => {
     try {
       const token = await getValue("token");
-      const versionCode = parseInt(await DeviceInfo.getBuildNumber(), 10);
+      const versionCode = parseInt(await DeviceInfo?.getBuildNumber(), 10);
       const requiredVersion = parseInt(taxidoSettingData?.taxido_values?.setting?.app_version, 10) || 0;
       const forceUpdate = taxidoSettingData?.taxido_values?.activation?.force_update === "1";
 
@@ -110,7 +110,7 @@ export function Splash() {
         }
 
         if (latestZone && Object.keys(latestZone).length > 0) {
-          if (latestZone.success === false) {
+          if (latestZone?.success === false) {
             replace("NoService");
           } else {
             if (token) {
@@ -152,7 +152,7 @@ export function Splash() {
     <View style={[external.fx_1, { backgroundColor: appColors.whiteColor }]}>
       <View style={[external.ai_center, external.js_center, external.fx_1]}>
         <Image
-          source={splashImage ? { uri: splashImage } : Images.splashUser}
+          source={splashImage ? { uri: splashImage } : Images?.splashUser}
           style={styles.img}
           onError={() => deleteValue("splashImage")}
         />

@@ -1,13 +1,21 @@
 import React from "react";
 import {
   AppPages,
+  Bank,
   Chat,
+  DocumentSetting,
   Location,
+  Office,
   ProfileSetting,
   PromoCode,
   Share,
+  SideCar,
+  VehicleSetting,
 } from "@utils/icons";
 import { useSelector } from "react-redux";
+import Icons from '../../utils/icons/icons'
+import { appColors } from "@src/themes";
+
 
 export const useProfileData = () => {
   const { translateData } = useSelector((state: any) => state.setting);
@@ -53,6 +61,26 @@ export const useProfileData = () => {
         },
       ],
     },
+     {
+      title: translateData?.registrationDetails ? translateData?.registrationDetails : "Registration Details",
+      data: [
+        {
+          icon: <Office colors={appColors.gray}/>,
+          title: translateData?.documentRegistration || "Document Registration", 
+          screenName: "DocumentDetail",
+        },
+        {
+          icon: <SideCar />,
+          title: translateData?.vehicleRegistration || "Vehicle Registration",
+          screenName: "VehicleDetail",
+        },
+        {
+          icon: <Bank />,
+          title: translateData?.bankDetails || "Bank Details",
+          screenName: "BankDetails",
+        },
+      ],
+    },
   ];
 };
 
@@ -64,7 +92,7 @@ export const useGuestData = () => {
       title: translateData?.appDetails,
       data: [
         {
-          icon: <AppPages />,
+          icon:  <AppPages />,
           title: translateData?.appPages ?   translateData?.appPages : "App Page",
           screenName: "AppPageScreen",
         },
