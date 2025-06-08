@@ -10,6 +10,7 @@ const initialState: BidInterface = {
     loading: false,
     success: false,
     fcmToken: '',
+    
 };
 
 

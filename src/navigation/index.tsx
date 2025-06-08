@@ -84,7 +84,7 @@ const MyStack: React.FC = () => {
         ) : (
           <>
             <Stack.Screen name="Splash" component={Splash} />
-            {/* <Stack.Screen name="Onboarding" component={Onboarding} /> */}
+            <Stack.Screen name="Onboarding" component={Onboarding} />
             <Stack.Screen name="SignIn" component={SignIn} />
             <Stack.Screen name="OtpVerification" component={OtpVerification} />
             <Stack.Screen name="SignUp" component={SignUp} />
